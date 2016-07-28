@@ -1,3 +1,20 @@
 <link rel="stylesheet" href="http://localhost/profiltekst/web/stylesheets/css_theme_1.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		// jQuery.getJSON('http://localhost/profiltekst/web/json.php', {id: '1234'}, function(json, textStatus) {
+		// 	console.log(json);
+		// });
+
+		$(window).on('keydown', function(e){
+			console.log('iframe: ' + e.which);
+		});
+
+		if(window.location.hash){
+			$("body").append(window.location.hash);
+		}
+
+	});
+</script>
 
 test 1 2
