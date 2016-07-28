@@ -8,6 +8,7 @@
 
 		$(window).on('keydown', function(e){
 			console.log('iframe: ' + e.which);
+			parent.$(parent.document).trigger("iframeEvent.keydown", e.which);
 		});
 
 		if(window.location.hash){

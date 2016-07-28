@@ -29,6 +29,11 @@
 				$(window).on('keydown', function(e){
 					console.log(e.which);
 				});
+
+				// Listen to iFrame events
+				$(document).on('iframeEvent.keydown', function(e, data){
+					console.log('iframeEvent: '+data);
+				});
         	});
         </script>
     </body>
