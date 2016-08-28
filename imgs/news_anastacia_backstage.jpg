@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>		<title>mcg|graz - Messe Congress Graz</title>
+		<meta property="og:title" content="mcg|graz - Messe Congress Graz"/>
+			<meta name="keywords" content="Messe, Congress, Graz" />
+			<meta name="description" content="Messe Congress Graz" />
+		<meta property="og:description" content="Messe Congress Graz" />
+		<meta name="author" content="Rubikon Werbeagentur Graz" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-iphone4.png" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	
+	<meta property="og:site_name" content="Messe Congress Graz" />
+	
+	<meta property="og:url" content="http://www.mcg.at/messegraz.at/de/index.php"/>
+	
+	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- TYPEKIT über /_include/css/typekit.html integrieren, sonst kommts manchmal zu fehlern -->
+<!-- hier typekit code einfügen -->
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'><link rel="stylesheet" type="text/css" href="/_include/css/bootstrap.css?m=1462356347" />
+<link rel="stylesheet" type="text/css" href="/_include/css/jquery-ui-1.9.2.custom.min.css?m=1462356635" />
+<style type="text/css">
+
+h1.headline-index { left: 50%; margin-left: -50px; position: absolute; width: 100px;}
+.en {display:hidden;}</style><link rel="stylesheet" type="text/css" href="/_include/css/all.css?v=04" />
+
+<link rel="stylesheet" type="text/css" href="/_include/css/mobile.css" /><!--[if IEMobile 7]><link rel="stylesheet" type="text/css" href="/_include/css/mob.css" media="screen" /><![endif]--><link rel="stylesheet" type="text/css" href="/_include/js/images/fancybox/jquery.fancybox-1.3.1.css?m=1462357178" />
+ <!-- jquery.fancybox.css -->
+<link rel="stylesheet" type="text/css" href="/_include/css/datepicker.css?m=1462356354" />
+ <!-- datepicker.css -->
+<!--[if IE]><link rel="stylesheet" type="text/css" href="/_include/css/ieHack.css?m=1462356338" />
+<![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/_include/css/ie8.css?m=1462356331" />
+<![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/_include/css/ie7.css?m=1462356330" />
+<![endif]-->
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/_include/css/ie6.css?m=1462356331" />
+<![endif]-->
+<!--[if lte IE 8]>
+
+	<script type="text/javascript" src="/_include/js/respond.js.js?m=1462356344"></script>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script>window.jQuery || document.write('<script src="/_include/js/jquery-1.9.1.min.js" type="text/javascript"><\/script>')</script>
+	
+	
+
+<script type="text/javascript" src="/_include/js/jsStuff.js?m=1463571117"></script>
+ <!-- jsStuff.js -->
+<script type="text/javascript" src="/_include/js/jquery-ui-1.9.2.custom.min.js?m=1462356548"></script>
+ <!-- jquery.ui.js -->
+ <!-- jquery.easing-1.3.pack.js -->
+ <!-- jquery.mousewheel-2.0.2.pack.js -->
+<script type="text/javascript" src="/_include/js/images/fancybox/jquery.fancybox-1.3.1.js?m=1462357141"></script>
+ <!-- jquery.fancybox-1.3.1.pack.js -->
+<script type="text/javascript" src="/_include/js/images/jquery.cycle.all.js?m=1462356503"></script>
+ <!-- jquery.cycle.all.js -->
+<script type="text/javascript" src="/_include/js/instafeed.js?m=1462356343"></script>
+ <!-- instafeed.js -->
+	<script type="text/javascript" src="/_include/js/cycler2.js?m=1462356337"></script>
+ <!-- cycler2.js -->
+<script type="text/javascript" src="/_include/js/ways.js?m=1462356329"></script>
+ <!-- way.js -->
+<script type="text/javascript" src="/_include/js/css_browser_selector.js?m=1462356443"></script>
+ <!-- css_browser_selector.js -->
+<script type="text/javascript" src="/_include/js/bootstrap-datepicker.de.js?m=1462356501"></script>
+ <!-- bootstrap-datepicker.de.js -->
+<script src="https://raw.github.com/scottjehl/Respond/master/src/respond.js"></script>
+ 
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+<!-- faceliftfiles -->
+ 
+
+
+		
+	</head>
+	<body >		<div class="container lang_de template_60 doc_1043 theme_default">
+			<header>
+	<nav class="main row">
+		
+<!-- NAVIGATION LEVEL 1 -->
+
+
+<ul>	<li class="span3"><a href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen.php">Veranstaltungen</a>
+		<div class="entries">	<div><img  src="/_images/navigation/ball.jpg" alt="Ball" /><p><a href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen-ball.php">Ball</a></p></div>
+	<div><img  src="/_images/navigation/veranstaltungen/konzerte.png" alt="Konzerte" /><p><a href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen-konzerte.php">Konzerte</a></p></div>
+	<div><img  src="/_images/navigation/veranstaltungen/kongresse.png" alt="Kongresse &amp; Firmenveranstaltungen" /><p><a href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen-kongress-firmen.php">Kongresse &amp; Firmenveranstaltungen</a></p></div>
+	<div><img  src="/_images/navigation/veranstaltungen/messen.png" alt="Messen &amp; Austellungen" /><p><a href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen-messe-ausstellungen.php">Messen &amp; Austellungen</a></p></div>
+	<div><img  src="/_images/navigation/veranstaltungen/shows.png" alt="Shows &amp; Entertainment" /><p><a href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen-show-entertainment.php">Shows &amp; Entertainment</a></p></div>
+	<div><img  src="/_images/navigation/veranstaltungen/sport.png" alt="Sport" /><p><a href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen-sport.php">Sport</a></p></div>
+	<div><img  src="/_images/navigation/veranstaltungen/news.png" alt="News &amp; Highlights" /><p><a href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen-news-highlights.php">News &amp; Highlights</a></p></div>
+	<div><img  src="/_images/navigation/veranstaltungen/messen.png" alt="Impressionen" /><p><a href="/messegraz.at/de/veranstaltungs-uebersichten/impressionen.php">Impressionen</a></p></div>
+	<div><img  src="/_images/navigation/veranstaltungen/ticketshop.jpg" alt="MCG Ticketshop" /><p><a href="http://www.oeticket.com/mcg">MCG Ticketshop</a></p></div>
+</div>	</li>
+	<li class="span3"><a href="/messegraz.at/de/locations/congress-graz/">Locations</a>
+		<div class="entries">	<div><img  src="/_images/navigation/locations/congress.png" alt="Congress Graz" /><p><a href="/messegraz.at/de/locations/congress-graz/">Congress Graz</a></p></div>
+	<div><img  src="/button-graz.jpg" alt="Graz Info" /><p><a href="/messegraz.at/de/locations/graz-info/graz-info.php">Graz Info</a></p></div>
+	<div><img  src="/_images/navigation/locations/UPCArenaMCGKrug.jpg" alt="Merkur Arena" /><p><a href="/messegraz.at/de/locations/merkur-arena/merkur-arena.php">Merkur Arena</a></p></div>
+	<div><img  src="/_images/navigation/locations/eishalle-graz.png" alt="Merkur Eisstadion" /><p><a href="/messegraz.at/de/locations/merkur-eisstadion/merkur-eisstadion.php">Merkur Eisstadion</a></p></div>
+	<div><img  src="/_images/navigation/locations/MesseGrazHalleAMCGKrug4.JPG" alt="Messe Graz" /><p><a href="/messegraz.at/de/locations/messe-graz/messe-graz.php">Messe Graz</a></p></div>
+	<div><img  src="/_images/navigation/locations/messecongress.png" alt="Messecongress Graz" /><p><a href="/messegraz.at/de/locations/messecongress-graz/messecongress-graz.php">Messecongress Graz</a></p></div>
+	<div><img  src="/_images/_weinzoedl/button-weinzoedl2.jpg" alt="Sportzentrum Graz-Weinzödl" /><p><a href="/messegraz.at/de/locations/sportzentrum-graz-weinzoedl/sportzentrum-graz-weinzoedl.php">Sportzentrum Graz-Weinzödl</a></p></div>
+	<div><img  src="/_images/navigation/locations/StadthalleGrazMCGKrug3.JPG" alt="Stadthalle Graz" /><p><a href="/messegraz.at/de/locations/stadthalle-graz/stadthalle-graz.php">Stadthalle Graz</a></p></div>
+</div>	</li>
+	<li class="span3"><a href="/messegraz.at/de/unternehmen/unternehmen.php">Unternehmen</a>
+		<div class="entries">	<div><img  src="/_images/navigation/unternehmen/unternehmen.png" alt="Unternehmen" /><p><a href="/messegraz.at/de/unternehmen/unternehmen.php">Unternehmen</a></p></div>
+	<div><img  src="/_images/navigation/unternehmen/Nachhaltigkeit-layer.jpg" alt="Nachhaltigkeit" /><p><a href="/messegraz.at/de/unternehmen/nachhaltigkeit-mcg.php">Nachhaltigkeit</a></p></div>
+	<div><img  src="/_images/navigation/unternehmen/service-sw2.jpg" alt="Service" /><p><a href="/messegraz.at/de/unternehmen/service-uebersicht.php">Service</a></p></div>
+	<div><img  src="/_images/navigation/unternehmen/Congress-Award-Graz-layer.jpg" alt="Congress Award Graz" /><p><a href="/messegraz.at/de/unternehmen/congress-award-graz.php">Congress Award Graz</a></p></div>
+	<div><img  src="/_images/navigation/unternehmen/kontakt-layer.jpg" alt="Kontakt &amp; Team" /><p><a href="/messegraz.at/de/unternehmen/kontakt-mcg.php">Kontakt &amp; Team</a></p></div>
+</div>	</li>
+</ul>		<section class="social">
+									<a href="/messegraz.at/en/index.php" class="en"><img src="/_include/css/img/english-flag.png" alt="" /><span>English</span></a>
+							
+			<a class="social in" target="_blank" href="http://instagram.com/mcg_graz#">Instagra</a>
+			<a class="social fl" target="_blank" href="http://www.flickr.com/photos/28139888@N05/">Flickr</a>
+			<a class="social gp" target="_blank" href="https://plus.google.com/+McgAt/posts">Google Plus</a>
+			<a class="social yt" target="_blank" href="http://www.youtube.com/user/Messecongressgraz">Youtube</a>
+			<a class="social tw" target="_blank" href="https://twitter.com/mcg_graz">Twitter</a>
+			<a class="social fb" target="_blank" href="https://www.facebook.com/mcggraz">Facebook</a>
+			<a class="social mcticket" title="Tickets gewinnen" href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen-mcticket.php"><img src="/_include/css/img/mcticket-meta.png" alt="MC Tickets gewinnen" title="Tickets gewinnen" /></a>
+		</section>
+	</nav>
+			<section class="subheader row">
+			<section class="events-control span9">
+				<form class="form-inline" method="get" name="documentSearch" onsubmit="" action="/messegraz.at/de/site/suche.php">					<select class="input-large" name="sucheumfang" data-check="">
+						<option value="events">alle Veranstaltungen</option>
+						<option value="all">gesamte Seite</option>
+						<option>----------</option>
+						<option value="ball">Ball</option><option value="kongress-firmenveranstaltungen">Kongress & Firmenveranstaltungen</option><option value="konzert">Konzert</option><option value="mcticket"></option><option value="messe-ausstellungen">Messe & Ausstellungen</option><option value="news-highlights">News & Highlights</option><option value="shows-entertatinment">Shows & Entertainment</option><option value="sport">Sport</option>						<option>----------</option>
+						<option class="16">Impressionen</option>
+					</select>
+					<input class="input-medium" id="Suchbegriff" value="" name="we_lv_search_documentSearch" type="text" /><input type="hidden" name="we_from_search_documentSearch" value="1" />						<label for="suche_von">von</label>
+												<input type="text" class="datepicker input-small" id="suche_von" name="ts" value="29.05.2016" />
+						<label for="suche_bis">bis</label>
+												<input type="text" class="datepicker input-small" id="suche_bis" name="te" value="10.07.2019" />
+										<input class="btn btn-small" type="submit" name="Suche" value="Suche" />
+				</form>			</section>
+			<a class="logo" href="http://www.mcg.at/messegraz.at/de/index.php"><img src="/_include/css/img/messe-graz-logo.png" alt="Logo Messe Graz" /></a>
+		</section>
+		<section class="row list">
+			<div id="merkliste" class="span2">
+				<span class="merkliste">Merkliste (0)</span>
+				<div class="merkliste-page shadow">
+					<h5>Merkliste</h5>
+					<hr />
+					<div class="merkliste-list">
+						<div class="load"></div>
+					</div>
+					<div class="merkliste-footer">
+						<p><a href="#sendEvents">Merkliste per Mail versenden.</a></p>
+						<div class="sendEvents">
+							<form method="post" action="">
+								<label for="NameSender">Name Sender</label>
+								<input id="NameSender" name="NameSender" type="text" />
+								<label for="MailSender">E-Mail Sender</label>
+								<input id="MailSender" name="MailSender" type="text" />
+								<label for="NameEmpfaenger">Name Empfänger</label>
+								<input id="NameEmpfaenger" name="NameEmpfaenger" type="text" />
+								<label for="MailEmpfaenger">E-Mail Empfänger</label>
+								<input id="MailEmpfaenger" name="MailEmpfaenger" type="text" />
+								<label for="BetreffMail">Betreff Mail</label>
+								<input id="BetreffMail" name="BetreffMail" type="text" value="Messe Congress Graz" />
+								<label for="MailEmpfaenger">Text Mail</label>
+								<textarea name="TextMail" id="MailEmpfaenger"></textarea>
+								<input class="checkbox" type="checkbox" name="Newsletter" value="ja" id="Newsletter" />
+								<label class="checkbox" for="Newsletter">Newsletter anmelden</label>
+								<input type="submit" name="senden" value="senden" class="btn-medium btn-inverse" />
+							</form>
+						</div>
+						<p class="hidden"><a href="/_include/site/ical.php">iCal File downloaden</a></p>
+						<p><a href="/_include/merkliste.php?action=flushEvents">Merkliste leeren</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="span3 metanavigation">
+				<span><a href="/messegraz.at/de/unternehmen/presse.php" target="">Presse</a></span> . <span><a href="/messegraz.at/de/unternehmen/team.php" target="">Team</a></span> . <span><a href="/messegraz.at/de/unternehmen/kontakt-mcg.php" target="">Kontakt &amp; Anfahrt</a></span> . <span><a href="/messegraz.at/de/site/newsletter.php" target="_blank">Newsletter</a></span> . <span><a href="http://www.mcg.at/messegraz.at/de/" target="">Home</a></span> . <span><a href="/messegraz.at/de/unternehmen/wetter.php" target="">Wetter</a></span> . 				<div class="barrierefreiheit" style="">
+					<div style="" class="resizer">
+						<span>Schriftgröße</span>
+						<a style="" href="#" class="fontReset">A</a>
+						<a style="" href="#" class="fontSizePlus">A</a>
+						<span>Kontrast </span>
+							<a style="" href="#" class="contrastReset">A</a>
+						<a style="" href="#" class="contrastBlack">A</a>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+	</header><!-- header.tmpl -->
+						<section class="squares">
+									
+
+					
+					
+					
+					<h1 class="headline-index">Messe Congress Graz - Veranstaltungen, Konzerte, Kongresse, Sport, Shows</h1>
+										
+					<div class="row">
+						<div class="span12 ThemeColor2">		<div class="trans homeslider">	
+			<ul class="sliderwrap cycle-slideshow"
+				data-cycle-fx="fadeout" 
+				data-cycle-speed=1000
+				data-cycle-timeout="8000"
+				data-cycle-slides="> li"
+				data-cycle-pager="#pageingbox"
+				data-cycle-pager-template="<div class='sliderbullet'></div>"
+				>	
+				<li class="sliderItem">
+					<article>
+						<a href="/messegraz.at/de/veranstaltungen/2017/03/2017-03-04-rainhard-fendrich.php">
+							<p class="line1"><span class="white">Rainhard Fendrich - SCHWARZODERWEISS Tour 2017</span><br />Stadthalle Graz, 04.03.2017</p>
+						</a>
+					</article>
+					<img src="/messegraz.at/de/veranstaltungen/2017/03/images/940x460px-07_Pressefoto_RainhardFendrich_Live_Tour2017.jpg" alt="Rainhard Fendrich - SCHWARZODERWEISS Tour 2017" />
+					<a class="merken" href="/_include/merkliste.php?action=addEvent&id=17501">Merken</a><a class="oeticket" href="http://www.oeticket.com/rainhard-fendrich-live-2017-graz-Tickets.html?affiliate=F66&fun=evdetail&doc=evdetailb&key=1660202$8009545&xtcr=1&xtmc=fendrich&xtnp=1" target="_blank"><img src="/_include/css/img/oeticket.png" alt="Wechsel auf oeticket.com" /></a>				</li>
+				
+				<li class="sliderItem">
+					<article>
+						<a href="/messegraz.at/de/veranstaltungen/2016/07/2016-07-01_unheilig.php">
+							<p class="line1"><span class="white">Unheilig - Ein letztes Mal</span><br />Stadthalle Graz, 01.07.2016</p>
+						</a>
+					</article>
+					<img src="/messegraz.at/de/veranstaltungen/2016/07/images/UH0310S.jpg" alt="Unheilig - Ein letztes Mal" />
+					<a class="merken" href="/_include/merkliste.php?action=addEvent&id=14751">Merken</a><a class="oeticket" href="http://www.oeticket.com/unheilig-ein-letztes-mal-graz-Tickets.html?affiliate=F66&fun=evdetail&doc=evdetailb&key=1405482$7929629&xtcr=2&xtmc=unheilig&xtnp=1" target="_blank"><img src="/_include/css/img/oeticket.png" alt="Wechsel auf oeticket.com" /></a>				</li>
+				
+					<li class="sliderItem">
+					<article>
+						<a href="/messegraz.at/de/veranstaltungen/2016/10/2016-10-21-circus-roncalli.php">
+							<p class="line1"><span class="white">Circus Roncalli - 40 Jahre Reise zum Regenbogen</span><br />Messe Graz Freigelände, 21.10.2016 - 13.11.2016</p>
+						</a>
+					</article>
+					<img src="/messegraz.at/de/veranstaltungen/2016/10/images/940x460-Roncalli-Finale-1-web.jpg" alt="Circus Roncalli - 40 Jahre Reise zum Regenbogen" />
+					<a class="merken" href="/_include/merkliste.php?action=addEvent&id=15851">Merken</a><a class="oeticket" href="http://www.oeticket.com/tickets.html?affiliate=F66&doc=search%2Fsearch&fun=search&action=power&comefrom=search%2FextendedSearch&detailadoc=erdetaila&detailbdoc=evdetailb&fuzzy=yes&index=0&isSent=true&ort=graz&redirect=no&show=16&suchbegriff=roncalli&week=-3&zeit=vom&sort_by=event_name1" target="_blank"><img src="/_include/css/img/oeticket.png" alt="Wechsel auf oeticket.com" /></a>				</li>
+				
+				
+			</ul>
+			<div id="pageingbox"></div>
+		</div>
+		<script>setTimeout(function(){  $(".homeslider").removeClass("trans"); }, 3000);</script>
+		
+		
+		
+		
+		
+		
+		
+	</div> <!-- neuer slider hier -->
+					</div>
+					
+					<div class="row">
+						<div class="span6 ThemeColor2"><article>
+			<a target="_blank" href="http://www.tut-ausstellung.at/">
+		<span class="white">
+		Tutanchamun - Sein Grab und die Schätze	</span><br />Messe Graz Halle A<br />22.03.2016 - 27.07.2016	</a>
+</article>
+		
+			<img src="/messegraz.at/de/veranstaltungen/2016/03/images/tut_800x800px.jpg" class="maxwidth" alt="Tutanchamun - Sein Grab und die Schätze" />
+		<a class="merken" href="/_include/merkliste.php?action=addEvent&id=15157">Merken</a><a class="oeticket" href="http://www.oeticket.com/tickets.html?fun=erdetail&affiliate=F66&doc=erdetaila&erid=1542860&xtor=AL-6071-[Linkgenerator]-[EOE]" target="_blank"><img src="/_include/css/img/oeticket.png" alt="Wechsel auf oeticket.com" /></a></div>
+						<div class="span6">
+							<div class="row">
+								<div class="span3 ThemeColor2"><article>
+				<a href="/messegraz.at/de/veranstaltungen/2016/09/2016-09-10-jose-carreras.php">
+			<span class="white">
+		José Carreras	</span><br />Stadthalle Graz<br />10.09.2016, 20:00	</a>
+</article>
+		
+	<img src="/messegraz.at/de/veranstaltungen/2016/09/images/660x660JoseCarrerasOrchestraGimenez-Kopie.jpg" class="maxwidth" alt="José Carreras" />
+<a class="merken" href="/_include/merkliste.php?action=addEvent&id=15875">Merken</a><a class="oeticket" href="http://www.oeticket.com/jose-carreras-graz-Tickets.html?affiliate=F66&fun=evdetail&doc=evdetailb&key=1441890$6982493&xtcr=1&xtmc=Jos_eacute;_Carreras&xtnp=1" target="_blank"><img src="/_include/css/img/oeticket.png" alt="Wechsel auf oeticket.com" /></a></div>
+								<div class="span3 ThemeColor2"><article>
+			<a target="_blank" href="http://holiopenair.at/">
+		<span class="white">
+		Holi Festival der Farben 2016	</span><br />Messe Graz Freiluftarena B<br />18.06.2016, 14:00	</a>
+</article>
+		
+			<img src="/messegraz.at/de/veranstaltungen/2015/06/images/IMG_9296.jpg" class="maxwidth" alt="Holi Festival der Farben 2016" />
+		<a class="merken" href="/_include/merkliste.php?action=addEvent&id=16130">Merken</a><a class="oeticket" href="http://www.oeticket.com/holi-festival-der-farben-2016-graz-Tickets.html?affiliate=F66&fun=evdetail&doc=evdetailb&key=1415727$7719774&xtcr=1&xtmc=holi&xtnp=1" target="_blank"><img src="/_include/css/img/oeticket.png" alt="Wechsel auf oeticket.com" /></a></div>
+							</div>
+							<div class="row">
+								<div class="span3 ThemeColor2"><article>
+				<a href="/messegraz.at/de/veranstaltungen/2016/08/2016-08-20_IchwarnochniemalsinNewYork.php">
+			<span class="white">
+		Ich war noch niemals in New York	</span><br />Stadthalle Graz<br />20.08.2016 - 28.08.2016	</a>
+</article>
+		
+	<img src="/messegraz.at/de/veranstaltungen/2016/08/images/NY-B_8219_F39.jpg" class="maxwidth" alt="Ich war noch niemals in New York" />
+<a class="merken" href="/_include/merkliste.php?action=addEvent&id=14388">Merken</a><a class="oeticket" href="http://www.oeticket.com/tickets.html?affiliate=F66&fun=search&action=power&doc=search%2Fsearch&sort_by=event_name1&sort_direction=asc&fuzzy=yes&detailadoc=erdetaila&detailbdoc=evdetailb&comefrom=search%2FextendedSearch&isSent=true&week=-3&redirect=no&extended=true&suchbegriff=ich+war+noch+niemals&kategorie=&ort=graz&venue=&zeit=vom&vonTag=&vonMonat=&vonJahr=&bisTag=&bisMonat=&bisJahr=" target="_blank"><img src="/_include/css/img/oeticket.png" alt="Wechsel auf oeticket.com" /></a></div>
+								<div class="span3 ThemeColor2"><article>
+				<a href="/messegraz.at/de/veranstaltungen/2016/11/2016-11-19_Nik P.php">
+			<span class="white">
+		NIK P. & Band	</span><br />Stadthalle Graz<br />19.11.2016, 20:00	</a>
+</article>
+		
+	<img src="/messegraz.at/de/veranstaltungen/2016/11/images/220x220-PT_-NIK-P.jpg" class="maxwidth" alt="NIK P. & Band" />
+<a class="merken" href="/_include/merkliste.php?action=addEvent&id=14204">Merken</a><a class="oeticket" href="http://www.oeticket.com/nik-p-live-mit-band-geboren-um-dich-zu-lieben-graz-Tickets.html?affiliate=F66&fun=evdetail&doc=evdetailb&key=1507195$6606459&xtcr=5&xtmc=Nik_P._-_Geboren_um_dich_zu_Lieben&xtnp=1" target="_blank"><img src="/_include/css/img/oeticket.png" alt="Wechsel auf oeticket.com" /></a></div>
+							</div>
+						</div>
+					</div>
+
+							</section>
+			<!--  ------------------------------------------------------------------------------------- Social Block -->
+			
+			<section class="socialRow squares crop">
+				
+					
+	<script src="/_fbstream/js/jquery.famax.min.js"></script>
+	<link type="text/css" href="/_fbstream/css/famax_grey.min.css" rel="stylesheet">
+	
+	
+	
+	<a class="blog" href="http://www.mcg.at/blog/" target="_blank" style="color:#666666;  font-size:12px;"><div class="  sociaclblock_C span3" >
+		<div class="socialboxheader">
+			<img src="/_include/css/img/blogIcon.png" alt="" class="icon"><h3>Blog</h3>
+		</div>
+		<div class="socialcontent">
+			<div  id="mcgFB" >
+	<p class="blog-headerbild"><img src="http://www.mcg.at/blog/wp-content/uploads/2016/04/Brutwabe_Kinderstube.jpg" alt="Brutwabe_Kinderstube" /></p>Sonderausstellung „Wunderwelt Bienen“<p><a href="http://www.mcg.at/blog/sonderausstellung-wunderwelt-bienen/" title="<p class="blog-headerbild"><img src="http://www.mcg.at/blog/wp-content/uploads/2016/04/Brutwabe_Kinderstube.jpg" alt="Brutwabe_Kinderstube" /></p>Sonderausstellung „Wunderwelt Bienen“"><p class="blog-headerbild"><img src="http://www.mcg.at/blog/wp-content/uploads/2016/04/Brutwabe_Kinderstube.jpg" alt="Brutwabe_Kinderstube" /></p>Sonderausstellung „Wunderwelt Bienen“</a></p>	</div>
+					</div>
+		</div>
+	</a>
+	
+	
+	<div class="sociaclblock_C span3 mcgfblink" >
+		<div class="socialboxheader">
+			<img src="/_include/css/img/fbIcon.png" alt="" class="icon"><h3>Messe Congress Graz</h3>
+		</div>
+		
+		<div class="socialcontent" style="color:#666666;  font-size:12px; ">
+			<div id="mcgFB" class="famax streamblock"></div>
+		</div>
+	</div>
+	
+	<div class="congressFB sociaclblock_C span3" >
+		<div class="socialboxheader">
+			<img src="/_include/css/img/fbIcon.png" alt="" class="icon"><h3>Messe Graz</h3>
+		</div>
+		<div class="socialcontent">
+			<div id="congressFB" class="famax" style="color:#666666;  font-size:12px;"></div>
+		</div>
+		
+	</div>
+	<a href="https://instagram.com/mcg_graz/" target="_blank">
+		<div class="sociaclblock_last sociaclblock_C span3 ">
+			<div class="socialboxheader">
+				<img src="/_include/css/img/instagramIcon.png " alt="" class="icon"><h3>Instagram</h3>
+			</div>
+			
+			<div class="instagramm socialcontent">
+				<div class="instaframewrap">
+					
+									<div class='embed-container'>
+						
+					<img src="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e15/13298209_1886396554920530_2116110037_n.jpg?ig_cache_key=MTI1NzkxODg5NDU1MjQyNzQwMg%3D%3D.2" alt="instagramphoto" />	
+				</div>
+					<p class="socialtext" style="color:#666666; font-size:12px;">Die #stadthallegraz ist schon bald bereit für das Narrisch Guate Sommerkabarett ;)</p>
+        
+					
+									
+				</div>
+			</div>
+		</div>
+	</a>
+	<!--
+<a class="blog" href="http://www.mcg.at/blog/" target="_blank"><div class="sociaclblock_last  sociaclblock_C span3" >
+<div class="socialboxheader">
+<img src="/_include/css/img/tumbrlIcon.png" alt="" class="icon"><h3>Blog</h3>
+</div>
+<div class="socialcontent">
+<div id="blog" class="blogimgage"><img src="" alt="" class="blogblid"></div>
+<p class="socialtext">
+Ansichtssache<br>
+Unser Locations im besten Licht
+</p>
+</div>
+</div>
+</a>
+-->
+	
+	
+	
+	
+	
+	<script>
+		
+		
+		
+		//socialboxen init
+		$('#mcgFB').famax({
+			
+			//MANDATORY
+			appId:'1644284472472833', 
+			accessToken:'1644284472472833|671648624ffc49732101b02a93265123', 
+			
+			fanPage:'https://www.facebook.com/mcggraz',
+			
+			album : [
+				"https://www.facebook.com/media/set/?set=a.10152281280572415.1073741851.6589192414&type=3"
+			],
+			
+			//NON MANDATORY
+			maxResults:1, //Maximum videos to display in one load
+			innerOffset: 40, //Distance between video thumbnails
+			minItemWidth: 300, //Minumum width of a video thumbnails
+			maxItemWidth : 450, //Maximum width of a video thumbnails
+			outerOffset: 35, //Distance between video thumbnails and plugin conatiner
+			maxContainerWidth: 1000, //Maximum width of plugin container
+			alwaysUseDropdown: false,
+			maxAttachments: 4,
+			selectedTab: 'p',
+			skin:'grey',
+			maxComments:0, 
+			onClickAction:'popup',
+			refreshTimeout:1000
+		});
+		
+		
+		//socialboxen init
+		$('#congressFB').famax({
+			
+			//MANDATORY
+			appId:'393198134212711',
+			accessToken:'1005049692841442|p1o0FR95vVZXEoMqRgJzQ0MSkA8',
+			
+			fanPage:'https://de-de.facebook.com/messegraz',
+			
+			album : [
+				"https://www.facebook.com/media/set/?set=a.10152281280572415.1073741851.6589192414&type=3"
+			],
+			
+			//NON MANDATORY
+			maxResults:1, //Maximum videos to display in one load
+			innerOffset: 40, //Distance between video thumbnails
+			minItemWidth: 300, //Minumum width of a video thumbnails
+			maxItemWidth : 450, //Maximum width of a video thumbnails
+			outerOffset: 35, //Distance between video thumbnails and plugin conatiner
+			maxContainerWidth: 1000, //Maximum width of plugin container
+			alwaysUseDropdown: false,
+			notFoundImage: 'http://www.404notfound.fr/assets/images/pages/img/onsydney.jpg', //change this image link
+			maxAttachments: 1,
+			selectedTab: 'p',
+			skin:'grey',
+			displayMetricsForTags:false,
+			displayMetricsForPosts:true,
+			maxComments:0, 
+			onClickAction:'popup',
+			refreshTimeout:1000
+		});
+		
+		//socialboxen index
+		
+		
+		
+		setInterval(function(){ 
+			$(".mfp-bg,.mfp-wrap").remove();
+			
+		}, 1000);
+		
+		setTimeout(function() {
+			$("#mcgFB, #mcgFB img").click(function(){
+				$("body").removeClass("mfp-zoom-out-cur");
+				window.open('http://www.facebook.com/mcggraz', '_blank');
+				return false;
+			});
+		}, 3000);
+		
+		setTimeout(function() {
+			$("#congressFB,#congressFB img").click(function(){
+				$("body").removeClass("mfp-zoom-out-cur");
+				window.open('https://www.facebook.com/messegraz', '_blank');
+				return false;
+			});
+		}, 3000);
+		
+		
+		
+	</script>
+	
+ 
+			</section>
+							
+			
+			
+			<!--  ------------------------------------------------------------------------------------- Social Ende -->
+			<span class="subblock">
+						<section class="squares crop">
+			<div class="row">
+								<div class="span3 cpointer"><article>
+			<a target="_blank" href="http://www.tugraz.at/events/thermec-2016/home/">
+		<span class="white">
+		THERMEC MCL Workshop 2016	</span><br />Messecongress Graz<br />29.05.2016, 09:00 - 29.05.2016, 19:00	</a>
+</article>
+		
+			<img src="" class="maxwidth" alt="THERMEC MCL Workshop 2016" />
+		<a class="merken" href="/_include/merkliste.php?action=addEvent&id=16189">Merken</a></div>
+									<div class="span3 cpointer"><article>
+			<a target="_blank" href="http://www.tugraz.at/events/thermec-2016/home/">
+		<span class="white">
+		THERMEC 2016	</span><br />Messecongress Graz<br />30.05.2016 - 03.06.2016	</a>
+</article>
+		
+			<img src="" class="maxwidth" alt="THERMEC 2016" />
+		<a class="merken" href="/_include/merkliste.php?action=addEvent&id=12050">Merken</a></div>
+									<div class="span3 cpointer"><article>
+			<a target="_blank" href="http://www.musikverein-graz.at/konzert/7-kammerkonzert/">
+		<span class="white">
+		7. Kammerkonzert - Musikverein für Steiermark	</span><br />Congress Graz Stefaniensaal<br />31.05.2016, 19:30	</a>
+</article>
+		
+	<img src="/messegraz.at/de/veranstaltungen/2016/05/images/0531Lonquich_05_credit-Francesco-Fratto-341x386.jpg" class="maxwidth" alt="7. Kammerkonzert - Musikverein für Steiermark" />
+<a class="merken" href="/_include/merkliste.php?action=addEvent&id=15097">Merken</a></div>
+									<div class="span3 cpointer"><article>
+			<a target="_blank" href="http://www.womenforpeace.at/">
+		<span class="white">
+		Women for Peace Conference	</span><br />Congress Graz Stefaniensaal<br />03.06.2016	</a>
+</article>
+		
+	<img src="/messegraz.at/de/veranstaltungen/images/CongressGrazEmporeMCGKrug.jpg" class="maxwidth" alt="Women for Peace Conference" />
+<a class="merken" href="/_include/merkliste.php?action=addEvent&id=16477">Merken</a></div>
+				</div><div class="row">					<div class="span3 cpointer"><article>
+			<a target="_blank" href="http://rolling2016.org/">
+		<span class="white">
+		10th International and 7th European Rolling Conference	</span><br />Congress Graz<br />06.06.2016 - 08.06.2016	</a>
+</article>
+		
+	<img src="/messegraz.at/de/veranstaltungen/images/CongressGrazEmporeMCGKrug.jpg" class="maxwidth" alt="10th International and 7th European Rolling Conference" />
+<a class="merken" href="/_include/merkliste.php?action=addEvent&id=15255">Merken</a></div>
+									<div class="span3 cpointer"><article>
+			<a target="_blank" href="http://www.ecsite.eu/">
+		<span class="white">
+		ECSITE	</span><br />Messecongress Graz<br />07.06.2016 - 08.06.2016	</a>
+</article>
+		
+			<img src="" class="maxwidth" alt="ECSITE" />
+		<a class="merken" href="/_include/merkliste.php?action=addEvent&id=9780">Merken</a></div>
+									<div class="span3 cpointer"><article>
+			<a target="_blank" href="http://www.ecsite.eu/">
+		<span class="white">
+		ECSITE Annual Conference 2016	</span><br />Messecongress Graz & Congress Graz<br />09.06.2016 - 11.06.2016	</a>
+</article>
+		
+	<img src="/messegraz.at/de/veranstaltungen/2016/images/ECSITE_logo_v2.png" class="maxwidth" alt="ECSITE Annual Conference 2016" />
+<a class="merken" href="/_include/merkliste.php?action=addEvent&id=10717">Merken</a></div>
+									<div class="span3 cpointer"><article>
+			<a target="_blank" href="http://www.ecsite.eu/">
+		<span class="white">
+		ECSITE	</span><br />Messecongress Graz<br />09.06.2016 - 11.06.2016	</a>
+</article>
+		
+			<img src="" class="maxwidth" alt="ECSITE" />
+		<a class="merken" href="/_include/merkliste.php?action=addEvent&id=9781">Merken</a></div>
+							</div>
+		</section>
+		<div class="row"><div class="more span12 load" data-load="events" data-condition="von>1464480000" data-preloaded="15157,15875,16130,14388,14204,16189,12050,15097,16477,15255,9780,10717,9781"><span class="icon">mehr</span></div></div>
+	<footer>
+		<section class="mcg">
+			<div class="row">
+				<div class="span3"><div class="inner"><a href="http://www.mcg.at/"><img src="/_include/css/img/messe-graz-logo-small.png" alt="Messe Graz Logo" /></a></div></div>
+				<div class="span4"><div class="inner"><p>Messe Congress Graz Betriebsgesellschaft m.b.H.<br/>Messeturm, Messeplatz 1, 8010 Graz<br/>E: office@mcg.at, T: +43 / 316 / 8088 - 0</p></div></div>
+				<section class="span5 social">
+					<a class="social in" target="_blank" href="http://instagram.com/mcg_graz#">Instagram</a>
+					<a class="social fl" target="_blank" href="http://www.flickr.com/photos/28139888@N05/">Flickr</a>
+					<a class="social gp" target="_blank" href="https://plus.google.com/+McgAt/posts">Google Plus</a>
+					<a class="social yt" target="_blank" href="http://www.youtube.com/user/Messecongressgraz">Youtube</a>
+					<a class="social tw" target="_blank" href="https://twitter.com/mcg_graz">Twitter</a>
+					<a class="social fb" target="_blank" href="https://www.facebook.com/mcggraz">Facebook</a>
+				</section>
+			</div>
+		</section>
+		<section class="sitemap">
+			<div class="row">
+				<div class="span3"><div class="inner"><h5><a href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen.php">Veranstaltungen</a></h5><a href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen-konzerte.php">Konzerte</a><br /><a href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen-kongress-firmen.php">Kongresse & Firmenveranstaltungen</a><br /><a href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen-messe-ausstellungen.php">Messen & Ausstellungen</a><br /><a href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen-show-entertainment.php">Shows & Entertainment</a><br /><a href="/messegraz.at/de/veranstaltungs-uebersichten/veranstaltungen-sport.php">Sport</a></div></div>
+				<div class="span3"><div class="inner"><h5><a href="/messegraz.at/de/locations/congress-graz/">Locations</a></h5><a href="/messegraz.at/de/locations/congress-graz/">Congress Graz</a><br /><a href="/messegraz.at/de/locations/messecongress-graz/messecongress-graz.php">Messecongress Graz</a><br /><a href="/messegraz.at/de/locations/stadthalle-graz/stadthalle-graz.php">Stadthalle Graz</a><br /><a href="/messegraz.at/de/locations/messe-graz/messe-graz.php">Messe Graz</a><br /><a href="/messegraz.at/de/locations/merkur-arena/merkur-arena.php">Merkur Arena</a><br /><a href="/messegraz.at/de/locations/merkur-eisstadion/merkur-eisstadion.php">Merkur Eisstadion</a><br /><a href="/messegraz.at/de/locations/sportzentrum-graz-weinzoedl/sportzentrum-graz-weinzoedl.php">Sportzentrum Graz Weinzödl</a><br /><a href="/messegraz.at/de/locations/graz-info/graz-info.php">Graz & Steiermark Info</a></div></div>
+				<div class="span3"><div class="inner"><h5><a href="/messegraz.at/de/unternehmen/unternehmen.php">Unternehmen </a></h5><a href="/messegraz.at/de/unternehmen/nachhaltigkeit-mcg.php">Nachhaltigkeit</a><br /><a href="/messegraz.at/de/unternehmen/service-uebersicht.php">Service</a><br /><a href="/messegraz.at/de/unternehmen/congress-award-graz.php">Congress Award Graz</a><br /><a target="_blank" href="http://www.amb.at/">Messebau amb Graz</a><br /><a href="/messegraz.at/de/unternehmen/team.php">Team</a><br /><a href="/messegraz.at/de/unternehmen/impressum.php">Impressum</a><br /><a href="/messegraz.at/de/unternehmen/agb-mcg.php">AGB</a><br /><a href="/messegraz.at/de/unternehmen/disclaimer-mcg.php">Disclaimer</a><br /><a target="_blank" href="https://exch01.mcg.at/owa/">Webmail</a><br /><a href="/messegraz.at/de/site/newsletter.php">Newsletter</a></div></div>
+				<div class="span3"><div class="inner"><h5><a href="/messegraz.at/de/unternehmen/service-uebersicht.php">Service</a></h5><a href="/messegraz.at/de/unternehmen/parken-stadthalle-graz.php">Parken</a><br /><a href="/messegraz.at/de/unternehmen/unterkunft-graz.php">Unterkünfte in Graz</a><br /><a target="_blank" href="/messegraz.at/de/unternehmen/presse.php">Presse</a><br /><a href="/landingpages/maturaball/">Maturabälle</a><br /><a href="/messegraz.at/de/unternehmen/kontakt-mcg.php">Kontakt & Anfahrt</a><br /><a target="_blank" href="http://www.oeticket.com/mcg">MCG Ticketshop</a></div></div>
+			</div>
+		</section>
+	</footer>			</div>
+			<script src="/_include/js/jsStart.js?v=02"></script><!-- JS F google Analytics -->
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://85.126.154.36/analytics/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "1"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+<noscript><p><img src="http://85.126.154.36/analytics/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->		</span>
+		
+		</body>
+</html>

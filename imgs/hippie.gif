@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Arto - Page not found</title>
+
+<link rel="stylesheet" href="/stylesheet.axd?group=main&header=1&updated=6fb661257c48eccc47d8e42cc7048bbc" type="text/css" />
+
+</head>
+
+<body class="body2">
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<table width="450" border="0" align="center" cellpadding="10" cellspacing="0">
+<tr>
+<td valign="top"><img src="/fejl/error.gif" alt="Fejl" width="48" height="48" /></td>
+<td>
+
+   <b class="fontOverskrift">The page cannot be found</b>
+   <p class="fontLangTekst">The page you are looking for might have been removed, had its name changed, or is temporaily unavailable.</p>
+   <hr />
+   <p class="fontLangTekst">Please try the following:</p>
+   <ul>
+   <li class="fontLangTekst">If you typed the page address in the Address bar, make sure that it is spelled correctly.<br />
+   <br />
+   </li>
+   <li class="fontLangTekst">Click the <a href="JavaScript:history.back();">Back</a> button and try another link.<br />
+   <br />
+   </li>
+   <li class="fontLangTekst">Go to the <a href="/" target="_top">home page</a>.</li>
+   </ul><p><b class="fontLangTekst">We apologize for the inconvenience!</b></p>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

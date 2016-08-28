@@ -1,0 +1,619 @@
+
+a {
+	color:					#911411;
+	font-weight:			bold;
+	text-decoration:		none;
+}
+
+a:hover {
+	color:					#d00000;
+	text-decoration:		underline;
+}
+
+a:visited {
+	color:					#d00000;
+}
+
+html {
+	scrollbar-face-color:			#f5deb3;
+	scrollbar-highlight-color: 	#fdf5e6;
+	scrollbar-3dlight-color:		#ffffff;
+	scrollbar-arrow-color:			#000000;
+	scrollbar-darkshadow-color:	#fdf5e6;
+	scrollbar-base-color:			#ffffff;
+}
+
+
+table {
+	border: 					0px solid black;
+}
+
+td {
+	font-size: 				11px;
+	font-family: 			Verdana;
+	border: 					0px solid #F5DEB3;
+}
+
+tr, div, p {
+	border: 					0px solid #F5DEB3;
+}
+
+hr {
+	color:					#F5DEB3;
+	height:					1px;
+}
+
+input {
+	background-color:		#FFEBCD;
+	font-size: 				11px;
+	font-family: 			Verdana;
+	border-top:				1px solid #777777;
+	border-bottom:			1px solid white;
+	border-left:			1px solid #777777;
+	border-right:			1px solid white;
+}
+
+select {
+	background-color:		#FFEBCD;
+	font-size:				11px;
+	font-family:			Verdana;
+	border-top:				1px solid white;
+	border-bottom:			1px solid #777777;
+	border-left:			1px solid white;
+	border-right:			1px solid #777777;
+}
+
+textarea {
+	background-color: 	#FFEBCD;
+	font-size: 				11px;
+	font-family:			Verdana;
+	border-top:				1px solid #777777;
+	border-bottom:			1px solid white;
+	border-left:			1px solid #777777;
+	border-right:			1px solid white;
+}
+
+button {
+	background-color:		#FFEBCD;
+	font-size:				11px;
+	font-family:			Verdana;
+	border-top:				1px solid white;
+	border-bottom:			1px solid #777777;
+	border-left:			1px solid white;
+	border-right:			1px solid #777777;
+}
+
+.gbTabel {
+	width:					97%;
+	border:					0px;
+}
+
+.gbCelle {
+	padding: 				0px;
+}
+
+.inputKnap {
+	background-color:		#FFEBCD;
+	font-size:				11px;
+	font-family:			Verdana;
+	border-top:				1px solid white;
+	border-bottom:			1px solid #777777;
+	border-left:			1px solid white;
+	border-right:			1px solid #777777;
+}
+
+.inputCheckbox {
+	background: 			transparent;
+	border:					0px;
+}
+
+.inputRadio {
+	background: 			transparent;
+	border:					0px;
+}
+
+.infoBox {
+	border: 					1px solid #F5DEB3 #888888 #888888 #F5DEB3;
+}
+
+.infoBoxBg {
+	background: 			#FFF2DF;
+}
+
+.linkKnap {
+	background-color: 	#FFEBCD;
+	margin: 					0px;
+	cursor: 					pointer; cursor: hand;
+	border-top:    		1px solid #e1c59d;
+	border-bottom: 		1px solid #700000;
+	border-left:   		1px solid #e1c59d;
+	border-right:  		1px solid #700000;
+}
+
+.linkKnapInput {
+	background-color:		#FFEBCD;
+	margin: 					1px;
+	border-top:    		1px solid #700000;
+	border-bottom: 		1px solid #e1c59d;
+	border-left:   		1px solid #700000;
+	border-right:  		1px solid #e1c59d;
+}
+
+.linkKnapSelect {
+	background-color:	 	#FFEBCD;
+	color:					#A63235;
+	font-weight:			bold;
+	border-top:    		1px solid #e1c59d;
+	border-bottom: 		1px solid #700000;
+	border-left:   		1px solid #e1c59d;
+	border-right:  		1px solid #700000;
+}
+
+.selectNeutral {
+	background-color:		#fdf5e6;
+	font-size:				11px;
+	font-family:			Verdana;
+}
+
+.fontLangTekst {
+	font-size: 				12px;
+}
+
+.fontLille {
+	font-size:		 		9px;
+}
+
+.fontLille2 {
+	font-size: 				10px;
+}
+
+.fontNote {
+	color:					#ac9778;
+	font-size: 				9px;
+}
+
+.fontOK {
+	color:					#080;
+	font-weight:			bold;
+	font-size:				14px;
+}
+
+.fontOverskrift {
+	color: 					#700000;
+	font-weight: 			bold; 
+	font-size: 				16px;
+}
+
+.fontTitel {
+	color: 					#440000;
+	font-weight: 			bold;
+}
+
+.fontVigtig {
+	color: 					#f00000;
+	font-size:				14px;
+	font-weight: 			bold;
+}
+
+.tdOnline {
+	background-color: 	#daffd8;
+}
+
+.tdOnlineMB {
+	background-color: 	#daffd8;
+	border: 					0px solid #F5DEB3;
+	border-right: 			1px solid #F5DEB3;
+	border-bottom: 		1px solid #F5DEB3;
+}
+
+.tdOnlineMB2 {
+	background-color: 	#daffd8;
+	border: 					0px solid #F5DEB3;
+	border-bottom:			1px solid #F5DEB3;
+}
+
+.onlineLink {
+	background-color: 	#daffd8;
+}
+
+.tdSpeciel {
+	background-color: 	#e1c59d;
+}
+
+.tdSpeciel2 {
+	background-color: 	#FFEBCD;
+}
+
+.tdSpeciel2Margin {
+	background-color: 	#FFEBCD;
+	padding: 				10px;
+}
+
+.tdSpeciel2MB {
+	background-color: 	#FFEBCD;
+	border: 					0px solid #F5DEB3;
+	border-right:			1px solid #F5DEB3;
+	border-bottom: 		1px solid #F5DEB3;
+}
+
+.tdSpeciel2MB2 {
+	background-color: 	#FFEBCD;
+	border: 					0px solid #F5DEB3;
+	border-bottom: 		1px solid #F5DEB3;
+}
+
+.tdSpeciel2BlackBorder {
+	background-color: 	#FFEBCD;
+	border:					1px solid black;
+}
+
+.tdTitel {
+	background-color: 	#F5DEB3;
+	border: 					0px solid #fdf5e6;
+}
+
+.tdGenerel {
+	border: 					0px solid #F5DEB3;
+}
+
+.tdGenerelMargin {
+	padding: 				10px;
+	border: 					0px solid #F5DEB3;
+}
+
+.tdGenerelMarginMB {
+	padding: 				10px;
+	border: 					0px solid #F5DEB3;
+	border-bottom:			1px solid #F5DEB3;
+}
+
+.tdGenerelMB {
+	border: 					0px solid #F5DEB3;
+	border-right: 			1px solid #F5DEB3;
+	border-bottom: 		1px solid #F5DEB3;
+}
+
+.tdGenerelMB2 {
+	border: 					0px solid #F5DEB3;
+	border-bottom: 		1px solid #F5DEB3;
+}
+
+
+.bodyProfiltekst {
+	background-color: 	#fdf5e6;
+	background-image:		url(spacer.gif);
+	font-size: 				12px;
+	margin:					10px;
+
+	scrollbar-face-color:			#ffdead;
+	scrollbar-highlight-color: 	#ffdead;
+	scrollbar-3dlight-color:		#ffffff;
+	scrollbar-arrow-color:			#000000;
+	scrollbar-darkshadow-color:	#ffdead;
+	scrollbar-base-color:			#ffdead;
+}
+
+.bodyProfiltekstKlub {
+	background-color: 	#fdf5e6;
+	background-image:		url(spacer.gif);
+	font-size: 				12px;
+	margin:					10px;
+
+	scrollbar-face-color:			#f5deb3;
+	scrollbar-highlight-color: 	#fdf5e6;
+	scrollbar-3dlight-color:		#ffffff;
+	scrollbar-arrow-color:			#000000;
+	scrollbar-darkshadow-color:	#fdf5e6;
+	scrollbar-base-color:			#ffffff;
+}
+
+.marginBg {
+	background: 			#F2E6CF;
+}
+
+#borderRight 		 			 { border-right: 1px solid #F5DEB3; }
+#borderRightBottom 			 { border-right: 1px solid #F5DEB3; border-bottom: 1px solid #F5DEB3; }
+#borderRightTop 	 			 { border-right: 1px solid #F5DEB3; border-top: 1px solid #F5DEB3; }
+#borderLeft 		 			 { border-left: 1px solid #F5DEB3; }
+#borderLeftBottom  			 { border-left: 1px solid #F5DEB3; border-bottom: 1px solid #F5DEB3; }
+#borderLeftTop 	 			 { border-left: 1px solid #F5DEB3; border-top: 1px solid #F5DEB3; }
+#borderTop 			 			 { border-top: 1px solid #F5DEB3; }
+#borderBottom 		 			 { border-bottom: 1px solid #F5DEB3; }
+#borderTopBottom 		 		 { border-top: 1px solid #F5DEB3; border-bottom: 1px solid #F5DEB3; }
+#borderRightLeft	 			 { border-right: 1px solid #F5DEB3; border-left: 1px solid #F5DEB3; }
+#borderRightLeftTop	 		 { border-right: 1px solid #F5DEB3; border-left: 1px solid #F5DEB3; border-top: 1px solid #F5DEB3; }
+#borderRightLeftBottom	 	 { border-right: 1px solid #F5DEB3; border-left: 1px solid #F5DEB3; border-bottom: 1px solid #F5DEB3; }
+#borderRightTopBottom	 	 { border-right: 1px solid #F5DEB3; border-top: 1px solid #F5DEB3; border-bottom: 1px solid #F5DEB3; }
+#borderRightLeftTopBottom	 { border: 1px solid #F5DEB3; }
+
+.borderRight 		 			 { border-right: 1px solid #F5DEB3; }
+.borderRightBottom 			 { border-right: 1px solid #F5DEB3; border-bottom: 1px solid #F5DEB3; }
+.borderRightTop 	 			 { border-right: 1px solid #F5DEB3; border-top: 1px solid #F5DEB3; }
+.borderLeft 		 			 { border-left: 1px solid #F5DEB3; }
+.borderLeftBottom  			 { border-left: 1px solid #F5DEB3; border-bottom: 1px solid #F5DEB3; }
+.borderLeftTop 	 			 { border-left: 1px solid #F5DEB3; border-top: 1px solid #F5DEB3; }
+.borderTop 			 			 { border-top: 1px solid #F5DEB3; }
+.borderBottom 		 			 { border-bottom: 1px solid #F5DEB3; }
+.borderTopBottom 		 		 { border-top: 1px solid #F5DEB3; border-bottom: 1px solid #F5DEB3; }
+.borderRightLeft	 			 { border-right: 1px solid #F5DEB3; border-left: 1px solid #F5DEB3; }
+.borderRightLeftTop	 		 { border-right: 1px solid #F5DEB3; border-left: 1px solid #F5DEB3; border-top: 1px solid #F5DEB3; }
+.borderRightLeftBottom	 	 { border-right: 1px solid #F5DEB3; border-left: 1px solid #F5DEB3; border-bottom: 1px solid #F5DEB3; }
+.borderRightTopBottom	 	 { border-right: 1px solid #F5DEB3; border-top: 1px solid #F5DEB3; border-bottom: 1px solid #F5DEB3; }
+.borderRightLeftTopBottom	 { border: 1px solid #F5DEB3; }
+
+.menubody {
+	font-size: 				11px;
+	font-family: 			Verdana;
+	background: 			#F5DEB3 url(http://www.arto.com/framieRed/grafik/v2-menuBg.gif) repeat-y;
+	margin: 					7px;
+}
+
+.menupunkt {
+	background: 			#F5DEB3;
+	border-bottom: 		1px #d7bc77 solid;
+}
+
+.menupunktOver {
+	background: 			#F2E6CF;
+	border-bottom: 		1px #d7bc77 solid;
+}
+
+.menulink:hover {
+	color:					#911411;
+	text-decoration:		none;
+}
+
+.menulink:visited {
+	color:					#911411;
+}
+
+.topBody {
+	background: 			#A63235;
+	margin: 					0px;
+	border-top: 			1px solid white;
+}
+
+.topLogo {
+	border-bottom:			2px solid white;
+}
+
+.topMenuLinje {
+	background: 			#F5DEB3;
+}
+
+.topSideKant {
+	background: 			#9EA7B2;
+}
+
+.topHandAktiv {
+	cursor: 					pointer; cursor: hand;
+	text-decoration: 		none;
+	text-transform: 		uppercase;
+	font-family: 			Trebuchet MS, Lucida Grande, Verdana;
+	font-size: 				11px;
+	font-weight: 			bold;
+	color: 					#A63235;
+}
+
+.topHandAktiv:hover {
+	color:					#A63235;
+	text-decoration: 		none;
+}
+
+.topHandAktiv:visited {
+	color:					#A63235;
+}
+
+.topHandInaktiv {
+	cursor: 					pointer; cursor: hand;
+	text-decoration: 		none;
+	text-transform: 		uppercase;
+	font-family: 			Trebuchet MS, Lucida Grande, Verdana;
+	font-size: 				11px;
+	font-weight: 			bold;
+	color: 					white;
+}
+
+.topHandInaktiv:hover {
+	color: 					white;
+	text-decoration: 		none;
+}
+
+.topHandInaktiv:visited {
+	color: 					white;
+}
+
+.topKnapAktiv {
+	cursor: 					pointer; cursor: hand;
+	background: 			#F5DEB3;
+	padding-top:			2px;
+	border-bottom: 		1px solid #F5DEB3;
+	border-left: 			1px solid white;
+}
+
+.topKnapInaktiv {
+	cursor: 					pointer; cursor: hand;
+	background: 			#CC6A77;
+	padding-top:			1px;
+	border-top: 			1px solid white;
+	border-bottom: 		2px solid white;
+	border-left: 			1px solid white;
+}
+
+.topKnapOver {
+	cursor: 					pointer; cursor: hand;
+	background: 			#581411;
+	padding-top:			1px;
+	border-top: 			1px solid white;
+	border-bottom: 		2px solid white;
+	border-left: 			1px solid white;
+}
+
+.topKnapTopAktiv {
+	background: 			#F5DEB3;
+	border-top: 			1px solid white;
+	border-left: 			1px solid white;
+}
+
+.topKnapTopAktivNabo {
+	border-left: 			1px solid white;
+}
+
+.topKnapTopInaktiv {
+}
+
+#knap1 {
+	border-left: 			1px solid white;
+}
+
+.bundBody {
+	margin: 					0px;
+	background: 			#A63235;
+	border-top:				1px solid #A7B0BC;
+}
+
+.bundSelect {
+	background: 			#A63235;
+	color:					#fdf5e6;
+	width: 					135px;
+	height: 					18px;
+}
+
+.bundVipLink {
+	color:					orange;
+}
+
+.bundVipLink:hover {
+	color:					orange;
+}
+
+.bundVipLink:visited {
+	color:					orange;
+}
+
+.hoejreFrameBody {
+	margin: 					0px;
+	background: 			#F2E6CF url(http://www.arto.com/framieRed/grafik/v2-marginHoejreBg.gif) repeat-y;
+}
+
+.venstreFrameBody {
+	margin: 					0px;
+	background: 			#F2E6CF url(http://www.arto.com/framieRed/grafik/v2-marginVenstreBg.gif) repeat-y;
+	background-position: right;
+}
+
+.linkBarBody {
+	color: 					#FFD8E9;
+	font-size: 				11px;
+	font-family: 			Verdana;
+	background: 			#581411;
+	margin: 					0px;
+}
+
+.linkBarLink {
+	color: 					#E78086;
+	font-weight: 			bold;
+	text-decoration:		none;
+}
+
+.linkBarLink:hover {
+	color:					#E78086;
+}
+
+.linkBarLink:visited {
+	color:					#E78086;
+}
+
+.linkBarLinkPost {
+	color: 					orange;
+	font-weight: 			bold;
+	text-decoration:		none;
+}
+
+.linkBarLinkPost:hover {
+	color:					orange;
+}
+
+.linkBarLinkPost:visited {
+	color:					orange;
+}
+
+.linkBarMenu {
+	color:					#E78086;
+	font-weight: 			bold;
+	background: 			#581411;
+	border: 					1px solid #581411;
+	margin-top: 			1px;
+	margin-right: 			3px;
+}
+
+.linkBarMenuPunkt {
+	color:					white;
+}
+
+.linkBarKnap {
+	color:					#E78086;
+	margin: 					0px;
+	cursor: 					'hand';
+	border-top:    		1px solid white;
+	border-bottom: 		1px solid #AB997A;
+	border-left:   		1px solid white;
+	border-right:  		1px solid #AB997A;
+	background-color: 	#581411;
+}
+
+.linkBarInput {
+	color:					#E78086;
+	font-family: 			Verdana;
+	margin: 					2px;
+	border-top:    		1px solid #AB997A;
+	border-bottom: 		1px solid white;
+	border-left:   		1px solid #AB997A;
+	border-right:  		1px solid white;
+	background-color: 	#581411;
+}
+
+.linkBarInputLinje {
+	color:					#E78086;
+	font-family: 			Verdana;
+	margin: 					2px;
+	border-top:    		0px;
+	border-bottom: 		1px solid #FFD8E9;
+	border-left:   		0px;
+	border-right:  		0px;
+	background-color: 	#581411;
+}
+
+.smsIframeBody {
+	background: 			#fdf5e6 url(http://www.arto.com/sms/sms_forside_background_ny.jpg);
+	margin: 					0px;
+}
+
+.ptMenu {
+	background: 			#FFEBCD;
+	border-bottom:			1px solid #F5DEB3;
+	cursor: 					pointer; cursor: hand;
+}
+
+.ptMenuOver {
+	background: 			#F5DEB3;
+	border-bottom: 		1px solid #F5DEB3;
+}
+
+.ptMenuTitel {
+	background: 			#F5DEB3;
+	border-bottom: 		1px solid #FFEBCD;
+}
+
+.ptLink {
+	font-size: 				10px;
+}
+
+.ptLink:hover {
+	text-decoration: 		none;
+}
+
+#ptMenuTabel {
+	margin-right: 			10px;
+	margin-bottom: 		10px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+	    <link rel="stylesheet" href="css/css_theme_1.css">
+	    <link rel="stylesheet" href="css/nanoscroller.css">
+	    <link rel="stylesheet" href="css/iframe.css">
+
+	</head>
+
+	<body class="nano">
+	<div id="content" class="nano-content">
+
+	</div>
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="js/nanoscroller.js"></script>
+
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+
+				$("body").on('click mouseover mouseout', 'a', function(event){
+					return false;
+				}).on('submit', 'form', function(){
+					return false;
+				});
+
+				// Send keystrokes to parent
+				$(window).on('keydown', function(e){
+					// console.log('iframe keydown: ' + e.which);
+					parent.$(parent.document).trigger("iframeEvent.keydown", e.which);
+				});
+
+
+				if(window.location.hash){
+					// $("body").append(window.location.hash);
+					var hash = window.location.hash.replace('#','');
+					// console.log(hash);
+
+					jQuery.getJSON('http://profiltekst.taokitamoto.dk/php/fromhash.php', {hashid: hash}, function(json, textStatus) {
+						if(json==null){
+							// $("body").append("404 nigga");
+							parent.$(parent.document).trigger("iframeEvent.notfound", true);
+						} else {
+							$("#content").append( json.body );
+
+							$("a").each(function(){
+								$(this).attr({
+									'href': '#',
+									'onclick': '',
+								});
+							});
+
+							var bgcolor = $(".bodyProfiltekst").css('background-color');
+							$("body").css('background-color', bgcolor);
+							
+
+							$("body, html").css('height', '100%');
+
+							if( !$(".bodyProfiltekst").hasClass('no-nano') ){ //flyt måske ind i timeout?
+
+								setTimeout(function(){
+									var bodyheight = $(".bodyProfiltekst").height();
+
+									if( $(".bodyProfiltekst").height() > 463 ){
+										var profilwidth = $("body").width()-16;
+									} else {
+										$(".nano, .nano-content").css('overflow-y','hidden');
+									}
+
+									$(".bodyProfiltekst").css('width',profilwidth+'px');
+								}, 100); //wtf weird hax
+
+								setTimeout(function(){
+									$(".nano").nanoScroller({ alwaysVisible: true });
+									var sliderheight = $(".nano .nano-slider").height();
+									$(".nano .nano-slider").css('height',sliderheight-36+'px');
+								}, 100);
+							}
+						}
+
+					});
+				}
+
+
+				$(window).on('load', function(){
+					parent.$(parent.document).trigger("iframeEvent.loaded", true);
+				});
+
+
+
+
+			});
+
+		</script>
+
+
+	</body>
+
+	</html>

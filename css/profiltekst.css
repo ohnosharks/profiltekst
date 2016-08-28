@@ -1,0 +1,570 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300,400,700';
+.handcursor {
+  cursor: url('hand.png') 5 0, pointer;
+}
+.handcursor * {
+  cursor: url('hand.png') 5 0, pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url('cursor.gif'), auto;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background-image: url('artobg.png');
+  background-position: center center;
+  font-family: 'Roboto';
+  font-size: 12px;
+}
+body.loading * {
+  cursor: url('busy.gif'), wait;
+}
+a {
+  cursor: url('hand.png') 5 0, pointer;
+  color: #cf3616;
+}
+a * {
+  cursor: url('hand.png') 5 0, pointer;
+}
+a:hover {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.profiltekst {
+  display: none;
+  position: absolute;
+  width: 619px;
+  height: 500px;
+  top: 50%;
+  margin-top: -250px;
+  left: 50%;
+  margin-left: -309.5px;
+  border: 6px solid white;
+  border-top-width: 24px;
+  border-bottom-width: 13px;
+  border-radius: 7px;
+  box-shadow: 0 0 1px 1px #bdbab4;
+  z-index: 10;
+}
+.profiltekst::before {
+  content: 'PROFILTEKST';
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-family: Verdana;
+  top: -16px;
+  left: 8px;
+}
+.profiltekst iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+#menu {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 11px;
+}
+#menu a:link,
+#menu a:visited {
+  color: #666;
+  text-decoration: none;
+}
+#menu a:hover {
+  color: #000;
+  text-decoration: none;
+}
+#loading {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  z-index: 1;
+}
+#loading img {
+  width: 100%;
+  height: 100%;
+}
+.go-back,
+.go-forward {
+  position: absolute;
+  top: 0;
+  height: 95%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: 0.3s;
+  cursor: url('hand.png') 5 0, pointer;
+}
+.go-back *,
+.go-forward * {
+  cursor: url('hand.png') 5 0, pointer;
+}
+.go-back i,
+.go-forward i {
+  font-size: 35px;
+  transition: 0.3s;
+}
+.go-back:hover i,
+.go-forward:hover i {
+  font-size: 50px;
+}
+.go-back.low-opacity,
+.go-forward.low-opacity {
+  opacity: 0.2;
+}
+.go-back {
+  left: 0;
+}
+.go-forward {
+  right: 0;
+}
+.go-forward i:last-child {
+  display: none;
+}
+.go-forward.last i:last-child {
+  display: block;
+}
+.go-forward.last i:first-child {
+  display: none;
+}
+#fb {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.35;
+  transition: 0.2s;
+}
+#fb:hover {
+  opacity: 1;
+}
+.about-box {
+  background: white;
+}
+.about-box .nano-pane {
+  right: 0 !important;
+}
+.about-box .nano-slider {
+  width: 16px !important;
+  min-height: 10px;
+}
+.tab-menu {
+  font-family: Verdana;
+  font-size: 11px;
+}
+.tab-menu ul {
+  display: flex;
+  border-bottom: 2px solid #7fab1c;
+  padding-left: 1px;
+}
+.tab-menu ul li {
+  height: 21px;
+  line-height: 21px;
+  padding: 0px 6px;
+  margin-right: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: #e9e4d1;
+  color: #cf3616;
+  cursor: url('hand.png') 5 0, pointer;
+}
+.tab-menu ul li * {
+  cursor: url('hand.png') 5 0, pointer;
+}
+.tab-menu ul li.active {
+  background: linear-gradient(#a9c629, #80ab1c);
+  color: white;
+}
+.about-container {
+  height: 438px;
+}
+.about-content {
+  height: 438px;
+}
+.about-content .content-box {
+  min-height: 438px;
+  height: auto;
+  display: none;
+  overflow: hidden;
+}
+.about-content .content-box:first-child {
+  display: block;
+}
+#om-profiltekst {
+  background: #fdf5e5;
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+#om-profiltekst img.logo {
+  display: block;
+  width: 300px;
+  padding-top: 30px;
+  margin: auto;
+}
+#om-profiltekst article {
+  width: 70%;
+  margin: 30px auto 30px auto;
+  text-align: justify;
+}
+#om-profiltekst article p {
+  margin-bottom: 15px;
+  line-height: 140%;
+}
+#om-profiltekst article.about-dedication {
+  font-size: 14px;
+  text-align: center;
+  width: 40%;
+}
+#om-profiltekst article.about-dedication p {
+  margin-bottom: 7px;
+}
+#om-profiltekst article.about-disclaimer {
+  font-size: 10px;
+  width: 55%;
+  text-align: center;
+}
+#om-profiltekst article.about-footer {
+  font-size: 10px;
+  text-align: center;
+}
+#tao-laver {
+  font-family: 'Roboto Slab';
+  color: #222;
+}
+#tao-laver .laver-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('laverbg.png') no-repeat;
+  z-index: -1;
+}
+#tao-laver .inner-content {
+  margin: 170px auto 50px 60px;
+  font-size: 20px;
+  width: 370px;
+  line-height: 120%;
+}
+#tao-laver p {
+  margin-bottom: 12px;
+  font-weight: 300;
+}
+#tao-laver p b {
+  font-weight: 700;
+  display: block;
+}
+#tao-laver .laver-logo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#tao-laver .laver-logo img {
+  width: 150px;
+}
+#contact .nano-content {
+  padding: 30px;
+}
+#contact h2 {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-family: Verdana;
+}
+#contact form {
+  margin-top: 10px;
+}
+#contact form input,
+#contact form textarea {
+  display: block;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+#contact form .name,
+#contact form .email {
+  width: 200px;
+  padding: 5px 7px;
+  font-family: inherit;
+}
+#contact form textarea {
+  width: 500px;
+  height: 200px;
+  font-family: inherit;
+  resize: none;
+  padding: 7px;
+  font-size: 12px;
+}
+#contact form input[type="submit"] {
+  background: linear-gradient(#a9c629, #80ab1c);
+  font-family: Verdana;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0px 1px 0px #bdbab4;
+  padding: 0px 5px;
+  cursor: url('hand.png') 5 0, pointer;
+}
+#contact form input[type="submit"] * {
+  cursor: url('hand.png') 5 0, pointer;
+}
+#contact .mail-success {
+  text-align: center;
+  margin-top: 100px;
+  display: none;
+}
+#tao-laver-2 .question {
+  padding: 20px;
+  position: relative;
+}
+#tao-laver-2 .q-navn {
+  background: url(../imgs/12.jpg);
+  font-family: Times;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 150%;
+  letter-spacing: 2px;
+}
+#tao-laver-2 .q-navn span {
+  text-decoration: line-through;
+}
+#tao-laver-2 .q-alder {
+  background: url(../imgs/83.jpg);
+  font-family: Comic Sans Ms;
+  color: pink;
+  font-size: 120%;
+}
+#tao-laver-2 .q-fra {
+  background: #fdf5e5;
+  font-family: 'Mangal';
+}
+#tao-laver-2 .q-bor {
+  background: black;
+  color: #630202;
+  font-family: Verdana;
+  font-size: 180%;
+  font-weight: bold;
+  font-style: italic;
+}
+#tao-laver-2 .q-status {
+  font-family: cursive;
+  background: url(../imgs/191.jpg);
+  font-size: 180%;
+  color: green;
+  line-height: 80%;
+}
+#tao-laver-2 .q-laver {
+  background: url(../imgs/11433889075485-staticybg9lg.gif);
+  font-family: Arial;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: italic;
+  color: red;
+}
+#tao-laver-2 .q-drikker {
+  background: url(../imgs/50Cent.jpg);
+  font-family: Tahoma;
+  color: #66ff33;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#tao-laver-2 .q-ryger {
+  background: url(../imgs/th_thc6d02de1.gif);
+  font-size: 160%;
+  line-height: 90%;
+  color: white;
+  letter-spacing: -1px;
+}
+#tao-laver-2 .q-fritid {
+  background: url(../imgs/11.jpg);
+  font-family: 'Andalus';
+  font-size: 140%;
+  color: yellow;
+}
+#tao-laver-2 .q-fritid span {
+  color: pink;
+}
+#tao-laver-2 .q-mobil {
+  background: url(../imgs/7-1.jpg);
+  font-family: Comic Sans Ms;
+  font-size: 130%;
+  letter-spacing: 2px;
+  color: #48deeb;
+}
+#tao-laver-2 .q-cam {
+  background: url(../imgs/113.jpg);
+  font-family: Verdana;
+  font-size: 150%;
+  color: white;
+  font-weight: bold;
+}
+#tao-laver-2 .q-msn {
+  background: yellow;
+  font-family: 'Andalus';
+}
+#tao-laver-2 .q-msn span:first-child {
+  font-weight: bold;
+}
+#tao-laver-2 .q-msn span:last-child {
+  text-decoration: underline;
+}
+#tao-laver-2 .q-livret {
+  background: url(../imgs/84ae1172-2422-4f78-8ef8-03286c63e23b.gif);
+  font-weight: bold;
+  height: 60px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 160%;
+}
+#tao-laver-2 .q-livret marquee {
+  height: 60px;
+}
+#tao-laver-2 .q-musik {
+  background: url(../imgs/181.jpg);
+  font-family: Impact;
+  font-size: 140%;
+}
+#tao-laver-2 .q-musiklist {
+  background: url(../imgs/181.jpg);
+  font-family: Impact;
+  font-size: 140%;
+  line-height: 90%;
+  text-align: center;
+}
+#tao-laver-2 .q-musiklist div {
+  color: #df0f76;
+}
+#tao-laver-2 .q-musiklist ul li {
+  display: inline-block;
+}
+#tao-laver-2 .q-musiklist ul li::after {
+  content: ' • ';
+}
+#tao-laver-2 .q-musiklist ul li:last-child::after {
+  content: '';
+}
+#tao-laver-2 .q-film {
+  background: black;
+  font-size: 120%;
+  font-family: 'Sylfaen';
+  color: #ea4eb8;
+  text-decoration: underline;
+}
+#tao-laver-2 .q-sister {
+  background: url(../imgs/194.jpg);
+  font-size: 150%;
+  color: #76ff39;
+  font-family: 'BrowalliaUPC';
+  letter-spacing: 3px;
+}
+#tao-laver-2 .q-sister span {
+  background: red;
+}
+#tao-laver-2 .q-dyr {
+  background: #ebc826;
+  font-family: 'Levenim MT';
+  font-family: 130%;
+  font-weight: bold;
+}
+#tao-laver-2 .q-clothes {
+  background: url(../imgs/188.jpg);
+  font-family: Arial;
+}
+#tao-laver-2 .q-clothes div:first-child {
+  font-size: 200%;
+  color: #ff7e28;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+#tao-laver-2 .q-clothes div:last-child {
+  margin-top: -14px;
+  font-size: 140%;
+  font-style: italic;
+  color: white;
+}
+#tao-laver-2 .q-elsker {
+  background: url(../imgs/133.jpg);
+  font-family: Times;
+  font-size: 200%;
+  line-height: 65%;
+  color: #ff2850;
+}
+#tao-laver-2 .q-hader {
+  background: #bababa;
+  color: white;
+}
+#tao-laver-2 .q-hader span {
+  font-size: 140%;
+  color: #0fb0df;
+}
+#tao-laver-2 .q-website {
+  background: url(../imgs/bgredheart.gif);
+  font-size: 180%;
+  font-style: italic;
+}
+#tao-laver-2 .q-website span {
+  font-weight: bold;
+}
+#tao-laver-2 .q-instagram {
+  background: url(../imgs/153.jpg);
+  font-size: 170%;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  color: #22df0f;
+}
+#tao-laver-2 .q-andet {
+  background: url(../imgs/197.jpg);
+  font-size: 160%;
+  letter-spacing: 1px;
+  font-family: cursive;
+  color: white;
+  height: 300px;
+}
+#tao-laver-2 .q-footer {
+  text-align: center;
+  padding-bottom: 0;
+}
+#tao-laver-2 .q-footer img {
+  width: 120px;
+}
+#tao-laver-2 .q-footer span {
+  font-size: 80%;
+}
+.about-back {
+  position: absolute;
+  height: 40px;
+  line-height: 50px;
+  top: 50%;
+  margin-top: -20px;
+  left: 50%;
+  margin-left: -400px;
+}
+.about-back i {
+  font-size: 50px;
+  transition: 0.3s;
+  color: #666;
+}
+.about-back:hover i {
+  transform: scale(1.2);
+  cursor: url('hand.png') 5 0, pointer;
+}
+.about-back:hover i * {
+  cursor: url('hand.png') 5 0, pointer;
+}

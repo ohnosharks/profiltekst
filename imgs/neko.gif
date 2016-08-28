@@ -1,0 +1,164 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Anime Ronin - Anime, Mangas, Games and more....</title>
+<meta name="keywords" content="anime, manga, Anime, Manga, Otaku, Japan, Asien, Filme, Review, Fun, Artikel, Charts, Games"><meta name="description" content="reviews von animes, mangas, games, asian real movies, merchandise, music, ect...">
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<meta name="copyright" content="anime-ronin.de">
+<meta name="language" content="deutsch">
+<meta name="revisit-after" content="3 days">
+<meta name="robots" content="index,follow">
+
+<link rel="alternate" type="application/rss+xml" title="Anime Ronin News" href="rssfeed.php">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="menu.css">
+
+</head>
+
+<body>
+	<table align="center" cellspacing="0" cellpadding="0" border="0" bgcolor="#EFEFEF" style="border-width: 6px; 
+  border-style: solid; border-radius: 10px; border-color: #788CC8;" width="1010px">
+		<tr>
+			<td colspan="2" align="center" style="background-image:url(images/header_banner_back.jpg); background-repeat:repeat;" bgcolor="#788CC8">
+				<img style="display:block;" src="images/blind.gif" width="1" height="139" border="0" alt="" align="right">
+				<img style="display:block;" src="images/header_banner.jpg" border="0" alt="">
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" align="left" bgcolor="#EFEFEF">
+				
+<!-- Menü -->
+<table cellspacing="0" cellpadding="0" width="130px" border="0" bgcolor="#788CC8">
+	<tr>
+		<td width="130px" style="padding: 0px 5px 0px 0px;">
+			<div style="padding: 3px 3px 3px 3px; background: #2c4773;">
+			<font face="Verdana" color="#ffffff">
+				<b>MAIN</b>
+			</font>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td width="130px">
+			<div id="rollovermenu_home"><a href="http://www.anime-ronin.de/home.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;Home</a></div><div id="rollovermenu_news">
+<a href="http://www.anime-ronin.de/news.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;News</a>
+</div>
+<div id="rollovermenu_artikel">
+<a href="http://www.anime-ronin.de/artikel.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;Artikel</a>
+</div>
+<div id="rollovermenu_fun">
+<a href="http://www.anime-ronin.de/fun.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;Fun</a>
+</div>
+<div id="rollovermenu_search">
+<a href="http://www.anime-ronin.de/search.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;Suche</a>
+</div>
+<div id="rollovermenu_charts">
+<a href="http://www.anime-ronin.de/charts-0-DESC.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;Charts</a>
+</div>
+<div id="rollovermenu_kamiza">
+<a href="http://www.anime-ronin.de/kamiza.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;Kamiza</a>
+</div>
+			<br>
+		</td>
+	</tr>
+	<tr>
+		<td width="130px" style="padding: 0px 5px 0px 0px;">
+			<div style="padding: 3px 3px 3px 3px; background: #2c4773;">
+			<font face="Verdana" color="#ffffff">
+				<b>REVIEWS</b>
+			</font>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td width="130px">
+			<div id="rollovermenu_anime">
+				<a href="http://www.anime-ronin.de/anime.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;Anime</a>
+				</div>
+				<div id="rollovermenu_manga">
+				<a href="http://www.anime-ronin.de/manga.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;Manga</a>
+				</div>
+				<div id="rollovermenu_games">
+				<a href="http://www.anime-ronin.de/games.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;Games</a>
+				</div>
+				<div id="rollovermenu_movie">
+				<a href="http://www.anime-ronin.de/realmovies.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;Real Movie</a>
+				</div>
+				<div id="rollovermenu_buch">
+				<a href="http://www.anime-ronin.de/buecher.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;B&uuml;cher</a>
+				</div>
+				<div id="rollovermenu_sonstiges">
+				<a href="http://www.anime-ronin.de/sonstiges.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;Sonstiges</a>
+				</div>
+							<br>
+		</td>
+	</tr>
+	<tr>
+		<td width="130px" style="padding: 0px 5px 0px 0px;">
+			<div style="padding: 3px 3px 3px 3px; background: #2c4773;">
+			<font face="Verdana" color="#ffffff">
+				<b>Intern</b>
+			</font>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td width="130px">
+			<div id="rollovermenu_gb"><a href="http://www.anime-ronin.de/gaestebuch.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;Gästebuch</a></div><div id="rollovermenu_faq"><a href="http://www.anime-ronin.de/faq.htm " style="padding-top: 2px; padding-left: 2px;">&nbsp;FAQ</a></div><div id="rollovermenu_team"><a href="http://www.anime-ronin.de/team.htm" style="padding-top: 2px; padding-left: 2px;">&nbsp;Team</a></div><div id="rollovermenu_link"><a href="http://www.anime-ronin.de/link.htm" style="padding-top: 2px; padding-left: 2px; padding-left: 2px;">&nbsp;Links</a></div>			<br>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" bgcolor="#EFEFEF">
+			<br><br>
+			<p>
+				<a href="http://validator.w3.org/check?uri=referer" target="_blank">&nbsp;<img src="images/valid-html401.png" alt="Valid HTML 4.01 Transitional" height="31" width="88" border="0"></a>
+			</p>
+			<p>
+				<a href="http://jigsaw.w3.org/css-validator/check?uri=referer&amp;profile=css3" target="_blank">&nbsp;<img style="border:0;width:88px;height:32px" src="images/vcss.gif" alt="Valid CSS!" /></a>
+			</p>
+			<p>	
+				<a href="http://feedvalidator.org/check.cgi?url=http%3A//www.anime-ronin.de/rssfeed.php" target="_blank">&nbsp;<img src="images/valid-rss.png" alt="[Valid RSS]" border="0" /></a>
+			</p>
+		<td>
+	</tr>
+</table>
+<!-- /Menü -->			</td>
+			<td valign="top" style="padding-top:20px; padding-left:10px; padding-right:10px;" align="center" bgcolor="#EFEFEF">
+						
+						<!-- Inhalt -->
+
+						
+<table border="0" cellspacing="10" cellpadding="0" width="687px">
+	<tr>
+		<td valign="top">
+			<p align="left">
+				<b>
+				<font color="#000000" size="+2">
+				<u>Fehler 404</u>
+				</font>
+				</b>
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="http://www.anime-ronin.de/work.jpg" width="300px" border="0" alt="fehler">
+		</td>
+		<td>
+			<p align="left">
+				<font color="#000000">
+				Hallo werter Besucher.<br><br>
+				Es ist leider ein Fehler aufgetreten.<br>
+				Entweder ist die gewünschte Seite derzeit nicht verfügbar oder die Adresse falsch oder nicht mehr aktuell.<br><br>
+				</font>
+			</p>
+		</td>
+	</tr>
+</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

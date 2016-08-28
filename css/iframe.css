@@ -1,0 +1,93 @@
+
+@import url('fonts/Andalus/stylesheet.css');
+
+@font-face {
+    font-family: 'MV Boli';
+    src: url('fonts/mvboli.ttf');
+}
+@font-face {
+    font-family: 'Sylfaen';
+    src: url('fonts/sylfaen.ttf');
+}
+@font-face {
+    font-family: 'FreesiaUPC';
+    src: url('fonts/upcfl.ttf');
+}
+@font-face {
+    font-family: 'Levenim MT';
+    src: url('fonts/levenim.ttf');
+}
+@font-face {
+    font-family: 'Edwardian Script ITC';
+    src: url('fonts/Edwardian_Script_ITC.ttf');
+}
+@font-face {
+    font-family: 'Gautami';
+    src: url('fonts/gautami.ttf');
+}
+@font-face {
+    font-family: 'Franklin Gothic Heavy';
+    src: url('fonts/franklin-gothic-heavy.ttf');
+}
+@font-face {
+    font-family: 'BrowalliaUPC';
+    src: url('fonts/browalliaupc.ttf');
+}
+@font-face {
+    font-family: 'Browallia New';
+    src: url('fonts/browallianew.ttf');
+}
+@font-face {
+    font-family: 'Mangal';
+    src: url('fonts/mangal.ttf');
+}
+
+
+* {
+	cursor: url('cursor.gif'), auto;
+}
+
+a, a * {
+	cursor: url('hand.png') 5 0, pointer !important;
+}
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.bodyProfiltekst {
+	position: relative;
+	margin:0;
+	padding:10px;
+	padding-right: 18px;
+	min-height: 100%;
+	height: auto;
+	/*height: 100%;*/
+	/*width: 100% - 50px;*/
+	/*overflow-y: auto;*/
+	/*overflow:hidden;*/
+	box-sizing: border-box;
+	background-attachment: fixed !important;
+}
+img.broken {
+	background: url('broken1.gif') no-repeat;
+	min-width: 50px;
+	min-height: 50px;
+	border-top: 1px solid #444;
+	border-left: 1px solid #444;
+	border-right: 1px solid #afafaf;
+	border-bottom: 1px solid #afafaf;
+}
+
+#content {
+	/*overflow: hidden;*/
+	min-height: 100%;
+	height: auto;
+	width: 100%;
+	margin:0;
+	padding: 0;
+}

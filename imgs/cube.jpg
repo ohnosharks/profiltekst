@@ -1,0 +1,1839 @@
+<!DOCTYPE html><html><head><script type='text/javascript'>window.NREUM||(NREUM={});NREUM.info = {"agent":"","beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5661488242","applicationID":"11048357","applicationTime":574.717207,"transactionName":"M1EGbEcDC0cABkFRDQobIUBFEABHEg9GFyUhYEsX","queueTime":0,"ttGuid":"130c42d2b102a90","agentToken":null}; (window.NREUM||(NREUM={})).loader_config={xpid:"VQYOV1NaCBABVVFWDwICUQ=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(14),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,-1!==o.indexOf("dev")&&(s.dev=!0),-1!==o.indexOf("nr_dev")&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f?f.apply(this,a(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(15),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7);t("loader").features.stn=!0,t(6);var c=NREUM.o.EV;o.on("fn-start",function(t,e){var n=t[0];n instanceof c&&(this.bstStart=Date.now())}),o.on("fn-end",function(t,e){var n=t[0];n instanceof c&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),s.on("fn-start",function(){this.bstStart=Date.now()}),s.on("fn-end",function(t,e){i("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on("pushState-start",function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on("pushState-end",function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(t){i("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",r,!1),document.addEventListener("keypress",r,!1),document.addEventListener("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(16)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(16)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(16)(r);e.exports=r,o.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(16)(i);e.exports=i,a.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),a.inPlace(window,["setInterval"],"setInterval-"),a.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),i.on("setInterval-start",r),i.on("setTimer-start",o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,v,"fn-",s)}function i(t){w.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(16)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;l>r;r++)t.removeEventListener(d[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return i(r)}function i(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}function a(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(11),u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(13),m=window.XMLHttpRequest;s.features.xhr=!0,t(9),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||10>h)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},a(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var a=i(r);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;l>s;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(t,e){return function(){o(t,[(new Date).getTime()].concat(a(arguments)),null,e)}}var o=t("handle"),i=t(14),a=t(15);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(s,function(t,e){newrelic[e]=r(f+e,"api")}),i(c,function(t,e){newrelic[e]=r(f+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),o("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],14:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],15:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],16:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(15),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return w}function i(){return new r}var a="nr@context",s=t("gos"),c=t(14),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!m++){var t=h.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(l,function(e,n){t[e]||(t[e]=n)});var n="https"===d.split(":")[0]||t.sslForHttp;h.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=h.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(14),f=window,u=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var d=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-943.min.js"},p=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),h=e.exports={offset:a(),origin:d,features:{},xhrWrappable:p};u.addEventListener?(u.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(u.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),s("mark",["firstbyte",a()],null,"api");var m=0},{}]},{},["loader",2,10,4,3]);</script><title>Top Rated Products on Shopperr</title><meta name="description" content="Shop for Top Rated Products on Shopperr."><meta name="charset" content="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="msvalidate.01" content="3F9B33FD3FAA6FFAB32A29B28B5534FB"><meta name="google-site-verification" content="9xfit9mO-D4wojZfHRITlvQYPVlcXJvx5I77RYfdtJQ"><link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800" rel="stylesheet" type="text/css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><link href="/stylesheets/index.css" rel="stylesheet"></head><body><ul class="views"><li class="product-card"><div class="imagehover"><img src=""></div><div class="card"><div class="id"></div><div class="price"></div><div class="cardscore"><ul class="scoreradial-small">
+<li class="scoreradialcontent-small" data-name="Great!" data-percent="86">
+<svg viewBox="-15 -15 230 230">
+<g fill="none" stroke-width="23" transform="translate(100,100)">
+<path d="M 0 -100 a 100 100 0 1 0 0.1 0" stroke="url(#cl2)"/>
+</g>
+</svg>
+<svg viewBox="-15 -15 230 230">
+<path class="scoreradialpath-small" d="M 100 0 a 100 100 0 1 0 0.1 0" stroke-dashoffset="540"></path>
+</svg>
+</li>
+</ul>
+<svg width="0" height="0">
+<defs>
+<linearGradient gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+<stop class="scoreradialstop1-small" stop-color="#40d0ac"/>
+<stop class="scoreradialstop2-small" offset="100%" stop-color="#40d0ac"/>
+</linearGradient>
+</defs>
+</svg></div><a class="titlelink"><h2 class="title"></h2></a><div class="manufacturer small"></div><div class="miniDescription small"></div></div></li></ul> <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WN76FN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){
+  w[l]=w[l]||[];
+  w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+  var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+  j.async=true;
+  j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;
+  f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WN76FN');
+</script> <div id="productModal-cover" style="opacity:0;display:none;" class="modal-cover"></div><div id="productModal" class="modal fade productmodal"><div class="modal-dialog modal-lg"><div class="arrow-left"><span class="ion-chevron-left"></span></div><div class="arrow-right"><span class="ion-chevron-right"></span></div><div class="modal-content"><div class="modal-fadeout-1"></div><div class="modal-fadeout-2"></div><div class="modal-body"><div id="productModal-scoreDetailBack" style="display:none;"><span style="margin-right:6px;font-size:16px;float:left;" class="ion-chevron-left">&nbsp;</span><span style="line-height:1.6em;">Product Details</span></div><div id="productModal-imageDetailBack" style="display:none;"><span style="margin-right:6px;font-size:16px;float:left;" class="ion-chevron-left">&nbsp;</span><span style="line-height:1.6em;">Product Details</span></div><div id="productModal-id" class="id"></div><button type="button" data-dismiss="modal" class="close"><span>&times;</span></button><div class="container-fluid"><div class="row"><div class="col-md-6 col-md-offset-6"><span id="productModal-subtitle" class="grey"></span><h4 id="productModal-title" class="modal-title"></h4><div class="price"><div class="priceline"></div><div id="productModal-price">0</div><div class="priceline"></div></div><div class="imagerow"><div id="productModal-images" class="images"></div><div class="images-shadow-container"><div class="images-shadow"></div></div></div><div id="productModal-imagebars" class="imagebars"></div><div id="productModal-score" class="score"><ul class="scoreradial">
+<li id="productModal-scoreradialcontent" data-name="Great!" data-percent="86">
+<svg viewBox="-10 -10 220 220">
+<g fill="none" stroke-width="14" transform="translate(100,100)">
+<path d="M 0 -100 a 100 100 0 1 0 0.1 0" stroke="url(#cl1)"/>
+</g>
+</svg>
+<svg viewBox="-10 -10 220 220">
+<path id="productModal-scoreradialpath" d="M 100 0 a 100 100 0 1 0 0.1 0" stroke-dashoffset="540"></path>
+</svg>
+<div class="scorebanner">Shopperr Score</div>
+<div class="scorebanner-corner1"></div>
+<div class="scorebanner-corner2"></div>
+</li>
+</ul>
+<svg width="0" height="0">
+<defs>
+<linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+<stop id="productModal-scoreradialstop1" stop-color="#40d0ac"/>
+<stop id="productModal-scoreradialstop2" offset="100%" stop-color="#40d0ac"/>
+</linearGradient>
+</defs>
+</svg><div id="productModal-totalReviews">58 Opinions</div><div style="display:none;" class="scoreDescription"> <p id="productModal-scoreDescription">This product is highly rated and shared. <br>You can buy this with confidence.<br></p><p style="margin-top:6px;"><a href="/about" target="_blank">Learn More <span style="font-size:10px;" class="ion-chevron-right"></span></a></p></div><ul class="socialcounts"><li><span class="counticon ion-social-facebook"> </span><span id="productModal-facebookCount" class="countcontent">58 shares</span></li><li><span class="counticon ion-social-twitter"> </span><span id="productModal-twitterCount" class="countcontent">58 tweets</span></li><li><span class="counticon ion-social-pinterest"> </span><span id="productModal-pinterestCount" class="countcontent">58 pins</span></li><li><span class="counticon fa fa-amazon"></span><span id="productModal-amazonCount" class="countcontent">5.0 stars</span></li></ul><ul style="display:none;" class="socialcountdetails"><li><div id="productModal-facebookProgress" class="progress"><div style="width:40%;" class="progress-bar"></div></div></li><li><div id="productModal-twitterProgress" class="progress"><div style="width:40%;" class="progress-bar"></div></div></li><li><div id="productModal-pinterestProgress" class="progress"><div style="width:40%;" class="progress-bar"></div></div></li><li><div id="productModal-amazonProgress" class="progress"><div style="width:40%;" class="progress-bar"></div></div></li></ul></div><a href="#" id="productModal-buy" target="_blank">Buy Now</a><div id="productModal-descriptionContainer"><p id="productModal-description"></p></div><div id="productModal-divider"></div><div id="productModal-featuresContainer"><h4>Details</h4><ul id="productModal-features" class="features"></ul></div><div id="productModal-similarHeader">Similar Products<div id="productModal-similar"><ul></ul></div></div></div></div></div></div></div></div></div><div id="searchmodalbg"></div><div id="searchModal" class="searchmodal"><div class="searchmodal-body"><div class="container-fluid"><div class="row"><div class="col-xs-11 left-container"><div id="show-search2" class="icon"><span class="glyphicon glyphicon-search"></span></div><input id="searchbox" placeholder="Search..." class="searchbox"></div><div class="col-xs-1 right-container"><button id="searchmodalclose" type="button" class="modal-close-button close"><span>&times;</span></button></div></div><div class="row"><div class="col-xs-12 search-results-container"><ul id="searchresults" class="searchresults spaced"></ul></div></div></div></div></div><div id="sideMenu" class="sidemenu"><button type="button" id="sideMenu-close" class="close"><span>&times;</span></button><div class="topSection"><a href="/" class="sideMenuButton"> <span class="ion-ios-home"></span><span>Explore</span></a><a href="/" class="sideMenuButton"> <span class="ion-heart"></span><span>Trending</span></a><a href="/featured/toprated" class="sideMenuButton"> <span class="ion-checkmark"></span><span>Top Rated</span></a><a href="/browse" class="sideMenuButton"> <span class="ion-grid"></span><span>Browse</span></a></div><div class="bottomSection"><a href="/blog" class="sideMenuButton"><span>Blog</span></a><a href="/about" target="_blank" class="sideMenuButton"><span>About</span></a><a href="/privacy" target="_blank" class="sideMenuButton"><span>Privacy</span></a><a href="/terms" target="_blank" class="sideMenuButton"><span>Terms</span></a><a href="/cdn-cgi/l/email-protection#6a02051d0e132a1902051a1a0f181844090507" target="_blank" class="sideMenuButton"><span>Contact</span></a></div><div class="footerSection"><span>Shopperr © 2016</span></div></div><div class="main"><header><nav><div class="container-fluid"><div class="row"><div class="col-xs-3 col-sm-4 col-md-3"><div id="show-search" class="pull-left icon"><span class="glyphicon glyphicon-search"></span></div><div class="pull-left icontext icon"><a href="/browse">Browse</a></div></div><div class="col-xs-5 col-sm-4 col-md-6"><div class="logo"><a href="/"> <img src="/images/logo-white.svg"></a></div></div><div class="col-xs-4 col-sm-4 col-md-3"><div id="show-menu" class="pull-right icon"><span class="glyphicon glyphicon-menu-hamburger"></span></div></div></div></div></nav><nav class="navbar navbar-default"><div class="container-fluid"><div id="secondmenu-collapse"><ul class="nav navbar-nav"><li><a href="/" class="active">Score</a></li><li><a href="/featured/trending">Trending</a></li><li><a href="/featured/buzz">Buzz</a></li></ul></div></div></nav><div class="search"></div></header><main><div class="products"><ul class="medium"></ul></div><div class="cube"><div class="tcube c1"></div><div class="tcube c2"></div><div class="tcube c4"></div><div class="tcube c3"></div></div></main><div class="terms"><p>Popular Searches</p><ul><li><a href="/products/video%20cycle">video cycle</a></li><li><a href="/products/dry%20wipe">dry wipe</a></li><li><a href="/products/d3100%20nikon%20slr%20camera">d3100 nikon slr camera</a></li><li><a href="/products/sharp%20imaging%20film">sharp imaging film</a></li><li><a href="/products/pro%20camera%20bag">pro camera bag</a></li><li><a href="/products/eureka%20easy%20clean">eureka easy clean</a></li><li><a href="/products/backlit%20keyboard%20with%20touchpad">backlit keyboard with touchpad</a></li><li><a href="/products/canon%20lens%20hood">canon lens hood</a></li><li><a href="/products/l%201">l 1</a></li><li><a href="/products/piano%20music%20box">piano music box</a></li><li><a href="/products/bluetooth%20hands%20free">bluetooth hands free</a></li><li><a href="/products/33">33</a></li><li><a href="/products/canon%20xsi">canon xsi</a></li><li><a href="/products/water%20fall%20design">water fall design</a></li><li><a href="/products/41%20megapixel%20camera">41 megapixel camera</a></li><li><a href="/products/ice%20crusher">ice crusher</a></li><li><a href="/products/iphone%20headphones">iphone headphones</a></li><li><a href="/products/nikon%20ring%20flash">nikon ring flash</a></li><li><a href="/products/cinema%203d%20smart%20tv">cinema 3d smart tv</a></li><li><a href="/products/children%20water%20shoes">children water shoes</a></li><li><a href="/products/mac%20printers">mac printers</a></li><li><a href="/products/180%20degree%20swivel">180 degree swivel</a></li><li><a href="/products/drink">drink</a></li><li><a href="/products/luggage%2021">luggage 21</a></li><li><a href="/products/wireless%20storage%20devices">wireless storage devices</a></li></ul></div><script src="/js/jquery-2.1.4.min.js"></script><script src="/js/mousewheel.min.js"></script><script src="/js/waitforimages.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><script src="/js/jquery.dotdotdot.min.js"></script><script src="/js/index.js"></script><script type="text/javascript">if(typeof window !== 'undefined') (function(w) {
+	w._bh = w._bh || [];
+	w._bh.push(
+		['_setPartnerId', '1560'],
+		['_setPublisherId', '174'],
+		['_setMode', 'auto']
+	);
+	w._bh_lw = function(v) {
+		_bh_sl('/cart/widget.js?version=' + v);
+	}
+	w._bh_sl = function(p) {
+		(function(d, t, p) {
+			var g = d.createElement(t),
+			s = d.getElementsByTagName(t)[0];
+			g.src = 'https://static.bringhub.com' + p;
+			s.parentNode.insertBefore(g, s);
+		} (document, 'script', p));
+	}
+	w._bh_sl('/cart/loader.js?' + Date.now());
+})(window)</script></div><script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body></html><script type="text/javascript">var productsVisible = false;
+
+_Products = [  {    "amazonASIN": "B00GDQ0RMG",    "amazonFeatures": [      "Fire TV Stick connects to your TV's HDMI port. It's an easy way to enjoy over 4,000 channels, apps, and games including access to over 250,000 TV episodes and movies on Netflix, Amazon Video, HBO NOW, Hulu, and more.",      "Cutting the cord? Watch the best of live TV on NBC News, NBA, and Sling TV, which includes ESPN, CNN, HGTV, AMC, A&E, Cartoon Network, and more.",      "4x the storage and 2x the memory of Chromecast plus a dual-core processor and 1 GB of memory",      "No more buffering, ASAP learns what Amazon Video movies and shows you like so they start instantly",      "Never miss out. Bring Fire TV Stick with you to watch your favorites away from home, even in hotels and dorm rooms.",      "Amazon Prime members get unlimited access to Amazon Video, including original programming like Transparent, plus over 1 million songs with Prime Music.  Now get a subscription to apps like Showtime and STARZ to watch TV episodes, movies, and sports, without cable."    ],    "amazonOffers": [      {        "availability": true,        "availabilityFriendly": "Usually ships in 24 hours",        "condition": "New",        "price": 3999,        "primeEligible": true      }    ],    "amazonRootBrowseNodeName": "Electronics",    "amazonSalesRank": 1,    "amazonScore": 4.2,    "amazonURL": "http://www.amazon.com/Amazon-Fire-TV-Stick-Streaming-Media-Player/dp/B00GDQ0RMG%3Fpsc%3D1%26SubscriptionId%3DAKIAJQA6PK5J5ZC4LTRQ%26tag%3Dshopperr-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00GDQ0RMG",    "createdAt": "2015-11-24T07:45:12.069Z",    "description": "<div class=\"aplus\">  <p>Fire TV Stick is the most powerful streaming media stick. With a huge selection of TV shows and movies, voice search, plus exclusive features like Alexa (coming later this year) and ASAP, connect your HDTV to a world of online entertainment.</p>  <h4>What's on Fire TV Stick?</h4> <div class=\"leftImage\"><img alt=\"Apps\" src=\"https://images-na.ssl-images-amazon.com/images/G/01/kindle/dp/2015/848470/ftv-mobile/feature-mobile-ftvmv-app-grid-update.jpg\"/></div> <p>With over 3,000 channels, apps, and games, Fire TV Stick offers all your favorite subscriptions and streaming services. Watch over 250,000 TV episodes, movies, including live TV. Kick back with sports, news, music, and games. With instant access to Netflix, Amazon Video, HBO NOW, Hulu and more, you're sure to find something you love. Watch live TV with Sling TV, which includes ESPN, AMC, HGTV, TNT, Food Network, ABC Family, and more. Millions of songs are available to stream on Fire TV Stick through Prime Music, Pandora, Spotify and iHeartRadio. Access your entire Amazon Music Library. Fire TV Stick is also great for gaming on your HDTV—many games are free, and paid games start from just 99 cents.</p>  <h4>The most powerful streaming media stick</h4> <div class=\"leftImage\"><img alt=\"Fire TV Stick\" src=\"https://images-na.ssl-images-amazon.com/images/G/01/kindle/dp/2015/848470/ftv-mobile/feature-mobile-ftvm-most-powerful-v2.jpg\"/></div> <p>From the responsive interface to instant search results, everything about Fire TV Stick is fast and fluid. It's all thanks to a dual-core processor with 6x the processing power of Roku Streaming Stick, a dedicated VideoCore4 GPU, and 8 GB of storage—4x that of Chromecast and 32x that of Roku Streaming Stick. With Fire TV Stick, you can stream movies and TV shows in 1080p or 720p. With Dolby Audio, enjoy rich cinematic surround sound, consistent quality and enhanced volume level via HDMI (up to 7.1). Say goodbye to buffering: you shouldn't have to wait 10 seconds for a video to buffer every time you press \"Play\". ASAP (Advanced Streaming and Prediction) learns what Amazon movies and shows you like and gets them ready for you to watch.</p>  <h4>Perfectly portable</h4> <p>Never miss an episode while you're away from home. Fire TV Stick works with any HDTV, including those in hotels and college dorm rooms. Just plug and play anywhere—even with Wi-Fi that requires web authentication. Bring the world of online entertainment to any HDTV in your home. Fire TV Stick is so easy to connect to any HDTV, you can watch while cooking in the kitchen or relaxing in bed.</p>  <h4>TV the way you want it</h4> <div class=\"leftImage\"><img alt=\"TV the way you want\" src=\"https://images-na.ssl-images-amazon.com/images/G/01/kindle/dp/2015/848470/ftv-mobile/feature-mobile-tv-way-want.jpg\"/></div> <p>Use your cable subscription to stream what you love on-demand through apps like HBO GO, Showtime Anytime, A&E, Watch ESPN, and more. Get access to all your favorites with Fire TV Stick—download the apps and enter your cable account information to start watching. Stream your favorite shows at the same time they're broadcast with NBA Gametime, CBS News, and more. Plus watch live TV with Sling TV—which includes ESPN, AMC, ABC Family, TNT, Food Network, Cartoon Network, Disney Channel, CNN, HGTV, A&E, and more. Subscription fees may apply.</p>  <h4>Say it. Watch it.</h4> <p>Less searching, more watching. Fire TV Stick uses the same voice search engine as Amazon Fire TV, enabling you to simply speak the name of a movie, TV show, actor, director, or genre into your phone using the free Fire TV Remote App.</p>  <h4>Even better with Prime</h4> <p>With Prime Video, thousands of movies and TV shows including The Americans, Justified, and Downton Abbey, are available to stream instantly, at no additional cost. Access your favorite HBO shows like The Sopranos in the HBO Collection. As a Prime member, unlock hours of new shows created by Amazon Studios. From Bosch to the award-winning series Transparent, plus great shows for kids like Creative Galaxy, Amazon Originals showcase comedy, drama, and children's programming you can only see on Amazon. With Prime Music, you can listen ad-free to over a million songs. And there are more than one thousand Prime Music Playlists to choose from based on your mood, activity, artist or decade of choice. </p>   </div>",    "displayBrand": "Amazon",    "images": [      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/41KqCrQ2fuL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/51oEcf0zz4L.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/41EcVTWsAFL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/41owZfkh1dL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/51rK3Bb9rJL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/51TAtSIoZ-L.jpg",        "width": 500      }    ],    "listPrice": 3999,    "price": 3999,    "score": 93.4768714820484,    "scoreDetails": {      "facebook": 86.92230874676042,      "googlePlusOne": 65.01777178644122,      "linkedIn": 70.85902559053348,      "pinterest": 31.316099380039702,      "social": 86.95374296409679,      "twitter": 31.316099380039702    },    "socialCounts": [      {        "Facebook": {          "click_count": 0,          "comment_count": 26235,          "commentsbox_count": 0,          "like_count": 12564,          "share_count": 19777,          "total_count": 58576        },        "GooglePlusOne": null,        "LinkedIn": 25,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 58601      },      {        "Facebook": {          "click_count": 0,          "comment_count": 26235,          "commentsbox_count": 0,          "like_count": 12564,          "share_count": 19777,          "total_count": 58576        },        "GooglePlusOne": 123,        "LinkedIn": 143,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 58842      },      {        "Facebook": {          "click_count": 0,          "comment_count": 26235,          "commentsbox_count": 0,          "like_count": 12564,          "share_count": 19777,          "total_count": 58576        },        "GooglePlusOne": 123,        "LinkedIn": 1251,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 59950      }    ],    "title": "Amazon Fire TV Stick",    "upcs": [      "848719037869"    ],    "updatedAt": "2016-05-26T21:08:28.892Z",    "objectId": "VxtdgjRjr1"  },  {    "amazonASIN": "B00TSUGXKE",    "amazonFeatures": [      "Beautiful 7\" IPS display (171 ppi / 1024 x 600) and fast 1.3 GHz quad-core processor. Rear and front-facing cameras. Available in four colors.",      "Amazon Underground, a one-of-a-kind app store experience where over $20,000 in apps, games and even in-app items are actually free - including extra lives, unlocked levels, unlimited add-on packs and more",      "Enjoy millions of movies, TV shows, songs, books, apps and games",      "8 or 16 GB of internal storage.  Free unlimited cloud storage for all Amazon content and photos taken with Fire devices. Add a microSD card for up to 128 GB of additional storage.",      "Updated user interface - Fire OS 5 designed for quick access to your apps and content plus personalized recommendations that make it easy to discover new favorites",      "Up to 7 hours of reading, surfing the web, watching videos, and listening to music",      "Stay connected with fast web browsing, email, and calendar support"    ],    "amazonOffers": [      {        "availability": true,        "availabilityFriendly": "Usually ships in 24 hours",        "condition": "New",        "price": 4999,        "primeEligible": true      }    ],    "amazonRootBrowseNodeName": "Electronics",    "amazonSalesRank": 1,    "amazonScore": 4.2,    "amazonURL": "http://www.amazon.com/Fire-Tablet-Display-Wi-Fi-GB/dp/B00TSUGXKE%3Fpsc%3D1%26SubscriptionId%3DAKIAJQA6PK5J5ZC4LTRQ%26tag%3Dshopperr-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00TSUGXKE",    "createdAt": "2015-11-24T07:46:28.509Z",    "description": "<div class=\"aplus\"> <p>Powerful, full-featured Fire tablet—with beautiful 7\" IPS display, fast 1.3 GHz quad-core processor, rear and front facing cameras, and up to 128 GB of expandable storage.</p> <h3>Tiny price. Big Fun.</h3> <div class=\"leftImage\"><img alt=\"Hero\" src=\"https://images-na.ssl-images-amazon.com/images/G/01/kindle/dp/2016/FF/Mobile/f-mobileDP-feature-hero-2._V275111999_.jpg\"/></div> <h4>Fast and responsive</h4> <p>The fast quad-core processor consists of four high-performance 1.3 GHz cores, for quick app launch times, smooth games and videos, and great overall performance.</p>  <h4>Beautiful 7\" IPS display</h4> <p>Fire features a 1024 x 600 IPS display with 171 ppi for a bright display with vivid colors and whiter whites. Enjoy a great viewing experience at all angles through a combination of IPS (in-plane switching) technology and an advanced polarizing filter. </p>  <h4>No more worrying about storage space</h4> <p>Keep photos, movies, and compatible apps and games with you using a microSD card slot to expand your tablet’s storage by up to 128 GB.  Plus enjoy free unlimited cloud storage for all your Amazon content and photos taken with your Fire device.</p>  <h4>Power when you need it</h4> <p>Don't be tethered to an outlet — with up to 7 hours of mixed use battery life.</p>  <h4>Capture life's moments</h4> <p>Fire features a 2 MP rear-facing camera for taking photos or recording 720p HD video.  The VGA front-facing camera is perfect for Skype calls with friends and family.</p>  <h4>Stands up to everyday life</h4> <p>Amazon engineers Fire tablets to hold up against everyday life. As measured in tumble tests, Fire is almost 2x more durable than the iPad Air 2.</p>  <h3>Designed for Entertainment</h3> <div class=\"leftImage\"><img alt=\"Designed for Entertainment\" src=\"https://images-na.ssl-images-amazon.com/images/G/01//kindle/dp/2016/FF/Mobile/f-mobileDP-feature-entertain-v2._V275111999_.jpg\"/></div> <h4>Read</h4> <p>Choose from millions of e-book and magazine titles. Connect with the largest online community of book lovers on Goodreads. Discover over a million titles with a Kindle Unlimited subscription. Also, listen to your favorite books with Audible. </p>  <h4>Watch</h4> <p>Enjoy all your favorite movies and TV shows on Amazon Video, Netflix, HBO NOW, and more. Discover thousands of TV episodes and movies and fling it all to the big screen.</p>  <h4>Play</h4> <p>Over 300,000 apps including favorites like Facebook, Twitter, and Spotify. Plus Amazon Underground, a one-of-a-kind app store experience where over $20,000 in apps, games, and even in-app items are 100% free. Play great titles like Frozen Free Fall, Angry Birds Slingshot Stella, and Sonic Dash from developers like Disney, Gameloft, Rovio Entertainment, and more. </p>  <h3>Fire OS 5 \"Bellini\"</h3> <div class=\"leftImage\"><img alt=\"Introducing Fire OS 5\" src=\"https://images-na.ssl-images-amazon.com/images/G/01/kindle/dp/2015/848470/tablets-mobile/_mobileDP-feature-OS-v2.jpg\"/></div> <h4>Updated user interface — Find the things you love easier</h4> <p>Fire OS 5 is the best entertainment experience on a tablet with quick access to the things you do most.  The new home screen includes dedicated content pages for books, games and apps, video, music, audiobooks, and Newsstand, making it quick to pick up right where you left off.</p>  <h4>Apps that are actually free with Amazon Underground</h4> <p>Fire tablet owners have access to a one-of-a-kind app store experience where over $10,000 in apps, games and even in-app items are actually free. Experience titles from top developers including Disney, Rovio Entertainment, Gameloft, Zeptolab and Sega of America without ever having to pay for the app or in-app purchases.</p>  <h4>Read faster with Word Runner</h4> <p>Word Runner is a fun new way to read faster. It keeps your eyes focused on the center of the page and brings each word right to where your eyes already are.  With Dynamic Pacing, Word Runner automatically slows down for difficult words, punctuation, and paragraph breaks. And when you first start reading, it gradually builds up to the speed you choose.  If you miss something, just tap and hold the screen to activate the Brake.</p>  <h4>Share content with Family Library</h4> <p>Family Library links your Amazon account to that of your spouse or partner so you can easily share apps, games, audiobooks, and books, and it now allows Prime members to share their Prime Instant Video. Access your family's content across devices, including iOS and Android.</p>  <h4>No more waiting</h4> <p>With ASAP (Advanced Streaming and Prediction) Amazon movies and TV shows are ready for you to watch instantly. ASAP dynamically adapts to your viewing habits.</p>  <h4>Integrated on-device tech support</h4> <p>Mayday Screen Sharing brings Mayday-powered customer service to Fire tablets.  Amazon experts can now connect to any Fire tablet to co-pilot through features by drawing on your screen, walking you through how to do something yourself, or doing it for you — whatever works best.</p> </div>",    "displayBrand": "Amazon",    "images": [      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/41A4mMSdBJL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/51UJ31Buw0L.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/510CXaG2lYL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/61OqL2sySGL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/511nVMoGrML.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/61ZEfWSChkL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/51NYvhMZ6pL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/41lJpoju5wL.jpg",        "width": 500      }    ],    "listPrice": 4999,    "price": 4999,    "score": 93.46836582754435,    "scoreDetails": {      "facebook": 86.92814599519421,      "googlePlusOne": 63.09084561719068,      "linkedIn": 65.85247404528971,      "pinterest": 31.316099380039702,      "social": 86.9367316550887,      "twitter": 31.316099380039702    },    "socialCounts": [      {        "Facebook": {          "click_count": 0,          "comment_count": 0,          "commentsbox_count": 0,          "like_count": 0,          "share_count": 0,          "total_count": 0        },        "GooglePlusOne": 1,        "LinkedIn": 0,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 1      },      {        "Facebook": {          "click_count": 0,          "comment_count": 35361,          "commentsbox_count": 0,          "like_count": 22452,          "share_count": 30205,          "total_count": 88018        },        "GooglePlusOne": 137,        "LinkedIn": 316,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 88471      },      {        "Facebook": {          "click_count": 0,          "comment_count": 35361,          "commentsbox_count": 0,          "like_count": 22452,          "share_count": 30205,          "total_count": 88018        },        "GooglePlusOne": null,        "LinkedIn": 0,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 88018      }    ],    "title": "Fire Tablet, 7\" Display, Wi-Fi, 8 GB - Includes Special Offers, Black",    "upcs": [      "848719062854"    ],    "updatedAt": "2016-05-24T21:08:53.425Z",    "objectId": "36zjBxP5Xl"  },  {    "amazonASIN": "B004S8F7QM",    "amazonFeatures": [      "550 cards (460 White cards and 90 Black cards)",      "Over 13 duodecillion possible rounds (10^40) with 6 players",      "Professionally printed on premium playing cards",      "Includes game rules and alternate rules, shrink-wrapped in a custom box",      "America's #1 gerbil coffin"    ],    "amazonOffers": [      {        "availability": true,        "availabilityFriendly": "Usually ships in 24 hours",        "condition": "New",        "price": 2500,        "primeEligible": true      }    ],    "amazonRootBrowseNodeName": "Toys & Games",    "amazonSalesRank": 2,    "amazonScore": 4.8,    "amazonURL": "http://www.amazon.com/Cards-Against-Humanity-LLC-CAHUS/dp/B004S8F7QM%3FSubscriptionId%3DAKIAJQA6PK5J5ZC4LTRQ%26tag%3Dshopperr-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB004S8F7QM",    "createdAt": "2015-11-25T22:43:55.341Z",    "description": "<b>Cards Against Humanity is a party game for horrible people.</b> Unlike most of the party games you've played before, Cards Against Humanity is as despicable and awkward as you and your friends.\n</br></br>\nThe game is simple. Each round, one player asks a question from a Black Card, and everyone else answers with their funniest White Card.\n</br></br>\n<b>Reviews of Cards Against Humanity:</b>\n</br></br>\n\"Pretty amazing.\" - <em>The Onion AV Club</em>\n</br>\n\"An incredible game.\" - <em>Mike \"Gabe\" Krahulik, Penny Arcade</em>\n</br>\n\"Uncontrollable laughter.\" - <em>Kill Screen Magazine</em>\n</br>\n\"The game your party deserves.\" - <em>Thrillist</em>\n</br>\n\"A game.\" - <em>The Daily Beast</em>",    "displayBrand": "Cards Against Humanity LLC.",    "images": [      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/41njou1AvUL._SX500_.jpg",        "width": 500      },      {        "height": 332,        "url": "http://ecx.images-amazon.com/images/I/41pnVOenwNL.jpg",        "width": 500      },      {        "height": 333,        "url": "http://ecx.images-amazon.com/images/I/31YMGay6eEL.jpg",        "width": 500      }    ],    "listPrice": 2500,    "price": 2500,    "score": 93.39280371335033,    "scoreDetails": {      "facebook": 89.78245524211994,      "googlePlusOne": 67.8825025228397,      "linkedIn": 67.69972759408839,      "pinterest": 67.66928598221081,      "social": 89.79590738334048,      "twitter": 31.316099380039702    },    "socialCounts": [      {        "Facebook": {          "click_count": 0,          "comment_count": 59707,          "commentsbox_count": 0,          "like_count": 52093,          "share_count": 26354,          "total_count": 138154        },        "GooglePlusOne": 581,        "LinkedIn": 550,        "Pinterest": 493,        "StumbleUpon": null,        "Twitter": null,        "total": 139778      },      {        "Facebook": {          "click_count": 0,          "comment_count": 59707,          "commentsbox_count": 0,          "like_count": 52093,          "share_count": 26354,          "total_count": 138154        },        "GooglePlusOne": null,        "LinkedIn": 0,        "Pinterest": 52,        "StumbleUpon": null,        "Twitter": null,        "total": 138206      },      {        "Facebook": {          "click_count": 0,          "comment_count": 59707,          "commentsbox_count": 0,          "like_count": 52093,          "share_count": 26354,          "total_count": 138154        },        "GooglePlusOne": null,        "LinkedIn": 0,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 138154      }    ],    "title": "Cards Against Humanity",    "upcs": [      "500009638384",      "738435248451",      "754207313585"    ],    "updatedAt": "2016-05-24T21:08:35.699Z",    "objectId": "XrcfuYk9GW"  },  {    "amazonASIN": "B00NB86OYE",    "amazonOffers": [      {        "availability": true,        "availabilityFriendly": "Usually ships in 1-2 business days",        "condition": "New",        "price": 0,        "primeEligible": false      }    ],    "amazonRootBrowseNodeName": "Everything Else",    "amazonSalesRank": 1,    "amazonScore": 4.7,    "amazonURL": "http://www.amazon.com/Audible-Free-Trial-Digital-Membership/dp/B00NB86OYE%3FSubscriptionId%3DAKIAJQA6PK5J5ZC4LTRQ%26tag%3Dshopperr-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00NB86OYE",    "createdAt": "2015-11-28T05:14:41.980Z",    "images": [      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/41QA7FQysqL.jpg",        "width": 500      }    ],    "listPrice": 1495,    "price": 1495,    "score": 91.10602596970345,    "scoreDetails": {      "facebook": 82.12656198863017,      "googlePlusOne": 66.91014844700135,      "linkedIn": 67.68758428982672,      "pinterest": 62.050401722804196,      "social": 82.2120519394069,      "twitter": 31.316099380039702    },    "socialCounts": [      {        "Facebook": {          "click_count": 0,          "comment_count": 1250,          "commentsbox_count": 0,          "like_count": 3582,          "share_count": 9064,          "total_count": 13896        },        "GooglePlusOne": 434,        "LinkedIn": 274,        "Pinterest": 1,        "StumbleUpon": null,        "Twitter": null,        "total": 14605      },      {        "Facebook": {          "click_count": 0,          "comment_count": 1250,          "commentsbox_count": 0,          "like_count": 3582,          "share_count": 9064,          "total_count": 13896        },        "GooglePlusOne": null,        "LinkedIn": 274,        "Pinterest": 100,        "StumbleUpon": null,        "Twitter": null,        "total": 14270      },      {        "Facebook": {          "click_count": 0,          "comment_count": 1250,          "commentsbox_count": 0,          "like_count": 3582,          "share_count": 9064,          "total_count": 13896        },        "GooglePlusOne": null,        "LinkedIn": 0,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 13896      }    ],    "title": "Audible Free Trial [Digital Membership]",    "updatedAt": "2016-05-25T21:08:28.874Z",    "objectId": "9DkWOBsEHX"  },  {    "amazonASIN": "B00X4WHP5E",    "amazonFeatures": [      "Plays all your music from Prime Music, Spotify, Pandora, iHeartRadio, TuneIn, and more using just your voice",      "Fills the room with immersive, 360º omni-directional audio",      "Allows hands-free convenience with voice-control",      "Hears you from across the room with far-field voice recognition, even while music is playing",      "Answers questions, reads audiobooks and the news, reports traffic and weather, gives info on local businesses, provides sports scores and schedules, and more using the Alexa Voice Service",      "Controls lights, switches, and thermostats with compatible WeMo, Philips Hue, Samsung SmartThings, Wink, Insteon, Nest, and ecobee smart home devices",      "Always getting smarter and adding new features and skills--over 100 added since launch, including Domino's and Uber"    ],    "amazonOffers": [      {        "availability": false,        "condition": "New",        "price": 17999,        "primeEligible": true      }    ],    "amazonRootBrowseNodeName": "Electronics",    "amazonSalesRank": 5,    "amazonScore": 4.4,    "amazonURL": "http://www.amazon.com/Amazon-SK705DI-Echo/dp/B00X4WHP5E%3FSubscriptionId%3DAKIAJQA6PK5J5ZC4LTRQ%26tag%3Dshopperr-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00X4WHP5E",    "createdAt": "2015-11-24T11:29:19.578Z",    "description": "<div class=\"aplus\"> <div class=\"leftImage\"><img alt=\"What is AMAZON ECHO?\" src=\"https://images-na.ssl-images-amazon.com/images/G/01/kindle/dp/2016/D/mobile-feature-hero.jpg\" width=\"100%\"/></div> <p>Amazon Echo is a hands-free speaker you control with your voice. Echo connects to the Alexa Voice Service to play music, provide information, news, sports scores, weather, and more—instantly.  All you have to do is ask.</p>  <p>Echo has seven microphones and beam forming technology so it can hear you from across the room—even while music is playing. Echo is also an expertly tuned speaker that can fill any room with 360° immersive sound. When you want to use Echo, just say the wake word \"Alexa\" and Echo responds instantly. If you have more than one Echo or Echo Dot, you can set a different wake word for each—you can pick \"Amazon\", \"Alexa\" or \"Echo\" as the wake word. </p> <div class=\"leftImage\"><img alt=\"Voice Control YOUR MUSIC\" src=\"https://images-na.ssl-images-amazon.com/images/G/01/kindle/dp/2016/D/mobile-feature-music.jpg\" width=\"100%\" /></div> <p>Echo provides hands-free voice control for Amazon Music, Prime Music, Spotify, Pandora, iHeartRadio, and TuneIn. Plus, Echo is Bluetooth-enabled so you can stream other popular music services like iTunes from your phone or tablet.</p>   <p>Echo has been fine-tuned to deliver crisp vocals with dynamic bass response. Its dual downward-firing speakers produce 360° omni-directional audio to fill any room with immersive sound. </p> <div class=\"leftImage\"><img alt=\"Far-field Voice Recognition\" src=\"https://images-na.ssl-images-amazon.com/images/G/01/kindle/dp/2016/D/mobile-feature-farfield.jpg\" width=\"100%\" /></div> <p>Tucked under the light ring is an array of seven microphones that use beam-forming technology and enhanced noise cancellation. With far-field voice recognition, Echo can hear you ask a question from any direction—even while playing music. </p>  <p>When you want to use Echo, simply say the wake word, \"Alexa,\" and Echo lights up and streams audio to the cloud, where the Alexa Voice Service is leveraged to recognize and respond to your request instantly.</p>   <h1>Always Getting Smarter</h1>  <p>Alexa—the brain behind Echo—is built in the cloud, so it is always getting smarter. The more you use Echo, the more it adapts to your speech patterns, vocabulary, and personal preferences. And because Echo is always connected, updates are delivered automatically.</p>   <p>Just in the last few months we've added local search from Yelp, movie showtimes, Samsung SmartThings support, Google Calendar, Audible audiobooks, text-to-speech for Kindle eBooks, and over 100 new skills from third-party developers. </p>  <h1>Echo has Skills</h1>  <p>Skills add even more capabilities like ordering a pizza from Domino's, requesting a ride from Uber, opening your garage with Garageio, and more. Enabling skills lets your Echo do even more—simply discover and enable the skills you want to use in the Alexa App.</p>  <p>New skills are being added all the time. You can also see ratings and reviews to learn what other customers are saying about skills in the Alexa App. </p>  <h1>Control Your Smart Home</h1> <p>Use Echo to switch on the lamp before getting out of bed, turn on the fan or space heater while reading in your favorite chair, or dim the lights from the couch to watch a movie—all without lifting a finger.</p>  <p>Echo works with smart home devices such as lights, switches, thermostats, and more from WeMo, Philips Hue, SmartThings, Insteon, Nest, ecobee, Wink, and more.</p>  <h1>Do More with the Alexa App</h1>  <p>With the free Alexa App on Fire OS, Android, iOS, and desktop browsers, you can easily setup and manage your Echo.</p>  <p>Use the Alexa App to connect services you already use like Spotify, Pandora, and Google Calendar. Setup your smart home devices from WeMo, Philips Hue, SmartThings, Insteon, ecobee, and more. See what books are available to read from your Kindle and Audible libraries. View shopping and to-do lists while on the go. Control your timers and set custom tones for your alarms, and much more. The Alexa App is also where you discover and enable third-party skills.</p> </div>",    "displayBrand": "Amazon",    "images": [      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/41%2Bjw%2Bk87yL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/5117P1Ua4sL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/51hhmIr07-L.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/517yhYRadEL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/41Sb7MUrN8L.jpg",        "width": 500      }    ],    "listPrice": 17999,    "price": 17999,    "score": 90.67259107150875,    "scoreDetails": {      "facebook": 88.3085800707793,      "googlePlusOne": 61.013550310680564,      "linkedIn": 72.05427853860128,      "pinterest": 52.03145970811367,      "social": 88.33488218637768,      "twitter": 31.316099380039702    },    "socialCounts": [      {        "Facebook": {          "click_count": 0,          "comment_count": 33580,          "commentsbox_count": 0,          "like_count": 26688,          "share_count": 28516,          "total_count": 88784        },        "GooglePlusOne": null,        "LinkedIn": 677,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 89461      },      {        "Facebook": {          "click_count": 0,          "comment_count": 33580,          "commentsbox_count": 0,          "like_count": 26688,          "share_count": 28516,          "total_count": 88784        },        "GooglePlusOne": 37,        "LinkedIn": 677,        "Pinterest": 5,        "StumbleUpon": null,        "Twitter": null,        "total": 89503      },      {        "Facebook": {          "click_count": 0,          "comment_count": 33580,          "commentsbox_count": 0,          "like_count": 26688,          "share_count": 28516,          "total_count": 88784        },        "GooglePlusOne": 37,        "LinkedIn": 677,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 89498      }    ],    "title": "Amazon Echo",    "upcs": [      "848719071733"    ],    "updatedAt": "2016-05-19T03:42:55.901Z",    "objectId": "aGrp1961W5"  },  {    "amazonASIN": "B006QF3TW4",    "amazonFeatures": [      "Award-winning LifeStraw has been used by millions around the globe since 2005",      "Removes minimum 99.9999% of waterborne bacteria (>LOG 6 reduction) and surpasses EPA standards for water filters",      "Removes minimum 99.9% of waterborne protozoan parasites (>LOG 3 reduction) and filters to an amazing 0.2 microns",      "Filters up to 1000 liters of contaminated water WITHOUT iodine, chlorine, or other chemicals",      "Comes in a sealed bag, perfect for storing for emergencies"    ],    "amazonOffers": [      {        "availability": true,        "availabilityFriendly": "Usually ships in 1-2 business days",        "condition": "New",        "price": 990,        "primeEligible": false      }    ],    "amazonRootBrowseNodeName": "Tools & Home Improvement",    "amazonSalesRank": 6,    "amazonScore": 4.7,    "amazonURL": "http://www.amazon.com/LifeStraw-LSPHF017-Personal-Water-Filter/dp/B006QF3TW4%3FSubscriptionId%3DAKIAJQA6PK5J5ZC4LTRQ%26tag%3Dshopperr-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB006QF3TW4",    "createdAt": "2015-11-24T07:45:07.953Z",    "description": "A Time Magazine Invention of the Year winner, LifeStraw contains no chemicals, no batteries and no moving parts to wear out. It features a high flow rate and weighs only 2oz. It is perfect for the Ultralight backpacker, camper, hiker, traveler, boy scout, hunter or for emergencies. Unlike many similar filters on the market today, LifeStraw has met EPA standards for water filtration in independent testing. LifeStraw has been used around the world under extreme conditions for humanitarian relief. Does not filter chemicals, salt, viruses, heavy metals, taste. Please NOTE: It takes roughly 3-5 seconds of sucking to start the flow of water through the filter.",    "displayBrand": "LifeStraw",    "images": [      {        "height": 498,        "url": "http://ecx.images-amazon.com/images/I/41IRyBlx0LL.jpg",        "width": 500      },      {        "height": 333,        "url": "http://ecx.images-amazon.com/images/I/51scJWAnkqL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/51gr5L%2BCZ6L.jpg",        "width": 333      },      {        "height": 333,        "url": "http://ecx.images-amazon.com/images/I/51tkgdnmoxL.jpg",        "width": 500      },      {        "height": 333,        "url": "http://ecx.images-amazon.com/images/I/51tklrZbcnL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/510UEIs7hEL.jpg",        "width": 335      },      {        "height": 332,        "url": "http://ecx.images-amazon.com/images/I/51GcKAxskfL.jpg",        "width": 500      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/61V%2BM9%2BG0mL.jpg",        "width": 459      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/51ra-WsJtbL.jpg",        "width": 334      },      {        "height": 332,        "url": "http://ecx.images-amazon.com/images/I/519Op7kmt4L.jpg",        "width": 500      },      {        "height": 333,        "url": "http://ecx.images-amazon.com/images/I/51Nx1wq3ukL.jpg",        "width": 500      }    ],    "listPrice": 2500,    "price": 990,    "score": 90.23138819698526,    "scoreDetails": {      "facebook": 88.22082016759242,      "googlePlusOne": 71.04406795696767,      "linkedIn": 60.7803550153242,      "pinterest": 65.25316367715439,      "social": 88.24428889780697,      "twitter": 31.316099380039702    },    "socialCounts": [      {        "Facebook": {          "click_count": 0,          "comment_count": 13870,          "commentsbox_count": 0,          "like_count": 51617,          "share_count": 20990,          "total_count": 86477        },        "GooglePlusOne": null,        "LinkedIn": 69,        "Pinterest": 207,        "StumbleUpon": null,        "Twitter": null,        "total": 86753      },      {        "Facebook": {          "click_count": 0,          "comment_count": 13870,          "commentsbox_count": 0,          "like_count": 51617,          "share_count": 20990,          "total_count": 86477        },        "GooglePlusOne": 750,        "LinkedIn": 0,        "Pinterest": 57,        "StumbleUpon": null,        "Twitter": null,        "total": 87284      },      {        "Facebook": {          "click_count": 0,          "comment_count": 13870,          "commentsbox_count": 0,          "like_count": 51617,          "share_count": 20990,          "total_count": 86477        },        "GooglePlusOne": 750,        "LinkedIn": 0,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 87227      }    ],    "title": "LifeStraw Personal Water Filter",    "upcs": [      "712691409795",      "724716428377",      "802661580453",      "801722272924",      "712691409788",      "065946004611",      "400110596408",      "639476858701",      "802225739228",      "073128614657",      "712691409771",      "802664466518"    ],    "updatedAt": "2016-05-17T21:09:19.638Z",    "objectId": "Go8BABKkJU"  },  {    "amazonASIN": "1607747308",    "amazonOffers": [      {        "availability": true,        "availabilityFriendly": "Usually ships in 1-2 business days",        "condition": "New",        "price": 565,        "primeEligible": false      }    ],    "amazonRootBrowseNodeName": "Books",    "amazonSalesRank": 6,    "amazonScore": 4.4,    "amazonURL": "http://www.amazon.com/The-Life-Changing-Magic-Tidying-Decluttering/dp/1607747308%3FSubscriptionId%3DAKIAJQA6PK5J5ZC4LTRQ%26tag%3Dshopperr-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1607747308",    "createdAt": "2015-11-28T23:17:11.967Z",    "description": "<b>This #1 <i>New York Times</i> best-selling guide to decluttering your home from Japanese cleaning consultant Marie Kondo takes readers step-by-step through her revolutionary KonMari Method for simplifying, organizing, and storing.</b><br><br>Despite constant efforts to declutter your home, do papers still accumulate like snowdrifts and clothes pile up like a tangled mess of noodles?<br><br>Japanese cleaning consultant Marie Kondo takes tidying to a whole new level, promising that if you properly simplify and organize your home once, you’ll never have to do it again. Most methods advocate a room-by-room or little-by-little approach, which doom you to pick away at your piles of stuff forever. The KonMari Method, with its revolutionary category-by-category system, leads to lasting results. In fact, none of Kondo’s clients have lapsed (and she still has a three-month waiting list). <br><br> With detailed guidance for determining which items in your house “spark joy” (and which don’t), this international bestseller featuring Tokyo’s newest lifestyle phenomenon will help you clear your clutter and enjoy the unique magic of a tidy home—and the calm, motivated mindset it can inspire.",    "displayBrand": "Ten Speed Press",    "images": [      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/51H8x07Fd7L.jpg",        "width": 353      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/517oqIVgrtL.jpg",        "width": 350      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/31h6EYD0G7L.jpg",        "width": 375      }    ],    "listPrice": 1699,    "price": 565,    "score": 90.15177268906636,    "scoreDetails": {      "facebook": 88.04553273815534,      "googlePlusOne": 54.94968883262667,      "linkedIn": 71.7304998588994,      "pinterest": 69.95213939213069,      "social": 88.08505788196916,      "twitter": 31.316099380039702    },    "socialCounts": [      {        "Facebook": {          "click_count": 0,          "comment_count": 40989,          "commentsbox_count": 0,          "like_count": 30567,          "share_count": 10491,          "total_count": 82047        },        "GooglePlusOne": 6,        "LinkedIn": 1843,        "Pinterest": 1079,        "StumbleUpon": null,        "Twitter": null,        "total": 84975      },      {        "Facebook": {          "click_count": 0,          "comment_count": 40989,          "commentsbox_count": 0,          "like_count": 30567,          "share_count": 10491,          "total_count": 82047        },        "GooglePlusOne": null,        "LinkedIn": 0,        "Pinterest": 2,        "StumbleUpon": null,        "Twitter": null,        "total": 82049      },      {        "Facebook": {          "click_count": 0,          "comment_count": 40989,          "commentsbox_count": 0,          "like_count": 30567,          "share_count": 10491,          "total_count": 82047        },        "GooglePlusOne": 6,        "LinkedIn": 0,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 82053      }    ],    "title": "The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing",    "upcs": [      "884327095983"    ],    "updatedAt": "2016-05-24T21:09:18.091Z",    "objectId": "xUXXFsS10B"  },  {    "amazonASIN": "0679805273",    "amazonFeatures": [      "Dr. Seuss, self improvement"    ],    "amazonOffers": [      {        "availability": true,        "availabilityFriendly": "Usually ships in 1-2 business days",        "condition": "New",        "price": 399,        "primeEligible": false      }    ],    "amazonRootBrowseNodeName": "Books",    "amazonSalesRank": 1,    "amazonScore": 4.9,    "amazonURL": "http://www.amazon.com/Oh-Places-Youll-Dr-Seuss/dp/0679805273%3FSubscriptionId%3DAKIAJQA6PK5J5ZC4LTRQ%26tag%3Dshopperr-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0679805273",    "createdAt": "2015-12-02T16:50:31.785Z",    "description": "<p>Dr. Seuss’s wonderfully wise <i>Oh, the Places You’ll Go! </i>is the perfect send-off for grads—from nursery school, high school, college, and beyond! From soaring to high heights and seeing great sights to being left in a Lurch on a prickle-ly perch, Dr. Seuss addresses life’s ups and downs with his trademark humorous verse and illustrations, while encouraging readers to find the success that lies within. In a starred review, <i>Booklist</i> notes, “Seuss’s message is simple but never sappy: life may be a ‘Great Balancing Act,’ but through it all ‘There’s fun to be done.’” A perennial favorite and a perfect gift for anyone starting a new phase in their life!</p>",    "displayBrand": "Random House",    "images": [      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/51GC3Acu0WL.jpg",        "width": 378      },      {        "height": 328,        "url": "http://ecx.images-amazon.com/images/I/51JZYAB1KFL.jpg",        "width": 475      },      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/41E726qVv0L.jpg",        "width": 375      }    ],    "listPrice": 1799,    "price": 399,    "score": 89.86773268558949,    "scoreDetails": {      "facebook": 79.52446298836716,      "googlePlusOne": 31.316099380039702,      "linkedIn": 66.71238385347601,      "pinterest": 69.10736902155736,      "social": 79.73546537117898,      "twitter": 31.316099380039702    },    "socialCounts": [      {        "Facebook": {          "click_count": 0,          "comment_count": 1920,          "commentsbox_count": 0,          "like_count": 2527,          "share_count": 1919,          "total_count": 6366        },        "GooglePlusOne": null,        "LinkedIn": 409,        "Pinterest": 839,        "StumbleUpon": null,        "Twitter": null,        "total": 7614      },      {        "Facebook": {          "click_count": 0,          "comment_count": 1920,          "commentsbox_count": 0,          "like_count": 2527,          "share_count": 1919,          "total_count": 6366        },        "GooglePlusOne": null,        "LinkedIn": 0,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 6366      },      {        "Facebook": {          "click_count": 0,          "comment_count": 1920,          "commentsbox_count": 0,          "like_count": 2527,          "share_count": 1919,          "total_count": 6366        },        "GooglePlusOne": null,        "LinkedIn": 0,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 6366      }    ],    "title": "Oh, The Places You'll Go!",    "upcs": [      "038332154085"    ],    "updatedAt": "2016-05-27T21:08:29.341Z",    "objectId": "ZmmxpztMrg"  },  {    "amazonASIN": "1338099132",    "amazonOffers": [      {        "availability": true,        "availabilityFriendly": "Not yet published",        "condition": "New",        "price": 1799,        "primeEligible": true      }    ],    "amazonRootBrowseNodeName": "Books",    "amazonSalesRank": 3,    "amazonURL": "http://www.amazon.com/Harry-Potter-Cursed-Child-Production/dp/1338099132%3FSubscriptionId%3DAKIAJQA6PK5J5ZC4LTRQ%26tag%3Dshopperr-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1338099132",    "createdAt": "2016-03-29T21:09:30.555Z",    "description": "<div><!--[if gte mso 9]><xml> <w:WordDocument> <w:View>Normal</w:View> <w:Zoom>0</w:Zoom> <w:TrackMoves /> <w:TrackFormatting /> <w:PunctuationKerning /> <w:ValidateAgainstSchemas /> <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid> <w:IgnoreMixedContent>false</w:IgnoreMixedContent> <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText> <w:DoNotPromoteQF /> <w:LidThemeOther>EN-US</w:LidThemeOther> <w:LidThemeAsian>X-NONE</w:LidThemeAsian> <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript> <w:Compatibility> <w:BreakWrappedTables /> <w:SnapToGridInCell /> <w:WrapTextWithPunct /> <w:UseAsianBreakRules /> <w:DontGrowAutofit /> <w:SplitPgBreakAndParaMark /> <w:EnableOpenTypeKerning /> <w:DontFlipMirrorIndents /> <w:OverrideTableStyleHps /> </w:Compatibility> <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel> <m:mathPr> <m:mathFont m:val=\"Cambria Math\" /> <m:brkBin m:val=\"before\" /> <m:brkBinSub m:val=\"--\" /> <m:smallFrac m:val=\"off\" /> <m:dispDef /> <m:lMargin m:val=\"0\" /> <m:rMargin m:val=\"0\" /> <m:defJc m:val=\"centerGroup\" /> <m:wrapIndent m:val=\"1440\" /> <m:intLim m:val=\"subSup\" /> <m:naryLim m:val=\"undOvr\" /> </m:mathPr></w:WordDocument> </xml><![endif]--><strong><span style=\"font-size: 10.0pt; font-family: \"Arial\",sans-serif;\">The Eighth Story. Nineteen Years Later.</span></strong><span style=\"font-size: 10.0pt; font-family: \"Arial\",sans-serif;\"><br /><br /></span><span style=\"font-size: 10.0pt; font-family: \"Arial\",sans-serif;\">Based on an original new story by J.K. Rowling, Jack Thorne and John Tiffany, a new play by Jack Thorne, <em>Harry Potter and the Cursed Child</em> is the eighth story in the Harry Potter series and the first official Harry Potter story to be presented on stage. The play will receive its world premiere in London’s West End on July 30, 2016.</span> <strong><span style=\"font-size: 10.0pt; font-family: \"Arial\",sans-serif;\"></span></strong><span style=\"font-size: 10.0pt; font-family: \"Arial\",sans-serif;\"><br /><br /></span><span style=\"font-size: 10.0pt; font-family: \"Arial\",sans-serif;\">It was always difficult being Harry Potter and it isn’t much easier now that he is an overworked employee of the Ministry of Magic, a husband and father of three school-age children.</span><span style=\"font-size: 10.0pt; font-family: \"Arial\",sans-serif;\"><br /><br /></span><span style=\"font-size: 10.0pt; font-family: \"Arial\",sans-serif;\">While Harry grapples with a past that refuses to stay where it belongs, his youngest son Albus must struggle with the weight of a family legacy he never wanted. As past and present fuse ominously, both father and son learn the uncomfortable truth: sometimes, darkness comes from unexpected places.</span> <span style=\"font-size: 10.0pt; font-family: \"Arial\",sans-serif;\"></span></div>",    "displayBrand": "Arthur A. Levine Books",    "images": [      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/51bY71UBtaL.jpg",        "width": 331      }    ],    "listPrice": 2999,    "price": 1799,    "score": 89.2426771426213,    "scoreDetails": {      "facebook": 83.25559821285776,      "googlePlusOne": 31.316099380039702,      "linkedIn": 56.11071114685405,      "pinterest": 31.316099380039702,      "social": 83.25656683243923,      "twitter": 31.316099380039702    },    "socialCounts": [      {        "Facebook": {          "click_count": 0,          "comment_count": 4137,          "commentsbox_count": 0,          "like_count": 11026,          "share_count": 4335,          "total_count": 19498        },        "GooglePlusOne": null,        "LinkedIn": 17,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 19515      },      {        "Facebook": {          "click_count": 0,          "comment_count": 4137,          "commentsbox_count": 0,          "like_count": 11026,          "share_count": 4335,          "total_count": 19498        },        "GooglePlusOne": 0,        "LinkedIn": 0,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 19498      },      {        "Facebook": {          "click_count": 0,          "comment_count": 4137,          "commentsbox_count": 0,          "like_count": 11026,          "share_count": 4335,          "total_count": 19498        },        "GooglePlusOne": 0,        "LinkedIn": 0,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 19498      }    ],    "title": "Harry Potter and the Cursed Child - Parts One & Two (Special Rehearsal Edition Script): The Official Script Book of the Original West End Production",    "updatedAt": "2016-05-24T21:09:18.429Z",    "objectId": "dqruzskB6B"  },  {    "amazonASIN": "B0009X29WK",    "amazonFeatures": [      "Hard Clumping",      "99.9% Dust Free",      "Use in Mechanical",      "Hypo-allergenic",      "All natural",      "Superior odor control"    ],    "amazonOffers": [      {        "availability": true,        "availabilityFriendly": "Usually ships in 1-2 business days",        "condition": "New",        "price": 999,        "primeEligible": false      }    ],    "amazonRootBrowseNodeName": "Pet Supplies",    "amazonSalesRank": 1,    "amazonScore": 4.4,    "amazonURL": "http://www.amazon.com/Precious-Cat-Premium-Clumping-Litter/dp/B0009X29WK%3Fpsc%3D1%26SubscriptionId%3DAKIAJQA6PK5J5ZC4LTRQ%26tag%3Dshopperr-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0009X29WK",    "createdAt": "2015-11-30T22:00:24.477Z",    "description": "A clay litter uniquely formulated combining heavy non tracking granules with medium grain. The result is an excellent clumping litter that prevents moisture from reaching the bottom of the litter box, while providing a clump that will not break apart. Ultra is perfect for multi-cat families and cat owners with sifting or mechanical litter boxes and it controls odor naturally without perfume, deodorants or chemicals.",    "displayBrand": "Precious Cat",    "images": [      {        "height": 500,        "url": "http://ecx.images-amazon.com/images/I/51E3aK7zKvL.jpg",        "width": 344      }    ],    "listPrice": 1999,    "price": 999,    "score": 88.92709541146056,    "scoreDetails": {      "facebook": 77.81244751715572,      "googlePlusOne": 60.42378128348364,      "linkedIn": 61.3148305155748,      "pinterest": 46.66666666666667,      "social": 77.85419082292113,      "twitter": 31.316099380039702    },    "socialCounts": [      {        "Facebook": {          "click_count": 0,          "comment_count": 1201,          "commentsbox_count": 0,          "like_count": 955,          "share_count": 1653,          "total_count": 3809        },        "GooglePlusOne": 62,        "LinkedIn": 81,        "Pinterest": 1,        "StumbleUpon": null,        "Twitter": null,        "total": 3953      },      {        "Facebook": {          "click_count": 0,          "comment_count": 1201,          "commentsbox_count": 0,          "like_count": 955,          "share_count": 1653,          "total_count": 3809        },        "GooglePlusOne": null,        "LinkedIn": 0,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 3809      },      {        "Facebook": {          "click_count": 0,          "comment_count": 1201,          "commentsbox_count": 0,          "like_count": 955,          "share_count": 1653,          "total_count": 3809        },        "GooglePlusOne": null,        "LinkedIn": 0,        "Pinterest": 0,        "StumbleUpon": null,        "Twitter": null,        "total": 3809      }    ],    "title": "Precious Cat Ultra Premium Clumping Cat Litter, 40 pound bag",    "upcs": [      "000338004404",      "764527052170",      "764527057403",      "622013163192",      "764527054679",      "879488272151",      "764527054815"    ],    "updatedAt": "2016-05-27T21:08:29.411Z",    "objectId": "gc7DdvEBSJ"  }];
+Products = {};
+for(var i = 0; i < _Products.length; i++){
+  Products[_Products[i].id] = _Products[i];
+}
+ProductList = "toprated";
+ProductSearch = "";
+ProductCategory = "";
+ProductSearchType = "magic";
+API_URL = 'http://api.shopperr.com/';
+var truncate = function(string, length) {
+  if (!string || string.length <= length) {
+    return string;
+  }
+  string += ' ';
+  string = string.slice(0, length);
+  while (!(string.slice(-1) === " " || string === "")) {
+    string = string.slice(0, -1);
+  }
+  while (!/[A-Za-z]/.test(string.slice(-1) || string === "")) {
+    string = string.slice(0, -1);
+  }
+  return string;// + "&hellip;";
+};
+var featuresFilter = function(a) {
+  var ret = [];
+  for(var i in a){
+    if(a[i].length < 60)
+      ret.push(a[i]);
+  }
+  return ret;
+};
+
+$(function(){
+  $('body').keyup(function(e){
+    if(e.which == 27){
+      $('#productModal').modal('hide');
+    }
+  });
+
+  var scoreDetailMode = false;
+  var imageDetailMode = false;
+
+  setActiveModalImage = function(e){
+    if(!e){
+      ActiveModalImage = 0;
+    }else{
+      var target = $(e.relatedTarget);
+      $('#productModal .carousel-inner .item').each(function(i){
+        if($(this)[0] == target[0]){
+          ActiveModalImage = i;
+        }
+      });
+    }
+    
+    $('#productModal .imagebar').each(function(i){
+      if(i == ActiveModalImage)
+        $(this).addClass('active');
+      else
+        $(this).removeClass('active');
+    });
+  }
+
+  $('#productModal #productModal-score').click(function(){
+    if(scoreDetailMode == false){
+      $('#productModal .modal-body').addClass('out');
+      setTimeout(function(){
+        showScoreDetail();
+        $('#productModal .modal-body').removeClass('out');
+      }, 600);
+    }
+  });
+  $('#productModal #productModal-scoreDetail').click(function(){
+    $('#productModal .modal-body').addClass('out');
+    setTimeout(function(){
+      showScoreDetail();
+      $('#productModal .modal-body').removeClass('out');
+    }, 600);
+  });
+  $('#productModal-scoreDetailBack').click(function(){
+    $('#productModal .modal-body').addClass('out');
+    setTimeout(function(){
+      hideScoreDetail();
+      $('#productModal .modal-body').removeClass('out');
+      updateMores();
+    }, 600);
+  });
+  $('#productModal-imageDetailBack').click(function(){
+    $('#productModal .modal-body').addClass('out');
+    setTimeout(function(){
+      hideImageDetail();
+      $('#productModal .modal-body').removeClass('out');
+      updateMores();
+    }, 600);
+  });
+  function showScoreDetail(){
+    scoreDetailMode = true;
+    $('#productModal .scorebanner-corner1').css('background-color', '#fff');
+    $('#productModal .scorebanner-corner2').css('background-color', '#fff');
+    $('#productModal-score').css('background-color', '#fff');
+    $('#productModal-score').css('cursor', 'auto');
+    $('.socialcounts-background').css('opacity', 1);
+
+    //$('#productModal .arrow-left').hide();
+    //$('#productModal .arrow-right').hide();
+
+    $('#productModal .modal-body').css('transform', 'translateY(0px)');
+    if(window.matchMedia('(min-width: 1200px)').matches){
+      $('#productModal .imagerow').css('transform', 'translateY('+(0)+'px)');
+      $('#productModal .imagebars').css('transform', 'translateY('+(0)+'px)');
+      $('#productModal .container-fluid').css('margin-top', '18px'); //28px
+      $('#productModal-totalReviews').css('width', '334px'); //0px
+      $('#productModal .scoreradial').css('left', '90px'); //-82px
+      $('#productModal .socialcounts').css('left', '110px'); //180px
+      $('#productModal .socialcountdetails').css('left', '280px'); //180px
+      $('#productModal .scoreDescription').css('left', '310px'); //-82px
+    }else if(window.matchMedia('(min-width: 992px)').matches){
+      $('#productModal .imagerow').css('transform', 'translateY('+(0)+'px)');
+      $('#productModal .imagebars').css('transform', 'translateY('+(0)+'px)');
+      $('#productModal .container-fluid').css('margin-top', '18px'); //28px
+      $('#productModal-totalReviews').css('width', '214px'); //0px
+      $('#productModal .scoreradial').css('left', '30px'); //-82px
+      $('#productModal .socialcounts').css('left', '50px'); //180px
+    }else if(window.matchMedia('(min-width: 768px)').matches){
+      $('#productModal-totalReviews').css('left', '0px'); //0px
+      $('#productModal-totalReviews').css('width', '270px'); //0px
+      $('#productModal .scoreradial').css('left', '60px'); //-82px
+      $('#productModal .scoreDescription').css('left', '240px'); //-82px
+      $('#productModal .socialcounts').css('left', '60px'); //180px
+      $('#productModal .socialcountdetails').css('left', '230px'); //180px
+    }else{
+      $('#productModal-totalReviews').css('left', '-10px'); //0px
+      $('#productModal-totalReviews').css('width', '154px'); //0px
+      $('#productModal .container-fluid').css('margin-top', '42px'); //28px
+      $('#productModal .scoreradial').css('left', '-10px'); //-82px
+      $('#productModal .socialcounts').css('left', '-40px'); //180px
+      $('#productModal .scoreDescription').css('left', '160px'); //-82px
+      $('#productModal .scoreDescription').css('top', '50px'); //-82px
+      $('#productModal .socialcountdetails').css('left', '140px'); //180px
+      $('#productModal .socialcountdetails .progress').css('width', '130px'); //180px
+    }
+    $('#productModal .imagerow').hide();
+    var col = $('#productModal .row .col-md-6');
+    col.removeClass('col-md-6');
+    col.removeClass('col-md-offset-6');
+    col.addClass('col-md-8');
+    col.addClass('col-md-offset-2');
+    $('#productModal-subtitle').hide();
+    $('#productModal .price').hide();
+    $('#productModal-title').css('margin-bottom', '20px'); //0px
+    $('#productModal-scoreDetail').hide();
+    $('#productModal-imageDetail').hide();
+    $('#productModal .imagebars').hide();
+    $('#productModal-buy').hide();
+    $('#productModal-description').hide();
+    $('#productModal-featuresContainer').hide();
+    $('#productModal .socialcounts').css('position', 'relative'); //absolute
+    $('#productModal .socialcounts').css('top', '60px'); //24px
+    $('#productModal .scoreDescription').show();
+    $('#productModal-scoreDetailBack').show();
+    $('#productModal .socialcountdetails').show();
+  }
+  function hideScoreDetail(){
+    scoreDetailMode = false;
+    $('.socialcounts-background').css('opacity', 0);
+
+    $('#productModal .arrow-left').show();
+    $('#productModal .arrow-right').show();
+
+    $('#productModal .modal-body').css('transform', 'translateY(0px)');
+    gy = 0;
+    if(window.matchMedia('(min-width: 1200px)').matches){
+      $('#productModal .imagerow').css('transform', 'translateY('+(0)+'px)');
+      $('#productModal .imagebars').css('transform', 'translateY('+(0)+'px)');
+      $('#productModal-totalReviews').css('left', '0px'); //0px
+      $('#productModal-totalReviews').css('width', '214px'); //0px
+      $('#productModal .socialcounts').css('left', '220px'); //180px
+      $('#productModal .scoreradial').css('left', '-100px'); //-82px
+    }else if(window.matchMedia('(min-width: 992px)').matches){
+    //if($(document).width() >= 992){
+      $('#productModal .imagerow').css('transform', 'translateY('+(0)+'px)');
+      $('#productModal .imagebars').css('transform', 'translateY('+(0)+'px)');
+      $('#productModal-totalReviews').css('left', '0px'); //0px
+      $('#productModal-totalReviews').css('width', '153px'); //0px
+      $('#productModal .socialcounts').css('left', '140px'); //180px
+      $('#productModal .scoreradial').css('left', '-78px'); //-82px
+    }else if(window.matchMedia('(min-width: 768px)').matches){
+      $('#productModal-totalReviews').css('left', '0px'); //0px
+      $('#productModal-totalReviews').css('width', '340px'); //0px
+      $('#productModal .socialcounts').css('left', '260px'); //180px
+      $('#productModal .scoreradial').css('left', '-78px'); //-82px
+      $('#productModal .scoreDescription').css('left', '220px'); //220px
+    }else{
+      $('#productModal-totalReviews').css('left', '-78px'); //0px
+      $('#productModal-totalReviews').css('width', '210px'); //0px
+      $('#productModal .socialcounts').css('left', '70px'); //180px
+      $('#productModal .socialcounts').css('right', '-20px'); //180px
+      $('#productModal .scoreradial').css('left', '-78px'); //-82px
+      $('#productModal .scoreDescription').css('left', '220px'); //220px
+    }
+    $('#productModal .imagerow').show();
+    var col = $('#productModal .row .col-md-8');
+    col.removeClass('col-md-8');
+    col.removeClass('col-md-offset-2');
+    col.addClass('col-md-6');
+    col.addClass('col-md-offset-6');
+    $('#productModal-subtitle').show();
+    $('#productModal .price').show();
+    $('#productModal-title').css('margin-bottom', '0px'); //0px
+    $('#productModal-scoreDetail').show();
+    $('#productModal-imageDetail').show();
+    $('#productModal .imagebars').show();
+    $('#productModal-buy').show();
+    $('#productModal-description').show();
+    if($('#productModal-featuresContainer').text()!='Details(none)')
+      $('#productModal-featuresContainer').show();
+    $('#productModal .socialcounts').css('position', 'absolute'); //absolute
+    $('#productModal .socialcounts').css('top', '44px'); //24px
+    $('#productModal .scoreDescription').hide();
+    $('#productModal-scoreDetailBack').hide();
+    $('#productModal .socialcountdetails').hide();
+    $('#productModal .container-fluid').css('margin-top', '36px'); //28px
+    $('#productModal .container-fluid').css('margin-bottom', '16px'); //28px
+  }
+  function showImageDetail(){
+    imageDetailMode = true;
+    //$('#productModal .arrow-left').hide();
+    //$('#productModal .arrow-right').hide();
+
+    $('#productModal .modal-body').css('transform', 'translateY(0px)');
+    if(window.matchMedia('(min-width: 992px)').matches){
+    //if($(document).width() >= 992){
+      $('#productModal .imagerow').css('transform', 'translateY('+(0)+'px)');
+      $('#productModal .imagebars').css('transform', 'translateY('+(0)+'px)');
+      $('#productModal .imagerow').css('left', 'initial'); //-91%
+      $('#productModal .imagebars').css('left', 'initial'); //-91%
+      $('#productModal .container-fluid').css('margin-top', '36px'); //28px
+    }else if(window.matchMedia('(min-width: 768px)').matches){
+      $('#productModal .imagerow').css('left', '8%'); //-91%
+      $('#productModal .imagebars').css('left', '8%'); //-91%
+      $('#productModal .container-fluid').css('margin-top', '36px'); //28px
+      $('#productModal .container-fluid').css('margin-bottom', '16px'); //28px
+    }else{
+      $('#productModal .imagerow').css('left', '6%'); //-91%
+      $('#productModal .imagebars').css('left', '6%'); //-91%
+      $('#productModal .container-fluid').css('margin-top', '36px'); //28px
+      $('#productModal .container-fluid').css('margin-bottom', '16px'); //28px
+    }
+    //$('#productModal-images').css('height', '360px'); //480px
+    var col = $('#productModal .row .col-md-6');
+    col.removeClass('col-md-6');
+    col.removeClass('col-md-offset-6');
+    col.addClass('col-md-8');
+    col.addClass('col-md-offset-2');
+    $('#productModal .scoreradial').hide();
+    $('#productModal-subtitle').hide();
+    $('#productModal .price').hide();
+    $('#productModal-title').hide();
+    $('#productModal-totalReviews').hide();
+    $('#productModal-score').hide();
+    $('#productModal-imageDetail').hide();
+    $('#productModal-buy').hide();
+    $('#productModal-description').hide();
+    $('#productModal-featuresContainer').hide();
+    $('#productModal .socialcounts').hide();
+    $('#productModal-imageDetailBack').show();
+
+    var productId = $('#productModal .id').text();
+    var images = '<div id="productModal-carousel" class="carousel slide" data-ride="carousel" data-interval="">';
+    images += '<div class="carousel-inner">';
+    // record the main image and filter duplicates
+    var mainImageUrl = Products[productId].images[0].url;
+    var marginString = '';
+    var height, margin;
+    var maxWidth = ($('.modal-lg').width()||$('.main').width())*.84;
+    if(window.matchMedia('(max-width: 767px)').matches){
+      maxWidth = ($('.modal-lg').width()||$('.main').width())*.68;
+    }else if(window.matchMedia('(max-width: 991px)').matches){
+      maxWidth = ($('.modal-lg').width()||$('.main').width())*.84;
+    }
+    for(var i in Products[productId].images){
+      images += '<div class="item'+(i==0?' active':'')+'">';
+      if(Products[productId].images[i].height){
+        marginString = '';
+        height = parseInt(Products[productId].images[i].height);
+        var width = parseInt(Products[productId].images[i].width);
+        if(width > maxWidth)
+          height *= maxWidth/width;
+        if(window.matchMedia('(max-width: 767px)').matches){
+          if(height < 280){
+            margin = (280-height)/2;
+            marginString = ' style="margin-top:'+margin+'px"';
+          }
+        }else{
+          if(height < 480){
+            margin = (480-height)/2;
+            marginString = ' style="margin-top:'+margin+'px"';
+          }
+        }
+      }
+      images += '<img src="'+Products[productId].images[i].url+'" alt="'+Products[productId].title+'"'+marginString+'>';
+      images += '</div>';
+    }
+    images += '</div>';
+    if(Products[productId].images.length > 1){
+      images += '<a class="left carousel-control" href="#productModal-carousel" data-slide="prev">';
+      images += '<span class="glyphicon glyphicon-chevron-left"></span>';
+      images += '</a>';
+      images += '<a class="right carousel-control" href="#productModal-carousel" data-slide="next">';
+      images += '<span class="glyphicon glyphicon-chevron-right"></span>';
+      images += '</a>';
+    }
+    images += '</div>';
+    $('#productModal-images').html(images);
+    // image bars
+    var imagebars = '';
+    for(var i = 0; i < Products[productId].images.length; i++){
+      imagebars += '<div class="imagebar"></div>';
+    }
+    $('#productModal-imagebars').html(imagebars);
+    setActiveModalImage();
+    $('#productModal-carousel').on('slide.bs.carousel', function(e){
+      setActiveModalImage(e);
+    });
+    if(window.matchMedia('(min-width: 992px)').matches){
+      $('#productModal .carousel-control span').addClass('hoveronly');
+      $('#productModal-images').off('mouseenter');
+      $('#productModal-images').off('mouseleave');
+      $('#productModal-images').hover(function(){
+        $('#productModal .carousel-control span').addClass('active');
+      }, function(){
+        $('#productModal .carousel-control span').removeClass('active');
+      });
+    }
+    $('#productModal .imagebar').click(function(){
+      var index = $(this).index();
+      $('#productModal-carousel').carousel(index);
+    });
+  }
+  function hideImageDetail(){
+    imageDetailMode = false;
+    $('#productModal .arrow-left').show();
+    $('#productModal .arrow-right').show();
+
+    $('#productModal .modal-body').css('transform', 'translateY(0px)');
+    gy = 0;
+    if(window.matchMedia('(min-width: 992px)').matches){
+    //if($(document).width() >= 992){
+      $('#productModal .imagerow').css('transform', 'translateY('+(0)+'px)');
+      $('#productModal .imagebars').css('transform', 'translateY('+(0)+'px)');
+      $('#productModal .imagerow').css('left', '-91%'); //-91%
+      $('#productModal .imagebars').css('left', '-91%'); //-91%
+    }else{
+      $('#productModal .imagerow').css('left', '8%'); //-91%
+      $('#productModal .imagebars').css('left', '8%'); //-91%
+    }
+    //$('#productModal-images').css('height', '360px'); //480px
+    var col = $('#productModal .row .col-md-8');
+    col.removeClass('col-md-8');
+    col.removeClass('col-md-offset-2');
+    col.addClass('col-md-6');
+    col.addClass('col-md-offset-6');
+    $('#productModal .scoreradial').show();
+    $('#productModal-subtitle').show();
+    $('#productModal .price').show();
+    $('#productModal-title').show();
+    $('#productModal-totalReviews').show();
+    $('#productModal-score').show();
+    $('#productModal-imageDetail').show();
+    $('#productModal-buy').show();
+    $('#productModal-description').show();
+    if($('#productModal-featuresContainer').text()!='Details(none)')
+      $('#productModal-featuresContainer').show();
+    $('#productModal .socialcounts').show();
+    $('#productModal-imageDetailBack').hide();
+    $('#productModal .container-fluid').css('margin-top', '36px'); //28px
+    $('#productModal .container-fluid').css('margin-bottom', '16px'); //28px
+    
+    var productId = $('#productModal .id').text();
+    var images = '<div id="productModal-carousel" class="carousel slide" data-ride="carousel" data-interval="">';
+    images += '<div class="carousel-inner">';
+    // record the main image and filter duplicates
+    var mainImageUrl = Products[productId].images[0].url;
+    var marginString = '';
+    var height, margin;
+    var maxWidth = ($('.modal-lg').width()||$('.main').width())*.42;
+    if(window.matchMedia('(max-width: 767px)').matches){
+      maxWidth = ($('.modal-lg').width()||$('.main').width())*.55;
+    }else if(window.matchMedia('(max-width: 991px)').matches){
+      maxWidth = ($('.modal-lg').width()||$('.main').width())*.84;
+    }
+    for(var i in Products[productId].images){
+      images += '<div class="item'+(i==0?' active':'')+'">';
+      if(Products[productId].images[i].height){
+        marginString = '';
+        height = parseInt(Products[productId].images[i].height);
+        var width = parseInt(Products[productId].images[i].width);
+        //console.log(height, width, $('.modal-lg').width(), maxWidth)
+        if(width > maxWidth)
+          height *= maxWidth/width;
+        if(window.matchMedia('(max-width: 767px)').matches){
+          if(height < 280){
+            margin = (280-height)/2;
+            marginString = ' style="margin-top:'+margin+'px"';
+          }
+        }else{
+          if(height < 480){
+            margin = (480-height)/2;
+            marginString = ' style="margin-top:'+margin+'px"';
+          }
+        }
+      }
+      images += '<img src="'+Products[productId].images[i].url+'" alt="'+Products[productId].title+'"'+marginString+'>';
+      images += '</div>';
+    }
+    images += '</div>';
+    if(Products[productId].images.length > 1){
+      images += '<a class="left carousel-control" href="#productModal-carousel" data-slide="prev">';
+      images += '<span class="glyphicon glyphicon-chevron-left"></span>';
+      images += '</a>';
+      images += '<a class="right carousel-control" href="#productModal-carousel" data-slide="next">';
+      images += '<span class="glyphicon glyphicon-chevron-right"></span>';
+      images += '</a>';
+    }
+    images += '</div>';
+    $('#productModal-images').html(images);
+    // image bars
+    var imagebars = '';
+    for(var i = 0; i < Products[productId].images.length; i++){
+      imagebars += '<div class="imagebar"></div>';
+    }
+    $('#productModal-imagebars').html(imagebars);
+    setActiveModalImage();
+    $('#productModal-carousel').on('slide.bs.carousel', function(e){
+      setActiveModalImage(e);
+    });
+    $('#productModal-images img').click(function(){
+      $('#productModal .modal-body').addClass('out');
+      setTimeout(function(){
+        showImageDetail();
+        $('#productModal .modal-body').removeClass('out');
+      }, 600);
+    });
+    if(window.matchMedia('(min-width: 992px)').matches){
+      $('#productModal .carousel-control span').addClass('hoveronly');
+      $('#productModal-images').off('mouseenter');
+      $('#productModal-images').off('mouseleave');
+      $('#productModal-images').hover(function(){
+        $('#productModal .carousel-control span').addClass('active');
+      }, function(){
+        $('#productModal .carousel-control span').removeClass('active');
+      });
+    }
+    $('#productModal .imagebar').click(function(){
+      var index = $(this).index();
+      $('#productModal-carousel').carousel(index);
+    });
+  }
+
+  var imageWidth, sizeCards;
+  setModal = function(productId, fullWidth) {
+    var features;
+    $('#productModal-title').trigger('destroy.dot');
+    $('#productModal-description').trigger('destroy.dot');
+    $('#productModal-features').trigger('destroy.dot');
+    $('#productModal-id').text(productId);
+    $('#productModal-title').text(Products[productId].title);
+    $('#productModal-subtitle').text(Products[productId].displayBrand||'');
+    $('#productModal-price').text(pricePretty(Products[productId].price));
+    $('#productModal-price').attr('href', Products[productId].amazonURL);
+    $('#productModal-buy').attr('href', Products[productId].amazonURL||Products[productId].bizrateURL);
+    $('#productModal-arrow').attr('href', Products[productId].amazonURL);
+    //$('#productModal-img').attr('src', Products[productId].images[0].url);
+    // image carousel
+    var images = '<div id="productModal-carousel" class="carousel slide" data-ride="carousel" data-interval="">';
+    images += '<div class="carousel-inner">';
+    // record the main image and filter duplicates
+    var mainImageUrl = Products[productId].images[0].url;
+    var marginString = '';
+    var height, margin;
+    var maxWidth = ($('.modal-lg').width()||$('.main').width())*.42;
+    if(window.matchMedia('(max-width: 991px)').matches){
+      maxWidth = ($('.modal-lg').width()||$('.main').width())*.84;
+    }
+    for(var i in Products[productId].images){
+      images += '<div class="item'+(i==0?' active':'')+'">';
+      if(Products[productId].images[i].height){
+        marginString = '';
+        height = parseInt(Products[productId].images[i].height);
+        var width = parseInt(Products[productId].images[i].width);
+        if(width > maxWidth)
+          height *= maxWidth/width;
+        if(window.matchMedia('(max-width: 767px)').matches){
+          if(height < 280){
+            margin = (280-height)/2;
+            marginString = ' style="margin-top:'+margin+'px"';
+          }
+        }else{
+          if(height < 480){
+            margin = (480-height)/2;
+            marginString = ' style="margin-top:'+margin+'px"';
+          }
+        }
+      }
+      images += '<img src="'+Products[productId].images[i].url+'" alt="'+Products[productId].title+'"'+marginString+'>';
+      images += '</div>';
+    }
+    images += '</div>';
+    if(Products[productId].images.length > 1){
+      images += '<a class="left carousel-control" href="#productModal-carousel" data-slide="prev">';
+      images += '<span class="glyphicon glyphicon-chevron-left"></span>';
+      images += '</a>';
+      images += '<a class="right carousel-control" href="#productModal-carousel" data-slide="next">';
+      images += '<span class="glyphicon glyphicon-chevron-right"></span>';
+      images += '</a>';
+    }
+    images += '</div>';
+    $('#productModal-images').html(images);
+    // image bars
+    var imagebars = '';
+    for(var i = 0; i < Products[productId].images.length; i++){
+      imagebars += '<div class="imagebar"></div>';
+    }
+    $('#productModal-imagebars').html(imagebars);
+    setActiveModalImage();
+    $('#productModal-carousel').on('slide.bs.carousel', function(e){
+      setActiveModalImage(e);
+    });
+    $('#productModal-images img').click(function(){
+      $('#productModal .modal-body').addClass('out');
+      setTimeout(function(){
+        showImageDetail();
+        $('#productModal .modal-body').removeClass('out');
+      }, 600);
+    });
+    if(window.matchMedia('(min-width: 992px)').matches){
+      $('#productModal .carousel-control span').addClass('hoveronly');
+      $('#productModal-images').off('mouseenter');
+      $('#productModal-images').off('mouseleave');
+      $('#productModal-images').hover(function(){
+        $('#productModal .carousel-control span').addClass('active');
+      }, function(){
+        $('#productModal .carousel-control span').removeClass('active');
+      });
+    }
+    $('#productModal .imagebar').click(function(){
+      var index = $(this).index();
+      $('#productModal-carousel').carousel(index);
+    });
+    var fbC = 0;
+    var pnC = 0;
+    var twC = 0;
+    var counts = Products[productId].socialCounts;
+    $('#productModal-facebookCount').parent('li').hide();
+    $('#productModal-twitterCount').parent('li').hide();
+    $('#productModal-pinterestCount').parent('li').hide();
+    $('#productModal-amazonCount').parent('li').hide();
+    $('#productModal-facebookProgress').parent('li').hide();
+    $('#productModal-twitterProgress').parent('li').hide();
+    $('#productModal-pinterestProgress').parent('li').hide();
+    $('#productModal-amazonProgress').parent('li').hide();
+    $('#productModal-totalReviews').hide();
+    if(counts){
+      for(var c in counts){
+        if(counts[c].Facebook && counts[c].Facebook.total_count)
+          fbC += counts[c].Facebook.total_count;
+        if(counts[c].Twitter)
+          twC += counts[c].Twitter;
+        if(counts[c].Pinterest)
+          pnC += counts[c].Pinterest;
+      }
+      // display the top two
+      var v1 = 'facebook';
+      var v2 = 'twitter';
+      if(pnC > twC)
+        v2 = 'pinterest';
+      if(twC > fbC && v2 != 'twitter')
+        v1 = 'twitter';
+      else if(pnC > fbC && v2 != 'pinterest')
+        v1 = 'pinterest';
+      $('#productModal-facebookCount').text(fbC+' shares');
+      $('#productModal-twitterCount').text(twC+' tweets');
+      $('#productModal-pinterestCount').text(pnC+' pins');
+      var fbW = Math.round(Math.log2(fbC||1))/20*100;
+      if(fbW>100) fbW = 100;
+      $('#productModal-facebookProgress .progress-bar').css('width', fbW+'%');
+      var twW = Math.round(Math.log2(twC||1))/20*100;
+      if(twW>100) twW = 100;
+      $('#productModal-twitterProgress .progress-bar').css('width', twW+'%');
+      var pnW = Math.round(Math.log2(pnC||1))/20*100;
+      if(pnW>100) pnW = 100;
+      $('#productModal-pinterestProgress .progress-bar').css('width', pnW+'%');
+      if(v1 == 'facebook' || v2 == 'facebook'){
+        $('#productModal-facebookCount').parent('li').show();
+        $('#productModal-facebookProgress').parent('li').show();
+      }
+      if(v1 == 'twitter' || v2 == 'twitter'){
+        $('#productModal-twitterCount').parent('li').show();
+        $('#productModal-twitterProgress').parent('li').show();
+      }
+      if(v1 == 'pinterest' || v2 == 'pinterest'){
+        $('#productModal-pinterestCount').parent('li').show();
+        $('#productModal-pinterestProgress').parent('li').show();
+      }
+      if(Products[productId].amazonScore){
+        $('#productModal-amazonCount').parent('li').show();
+        $('#productModal-amazonCount').text(Products[productId].amazonScore+' stars');
+        var amW = Products[productId].amazonScore/5*100;
+        $('#productModal-amazonProgress .progress-bar').css('width', amW+'%');
+        $('#productModal-amazonProgress').parent('li').show();
+      }else{
+        // show the third social score
+        $('#productModal-facebookCount').parent('li').show();
+        $('#productModal-twitterCount').parent('li').show();
+        $('#productModal-pinterestCount').parent('li').show();
+        $('#productModal-facebookProgress').parent('li').show();
+        $('#productModal-twitterProgress').parent('li').show();
+        $('#productModal-pinterestProgress').parent('li').show();
+      }
+      $('#productModal-totalReviews').text((fbC+twC+pnC+1)+((!fbC&&!twC&&!pnC)?' Opinion':' Opinions'));
+      //if(fbC+twC+pnC+1 < 5)
+        //$('#productModal-totalReviews').text('A score will be generated once we receive more opinions');
+      $('#productModal-totalReviews').show();
+    }else if(Products[productId].amazonScore){
+      $('#productModal-amazonCount').parent('li').show();
+      $('#productModal-amazonCount').text(Products[productId].amazonScore+' stars');
+      var amW = Products[productId].amazonScore/5*100;
+      $('#productModal-amazonProgress .progress-bar').css('width', amW+'%');
+      $('#productModal-amazonProgress').parent('li').show();
+    }
+    $('#productModal-descriptionContainer').hide();
+    $('#productModal-featuresContainer').hide();
+    features = '(none)';
+    if (Products[productId].amazonFeatures) {
+      $('#productModal-featuresContainer').show();
+      features = Products[productId].amazonFeatures.map(function(n) {
+        return '<li><span>' + n + '</span></li>';
+      });
+    }
+    $('#productModal-features').html(features);
+    if (Products[productId].description) {
+      $('#productModal-descriptionContainer').show();
+      $('#productModal-description').html(Products[productId].description);
+    }
+    $('div#productModal-descriptionContainer *[style]').removeAttr('style');
+    if (Products[productId].description && Products[productId].amazonFeatures) {
+      $('#productModal-divider').show();
+    } else {
+      $('#productModal-divider').hide();
+    }
+    $('#productModal-score').hide();
+    $('#productModal-similarHeader').hide();
+    $('#productModal-similar').hide();
+
+    (function() {
+      var id;
+      var thresh = ((fbC+twC+pnC+1)>=5);
+      id = productId;
+      if(Products[id].score){
+        setScore(Products[id].score, thresh);
+      }
+
+      $.ajax({
+        url: API_URL+'product/' + id + '/score',
+        success: function(data) {
+          if (data.id === id && data.score){
+            setScore(data.score, thresh);
+          }
+        }
+      });
+      /*if(Products[id].similar && Products[id].similar.length){
+        $.ajax({
+          url: 'http://api.shopperr.com/products?keys=' + Products[id].amazonSimilarProducts.join(','),
+          success: function(data) {
+            //console.log(data);
+          }
+        });
+      }*/
+      $('#productModal-title').dotdotdot({
+        watch: false,
+        height: 125
+      });
+      $('#productModal-description').dotdotdot({
+        watch: false,
+        height: 236,
+        ellipsis: ''
+      });
+      $('#productModal-features').dotdotdot({
+        watch: false,
+        height: 236,
+        wrap: 'children'
+      });
+      setTimeout(function(){
+        updateMores();
+      }, 300);
+    })();
+  };
+
+  function updateMores(){
+    $('#productModal-title').trigger('update.dot');
+    $('#productModal-description').trigger('update.dot');
+    $('#productModal-description').trigger('isTruncated.dot', function(isTruncated){
+      if(isTruncated){
+        $('#productModal-description').append('<a class="readmore">More <span class="ion-arrow-down-b"></span></a>');
+        $('#productModal-description').find('a.readmore').click(function(){
+          $('#productModal-description').trigger('destroy.dot');
+        });
+      }
+    });
+    $('#productModal-features').trigger('update.dot');
+    $('#productModal-features').trigger('isTruncated.dot', function(isTruncated){
+      if(isTruncated){
+        $('#productModal-features').append('<a class="readmore">More <span class="ion-arrow-down-b"></span></a>');
+        $('#productModal-features').find('a.readmore').click(function(){
+          $('#productModal-features').trigger('destroy.dot');
+        });
+      }
+    });
+  }
+
+  function setScore(score, thresh){
+    var s = Math.round(score);
+    if(s >= 80){
+      $('#productModal-scoreradialcontent').attr('data-name', 'Great!');
+      $('#productModal-scoreDescription').text('This product is very highly rated and shared. You can buy this item with a high degree of confidence.');
+      $('#productModal-scoreradialstop1').attr('stop-color', '#8bc34b');
+      $('#productModal-scoreradialstop2').attr('stop-color', '#8bc34b');
+      $('#productModal-scoreradialcontent').removeClass('score-good');
+      $('#productModal-scoreradialcontent').removeClass('score-poor');
+      $('#productModal-scoreradialcontent').addClass('score-great');
+    }else if(s >= 60){
+      $('#productModal-scoreradialcontent').attr('data-name', 'Good');
+      $('#productModal-scoreDescription').text('This product has positive ratings and has been shared by many consumers, making it a good candidate for purchase.');
+      $('#productModal-scoreradialstop1').attr('stop-color', '#f7bc31');
+      $('#productModal-scoreradialstop2').attr('stop-color', '#f7bc31');
+      $('#productModal-scoreradialcontent').removeClass('score-great');
+      $('#productModal-scoreradialcontent').removeClass('score-poor');
+      $('#productModal-scoreradialcontent').addClass('score-good');
+    }else{
+      $('#productModal-scoreradialcontent').attr('data-name', 'Poor');
+      $('#productModal-scoreDescription').text('This product has not received many positive ratings and is not highly shared. We are unable to recommend this item for purchase.');
+      $('#productModal-scoreradialstop1').attr('stop-color', '#ec5638');
+      $('#productModal-scoreradialstop2').attr('stop-color', '#ec5638');
+      $('#productModal-scoreradialcontent').removeClass('score-great');
+      $('#productModal-scoreradialcontent').removeClass('score-good');
+      $('#productModal-scoreradialcontent').addClass('score-poor');
+    }
+    $('#productModal-scoreradialcontent').attr('data-percent', Math.round(score));
+    $('#productModal-scoreradialpath').attr('stroke-dashoffset', Math.round(score/100*629));
+    //$('#productModal-scoretext').text(Math.round(Products[productId].score));
+    if(!thresh){
+      $('.scorebanner').hide();
+      $('#productModal-scoreDetail').hide();
+      $('#productModal-scoreradialcontent').addClass('nothreshold');
+      $('#productModal-scoreradialcontent').attr('data-name', 'Not Enough Opinions');
+      $('#productModal-scoreDescription').text('A Shopperr Score will be calculated when this item receives more customer ratings, reviews and shares.');
+      $('#productModal-scoreradialcontent').attr('data-percent', '');
+      $('#productModal-scoreradialpath').attr('stroke-dashoffset', 0);
+    }else{
+      $('.scorebanner').show();
+      $('#productModal-scoreDetail').show();
+      $('#productModal-scoreradialcontent').removeClass('nothreshold');
+    }
+    if(!imageDetailMode)
+      return $('#productModal-score').fadeIn();
+    else
+      return;
+  }
+
+  var CategoryMetas = {};
+
+  var ActiveModalImage = 0;
+  var imageSizingLock = false;
+  imageWidth = 250 + 2 * 14 + 14;
+  sizeCards = function(width, height) {
+    if(!imageSizingLock)
+      imageSizingLock = true;
+    else
+      return setTimeout(function(){
+        sizeCards(width, height);
+      }, 100);
+    var card, cards, columnHeights, currentColumn, j, k, lastColumnHeights, margin, max, neededHeight, num, numColumns, ref, ref1;
+    width = width - 20;
+    $('.products').width(width);
+    numColumns = Math.floor(width / imageWidth);
+    margin = width % imageWidth;
+    lastColumnHeights = (function() {
+      var j, ref, results;
+      results = [];
+      for (j = 1, ref = numColumns; 1 <= ref ? j <= ref : j >= ref; 1 <= ref ? j++ : j--) {
+        results.push(0);
+      }
+      return results;
+    })();
+    cards = $('.products>ul>li');
+    neededHeight = 0;
+    columnHeights = (function() {
+      var j, ref, results;
+      results = [];
+      for (j = 1, ref = numColumns; 1 <= ref ? j <= ref : j >= ref; 1 <= ref ? j++ : j--) {
+        results.push(0);
+      }
+      return results;
+    })();
+    function shortestColumn(){
+      var shortestVal = 1000000;
+      var shortestI = 0;
+      for(var i = 0; i < columnHeights.length; i++){
+        if(columnHeights[i] < shortestVal){
+          shortestVal = columnHeights[i];
+          shortestI = i;
+        }
+      }
+      return shortestI;
+    }
+    var cardData;
+    for (num = j = 0, ref = cards.length - 1; 0 <= ref ? j <= ref : j >= ref; num = 0 <= ref ? ++j : --j) {
+      card = $(cards[num]);
+      /// this split is sometimes running on undefined
+      if(!card || card.find('.card').length == 0 || !card.find('.card').attr('id'))
+        continue;
+      cardData = Products[card.find('.card').attr('id').split('-')[1]];
+      var cardWidth = 262;
+      var height = cardData.images[0].height;
+      var width = cardData.images[0].width;
+      // use naturalHeight/Width if available
+      if(card.find('img')[0].naturalHeight)
+        height = card.find('img')[0].naturalHeight;
+      if(card.find('img')[0].naturalWidth)
+        width = card.find('img')[0].naturalWidth;
+      // set the image width to the min of the cardWidth or the image width
+      var scaledWidth = Math.min(width,cardWidth);
+      // set the height proportionally
+      var scaledHeight = height*scaledWidth/width;
+      if(scaledHeight > 600){
+        scaledWidth = scaledWidth*600/scaledHeight;
+        scaledHeight = 600;
+      }
+      var cardHeight = card.find('.card').height()+17.5*2+1;
+      cardHeight = Math.max(scaledHeight,100)+cardHeight;
+      currentColumn = shortestColumn() % numColumns;
+      columnHeights[currentColumn] += cardHeight + 2 * 7 + 2 * 7;
+      card.css('left', '' + (margin / 2 + currentColumn * imageWidth) + 'px');
+      card.css('top', '' + lastColumnHeights[currentColumn] + 'px');
+      card.find('.imagehover').height(scaledHeight);
+      card.find('img').height(scaledHeight+2);
+      card.find('img').width(scaledWidth+4)
+      // if the image is too short, add a top margin
+      if(scaledHeight < 100)
+        card.find('img').css('margin-top', 50-((scaledHeight+2)/2));
+      if(scaledWidth < cardWidth)
+        card.find('img').css('margin-left', (cardWidth+2)/2-((scaledWidth+4)/2));
+      lastColumnHeights[currentColumn] += cardHeight + 2 * 7 + 2 * 7;
+    }
+    max = 0;
+    for (num = k = 0, ref1 = columnHeights.length - 1; 0 <= ref1 ? k <= ref1 : k >= ref1; num = 0 <= ref1 ? ++k : --k) {
+      if (columnHeights[num] > max) {
+        max = columnHeights[num];
+      }
+    }
+    neededHeight += max;
+    if ($('.products').children().length > 1) {
+      neededHeight += 7 * 6;
+    }
+    imageSizingLock = false;
+    return $('.products').height(neededHeight);
+  };
+
+  function pricePretty(price){
+    if(price){
+      var cents = price%100;
+      cents = ''+cents;
+      if(cents.length == 1)
+        cents = '0'+cents;
+      var dollars = Math.floor(price/100);
+      dollars = ''+dollars;
+      // always round
+      price = Math.round(price/100);
+      price = '$'+price;
+      //price = '$'+dollars+'.'+cents;
+    }
+    if(price && price.length > 2){
+      if(price[price.length-1] == '0' && price[price.length-2] == '0' && price[price.length-3] == '.')
+        return price.substring(0, price.length-3);
+    }
+    return price;
+  }
+
+  var lastProduct;
+  var animateProductModal = function(that){
+    lastProduct = that;
+    $('#productModal-cover').css('opacity', 0);
+    var n = $(that).parents('.product-card');
+    $('#productModal-cover').height(n.height());
+    $('#productModal-cover').width(n.width());
+    var o = n.offset();
+    $('#productModal-cover').css({top:o.top+'px', left:o.left+'px'});
+  }
+
+  $('#productModal').on('hide.bs.modal', function(){
+    $('#productModal-cover').css('display', 'block');
+    $('#productModal-cover').css('opacity', 1);
+    $('#productModal-cover').animate({
+      opacity: 1
+    }, 200, function(){
+      var s = $(lastProduct).parents('.product-card');
+      var o = s.offset();
+      $('#productModal-cover').animate({
+        top: o.top,
+        left: o.left,
+        height: s.height(),
+        width: s.width()
+      }, 250, function(){
+        $('#productModal-cover').animate({
+          opacity: 0
+        }, 400, function(){
+          $('#productModal-cover').css('display', 'none');
+        });
+      });
+    });
+  });
+
+  $('#productModal').on('show.bs.modal', function(){
+    $('#productModal .modal-content').height($(window).height()-65);
+    $('#productModal .modal-body').css('transform', 'translateY(0px)');
+    if($(document).width() >= 992){
+      $('#productModal .imagerow').css('transform', 'translateY('+(0)+'px)');
+      $('#productModal .imagebars').css('transform', 'translateY('+(0)+'px)');
+    }
+    hideScoreDetail();
+    hideImageDetail();
+    gy = 0;
+    $('#productModal .modal-content').css('opacity', 0);
+    $('#productModal-cover').css('display', 'block');
+    $('#productModal-cover').animate({
+      opacity: 1
+    }, 250, function(){
+    });
+    //- var i = setInterval(function(){
+    //-   if($('#productModal .modal-content').height() > 0){
+    //-     clearInterval(i);
+    //-     cb();
+    //-   }
+    //- }, 50);
+    setTimeout(function(){
+      cb();
+    }, 300)
+    function cb(){
+      //$('#productModal-cover').height($('#productModal .modal-content').height());
+      var s = $('#productModal .modal-lg');
+      var o = s.offset();
+      $('#productModal-cover').animate({
+        top: o.top,
+        left: o.left,
+        height: s.height(),
+        width: s.width()
+      }, 300, function(){
+        $('#productModal .modal-content').css('opacity', 1);
+        $('#productModal-cover').animate({
+          opacity: 0
+        }, 300, function(){
+          $('#productModal-cover').css('display', 'none');
+        });
+      });
+      $('#productModal .modal-body').css('min-height', $('#productModal .modal-content').height());
+    }
+  });
+
+  $('#productModal .modal-body').bind('mousewheel', function(e){
+    manualScroll(gy+e.deltaY*e.deltaFactor);
+  });
+  //$('#productModal .modal-body').bind('touchstart', startTouch);
+  //$('#productModal .modal-body').bind('touchmove', handleTouch);
+  //- var lastY;
+  //- function startTouch(e){
+  //-   e.preventDefault();
+  //-   e.stopPropagation();
+  //-   lastY = e.originalEvent.touches[0].screenY;
+  //- }
+  //- function handleTouch(e){
+  //-   e.preventDefault();
+  //-   e.stopPropagation();
+  //-   var touch = e.originalEvent.touches[0];
+  //-   manualScroll(lastY-e.originalEvent.touches[0].screenY);
+  //-   lastY = e.originalEvent.touches[0].screenY;
+  //- }
+  var gy = 0;
+  function manualScroll(dy){
+    if(dy>0){
+      $('#productModal .modal-body').css('transform', 'translateY('+(0)+'px)');
+      if($(document).width() >= 992){
+        $('#productModal .imagerow').css('transform', 'translateY('+(0)+'px)');
+        $('#productModal .imagebars').css('transform', 'translateY('+(0)+'px)');
+      }
+      gy=0;
+      offset=-gy;
+      return;
+    }
+    if(Math.abs(dy)>$('#productModal .modal-body').height()-$('#productModal .modal-content').height()+30){
+      $('#productModal .modal-body').css('transform', 'translateY('+((-1*$('#productModal .modal-body').height()+$('#productModal .modal-content').height())-30)+'px)');
+      if($(document).width() >= 992){
+        $('#productModal .imagerow').css('transform', 'translateY('+(-1*((-1*$('#productModal .modal-body').height()+$('#productModal .modal-content').height())-30))+'px)');
+        $('#productModal .imagebars').css('transform', 'translateY('+(-1*((-1*$('#productModal .modal-body').height()+$('#productModal .modal-content').height())-30))+'px)');
+      }
+      gy=(-1*$('#productModal .modal-body').height()+$('#productModal .modal-content').height())-30;
+      offset=-gy;
+      return;
+    }
+    $('#productModal .modal-body').css('transform', 'translateY('+(dy)+'px)');
+    if($(document).width() >= 992){
+      $('#productModal .imagerow').css('transform', 'translateY('+(-dy)+'px)');
+      $('#productModal .imagebars').css('transform', 'translateY('+(-dy)+'px)');
+    }
+    gy = dy;
+    offset=-gy;
+  }
+
+  var wireCards = function(){
+    $('.cube').hide();
+    $('.products .product-card .imagehover').each(function() {
+      $(this).off('click');
+      $(this).click(function() {
+        setModal($(this).parent().find('.card').attr('id').split('-')[1]);
+        $('#productModal').modal('show');
+        return animateProductModal(this);
+      });
+    });
+    $('.products .product-card .titlelink').each(function() {
+      $(this).off('click');
+      $(this).click(function() {
+        setModal($(this).parent().attr('id').split('-')[1]);
+        $('#productModal').modal('show');
+        return animateProductModal(this);
+      });
+    });
+    $('.products .product-card').each(function(){
+      $(this).animate({
+        'opacity': 1
+      }, 600);
+    });
+  }
+  function escapeRegExp(str) {
+    return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+  }
+  var seed = 1;
+  function randomSeeded(){
+    var x = Math.sin(seed++)*10000;
+    return x-Math.floor(x);
+  }
+  var nonStarters = ['but', 'nor', '/', 'are', 'is', '-', 'but', 'by', 'as', 'at', 'for', 'from', 'to', 'this', 'in', 'on', 'a', 'the', 'and', 'of', 'onto', 'upon', 'with'];
+  function expandedMetaFromText(text, regex, limit, id){
+    if(!regex || !text) return [];
+    if(ProductSearch)
+      regex = regex+'|'+ProductSearch;
+    text = text.replace(/<(?:.|\n)*?>/gm, '');
+    // match cat.regex
+    var terms = [];
+    var k = 0;
+    var reg = new RegExp(regex, 'gi');
+    var matched = [];
+    while(k < limit){
+      var t = reg.exec(text);
+      if(!t || !t.length) break;
+      if(matched.indexOf(t[0].toLowerCase())>=0)
+        continue;
+      k++;
+      // go from this index forward and backward, capturing surrounding words. stop at breaking punctuation
+      var t1 = t.index;
+      var t2 = t.index+t[0].length-1;
+      var words = 0;
+      var whitespaceLast = false;
+      while(true){
+        if(t1==0) break;
+        t1--;
+        if(text[t1].match(/\s/)){
+          // whitespace
+          var word = text.substring(t1+1, text.indexOf(' ', t1+2));
+          word = word.toLowerCase();
+          if(nonStarters.indexOf(word)>=0){
+            t1 = text.indexOf(' ', t1+2);
+            break;
+          }
+          if(words>2){
+            t1++;
+            break;
+          }
+          whitespaceLast = true;
+        }
+        if(text[t1].match(/\S/)){
+          // non whitespace
+          if(text[t1].match(/[.,!;:]/)){
+            // punctuation. break
+            t1++;
+            break;
+          }
+          if(whitespaceLast)
+            words++;
+          whitespaceLast = false;
+        }
+      }
+      words = 0;
+      whitespaceLast = false;
+      var wordStart = t2;
+      while(true){
+        if(t2>=text.length-1) break;
+        t2++;
+        if(text[t2].match(/\s/)){
+          // whitespace
+          var word = text.substring(wordStart, t2);
+          word = word.toLowerCase();
+          if(nonStarters.indexOf(word)>=0){
+            t2 = wordStart-1;
+            break;
+          }
+          if(words>2){
+            t2--;
+            break;
+          }
+          whitespaceLast = true;
+        }
+        if(text[t2].match(/\S/)){
+          // non whitespace
+          if(text[t2].match(/[.,!;:]/)){
+            // punctuation. break
+            t2--;
+            break;
+          }
+          if(whitespaceLast){
+            words++;
+            wordStart = t2;
+          }
+          whitespaceLast = false;
+        }
+      }
+      var string = text.substring(t1, t2+1);
+      string = string.replace(/"/gm, '');
+      string = string.trim();
+      text = text.substring(t.index+string.length);
+      t = t[0];
+      matched.push(t.toLowerCase());
+      terms.push(string.toLowerCase());
+      //t = t[0];
+      //terms[t.toLowerCase()] = t.toLowerCase();
+    }
+    // shuffle terms with id as seed
+    var sd = 0;
+    for(var i=0; i<id.length; i++)
+      sd+=id.charCodeAt(i);
+      seed = sd;
+    for(var i=0; i<terms.length; i++){
+      var s = terms.splice(Math.floor(randomSeeded()*terms.length), 1);
+      terms.push(s);
+    }
+    /*var rTerms = [];
+    for(var t in terms)
+      rTerms.push(terms[t]);*/
+    return terms;
+  }
+  function updateCardsWithMeta(data){
+    for(var i in data){
+      var d = data[i];
+      var card = $('#card-'+d.objectId);
+      var cat = d.amazonRootBrowseNodeName;
+      cat = CategoryMetas[cat];
+      if(card && cat){
+        if(!cat.regex){
+          var terms = cat.allFeatureKeys.map(function(n){
+            return escapeRegExp(n);
+          });
+          cat.regex = terms.join('|');
+        }
+        var text = (d.description||'')+' '+(d.amazonFeatures||'');
+        var rTerms = expandedMetaFromText(text, cat.regex, 5, ProductSearch||'asdf');
+        data[i].metaTerms = rTerms;
+        card.find('.miniDescription').text(rTerms.join(', '));
+        card.find('.miniDescription').show();
+      }
+    }
+    sizeCards(window.innerWidth, window.innerHeight); 
+  }
+  var renderCardsWithData = function(data, append){
+    if(data && !append){
+      if(data.length && data[0].amazonRootBrowseNodeName){
+        $('#searchCategoryBackText').text(data[0].amazonRootBrowseNodeName);
+        $('#searchCategoryBack').attr('href', '/browse/'+encodeURIComponent(data[0].amazonRootBrowseNodeName));
+      }
+    }
+    // start fetching the category meta
+    var categories = {};
+    for(var i in data){
+      if(data[i].amazonRootBrowseNodeName && !CategoryMetas[data[i].amazonRootBrowseNodeName])
+        categories[encodeURIComponent(data[i].amazonRootBrowseNodeName)] = true;
+    }
+    categories = Object.keys(categories);
+    if(categories.length){
+      for(var i in categories){
+        categories[i] = 'categories='+categories[i];
+      }
+      var params = {
+        url: API_URL+'categoryMeta?'+categories.join('&')
+      }
+      ajaxSturdy(params, 5000, 0, function(err, data2){
+        if(!err){
+          for(var i in data2){
+            CategoryMetas[data2[i].name] = data2[i];
+          }
+          //renderCardsWithData(data, append);
+          updateCardsWithMeta(data);
+        }else{
+        }
+      });
+    }else{
+      updateCardsWithMeta(data);
+    }
+    var node;
+    var template = $($('.views .product-card')[0]);
+    var root = $('.products>ul');
+    if(!append){
+      root.html('');
+    }
+    if(!data.length){
+      $('.cube').hide();
+      return;
+    }
+    var num = data.length;
+    // fill in the html templates and bind to sizeCards after everything is loaded
+    for(var i in data){
+      if(!data[i].images.length){
+        num--;
+        continue;
+      }
+      Products[data[i].objectId] = data[i];
+      node = template.clone();
+      node.find('img').bind('load', function(){
+        num--;
+        if(num == 0){
+          setTimeout(function(){
+            updateCardsWithMeta(data);
+          }, 100);
+        }
+      });
+      node.find('img').attr('src', data[i].images[0].url);
+      node.find('.card').attr('id', 'card-'+data[i].objectId);
+      node.find('.id').text(data[i].objectId);
+      node.find('.price').text(pricePretty(data[i].price));
+      node.find('.title').html(truncate(data[i].title, 36));
+      node.find('.manufacturer').html(data[i].displayBrand);
+      node.find('.scoreradial-small svg:first-child path').attr('stroke', 'url(#cl2-'+data[i].objectId+')');
+      node.find('.cardscore linearGradient').attr('id', 'cl2-'+data[i].objectId);
+      var thresh = false;
+      if(data[i].socialCounts){
+        var counts = data[i].socialCounts;
+        var fbC=0, twC=0, pnC=0;
+        for(var c in counts){
+          if(counts[c].Facebook && counts[c].Facebook.total_count)
+            fbC += counts[c].Facebook.total_count;
+          if(counts[c].Twitter)
+            twC += counts[c].Twitter;
+          if(counts[c].Pinterest)
+            pnC += counts[c].Pinterest;
+        }
+        if(fbC+twC+pnC+1 < 5)
+          thresh = false;
+        else
+          thresh = true;
+      }
+      if(thresh){
+        var score = data[i].score;
+        var s = Math.round(score);
+        if(s >= 80){
+          node.find('.scoreradialstop1-small').attr('stop-color', '#8bc34b');
+          node.find('.scoreradialstop2-small').attr('stop-color', '#8bc34b');
+          node.find('.scoreradialcontent-small').removeClass('score-good');
+          node.find('.scoreradialcontent-small').removeClass('score-poor');
+          node.find('.scoreradialcontent-small').addClass('score-great');
+        }else if(s >= 60){
+          node.find('.scoreradialstop1-small').attr('stop-color', '#f7bc31');
+          node.find('.scoreradialstop2-small').attr('stop-color', '#f7bc31');
+          node.find('.scoreradialcontent-small').removeClass('score-great');
+          node.find('.scoreradialcontent-small').removeClass('score-poor');
+          node.find('.scoreradialcontent-small').addClass('score-good');
+        }else{
+          node.find('.scoreradialstop1-small').attr('stop-color', '#ec5638');
+          node.find('.scoreradialstop2-small').attr('stop-color', '#ec5638');
+          node.find('.scoreradialcontent-small').removeClass('score-great');
+          node.find('.scoreradialcontent-small').removeClass('score-good');
+          node.find('.scoreradialcontent-small').addClass('score-poor');
+        }
+        node.find('.scoreradialcontent-small').attr('data-percent', Math.round(score));
+        node.find('.scoreradialpath-small').attr('stroke-dashoffset', Math.round(score/100*629));
+        node.find('.scoreradialcontent-small').removeClass('nothreshold');
+      }else{
+        node.find('.scoreradialcontent-small').attr('data-percent', 'NS');
+        node.find('.scoreradialpath-small').attr('stroke-dashoffset', 0);
+        node.find('.scoreradialcontent-small').addClass('nothreshold');
+      }
+      var miniDescription = '';
+      var overLengthIndex = -1;
+      var desLength = 0;
+      var features = [];
+      var metaFeatures = [];
+      if(data[i].features){
+        // fetch from the features
+        for(var j in data[i].amazonFeatures){
+          var feature = data[i].amazonFeatures[j];
+          if(feature[feature.length-1] == '.' || feature[feature.length-1] == ',')
+              feature = feature.substring(0, feature.length-1);
+          if(feature.length > 26 && feature.length <= 100)
+            overLengthIndex == j;
+          if(feature.length >= 4 && feature.length <= 26){
+            //miniDescription += feature;
+            features.push(feature);
+            desLength += feature.length;
+            if(desLength > 100)
+              break;
+          }
+        }
+        // fetch from the description
+        if(data[i].description){
+          /*metaFeatures = data[i].description.split(/\.|•|◦|‣|\n|<br>|<br\/>/gi);
+          // trim and filter for minimum length
+          metaFeatures = metaFeatures.map(function(n){return n.trim();})
+          var long = metaFeatures.filter(function(n){return n.length>26;});
+          var short = metaFeatures.filter(function(n){return n.length>=4&&n.length<=26;});
+          metaFeatures = short;*/
+        }
+        if(desLength){
+          features.sort(function(a,b){
+            return (a[a.length-1]>b[b.length-1]);
+          });
+          miniDescription = features.join(', ');
+        }
+        if(!desLength && overLengthIndex > -1)
+          miniDescription = data[i].features[overLengthIndex].trim();
+      }
+      if(miniDescription)
+        node.find('.miniDescription').text(miniDescription);
+      else
+        if(!data[i].metaTerms)
+          node.find('.miniDescription').hide();
+
+      root.append(node);
+    }
+
+    updateCardsWithMeta(data);
+    wireCards();
+  }
+
+  $('#productModal').on('show.bs.modal', function(){
+    if(window.dataLayer){
+      dataLayer.push({
+        'event': 'VirtualPageview',
+        'virtualPageURL': '/product/'+$('#productModal-id').text(),
+        'virtualPageTitle': $('#productModal-title').text()
+      });
+    }
+  });
+  $('#productModal').on('hide.bs.modal', function(){
+    if(window.dataLayer){
+      dataLayer.push({
+        'event': 'VirtualPageview',
+        'virtualPageURL': location.pathname,
+        'virtualPageTitle': 'Top Rated Products on Shopperr'
+      });
+    }
+  });
+
+  function ajaxSturdy(params, timeout, times, callback){
+    params.timeout = timeout;
+    $.ajax(params).done(function(data){
+      if(data)
+        return callback(null, data);
+    }).fail(function(jqXHR, textStatus){
+      timeout*=2;
+      if(timeout>30000)
+        timeout=30000;
+      if(times){
+        times--;
+        // wait a little extra if server is querying amazon
+        if(jqXHR.status == 200){
+          setTimeout(function(){
+            ajaxSturdy(params, timeout, times, callback);
+          }, timeout/4);
+        }else
+          ajaxSturdy(params, timeout, times, callback);
+      }else{
+        return callback(jqXHR);
+      }
+    });
+  }
+
+  $('#productModal').scroll(function(){
+    if($(document).width() < 992) return;
+    var max = $('#productModal .modal-body').height()-parseInt($('#productModal .modal-body').css('padding-bottom'));
+    if($(this).scrollTop()+543 < max){
+      $('#productModal .imagerow').css('top', $(this).scrollTop()+0);
+      $('#productModal .imagebars').css('top', $(this).scrollTop()+543);
+    }else{
+      $('#productModal .imagerow').css('top', max-543);
+      $('#productModal .imagebars').css('top', max);
+    }
+  });
+
+  var offset;
+  (function(){
+    var view, indicator, relative,
+        min, max, reference, pressed, xform,
+        velocity, frame, timestamp, ticker,
+        amplitude, target, timeConstant;
+
+    function ypos(e) {
+        // touch event
+        if (e.targetTouches && (e.targetTouches.length >= 1)) {
+            return e.targetTouches[0].clientY;
+        }
+
+        // mouse event
+        return e.clientY;
+    }
+
+    function scroll(y) {
+        //offset = (y > max) ? max : (y < min) ? min : y;
+        //view.style[xform] = 'translateY(' + (-offset) + 'px)';
+        manualScroll(-y);
+        //indicator.style[xform] = 'translateY(' + (offset * relative) + 'px)';
+    }
+
+    function track() {
+        var now, elapsed, delta, v;
+
+        now = Date.now();
+        elapsed = now - timestamp;
+        timestamp = now;
+        delta = offset - frame;
+        frame = offset;
+
+        v = 1000 * delta / (1 + elapsed);
+        velocity = 0.8 * v + 0.2 * velocity;
+    }
+
+    function autoScroll() {
+        var elapsed, delta;
+
+        if (amplitude) {
+            elapsed = Date.now() - timestamp;
+            delta = -amplitude * Math.exp(-elapsed / timeConstant);
+            if (delta > 0.5 || delta < -0.5) {
+                scroll(target + delta);
+                requestAnimationFrame(autoScroll);
+            } else {
+                scroll(target);
+            }
+        }
+    }
+
+    function tap(e) {
+        pressed = true;
+        reference = ypos(e);
+
+        velocity = amplitude = 0;
+        frame = offset;
+        timestamp = Date.now();
+        clearInterval(ticker);
+        ticker = setInterval(track, 100);
+
+        //e.preventDefault();
+        //e.stopPropagation();
+        //return false;
+    }
+
+    function drag(e) {
+        var y, delta;
+        if (pressed) {
+            y = ypos(e);
+            delta = reference - y;
+            if (delta > 2 || delta < -2) {
+                reference = y;
+                scroll(offset + delta);
+            }
+        }
+        e.preventDefault();
+        //e.stopPropagation();
+        return false;
+    }
+
+    function release(e) {
+        pressed = false;
+
+        clearInterval(ticker);
+        if (velocity > 10 || velocity < -10) {
+            amplitude = 0.8 * velocity;
+            target = Math.round(offset + amplitude);
+            timestamp = Date.now();
+            requestAnimationFrame(autoScroll);
+        }
+
+        //e.preventDefault();
+        //e.stopPropagation();
+        //return false;
+    }
+
+    //view = document.getElementById('view');
+    view = $('#productModal .modal-body')[0];
+    if (typeof window.ontouchstart !== 'undefined') {
+        view.addEventListener('touchstart', tap);
+        view.addEventListener('touchmove', drag);
+        view.addEventListener('touchend', release);
+    }
+    //- view.addEventListener('mousedown', tap);
+    //- view.addEventListener('mousemove', drag);
+    //- view.addEventListener('mouseup', release);
+
+    max = parseInt(getComputedStyle(view).height, 10) - innerHeight;
+    offset = min = 0;
+    pressed = false;
+    timeConstant = 325; // ms
+
+    //indicator = document.getElementById('indicator');
+    relative = (innerHeight - 30) / max;
+
+    xform = 'transform';
+    ['webkit', 'Moz', 'O', 'ms'].every(function (prefix) {
+        var e = prefix + 'Transform';
+        if (typeof view.style[e] !== 'undefined') {
+            xform = e;
+            return false;
+        }
+        return true;
+    });
+  })();
+
+  var prescrollW = Math.ceil(5-$(window).width()/imageWidth)||1;
+  if(prescrollW <= 0)
+    prescrollW = 1;
+  var prescrollHeight = $(window).height()*prescrollW+100;
+  var loadingData = true;
+  var currentPage = 1;
+  $(window).scroll(function(e){
+    var top = $(window).scrollTop();
+    if(!loadingData && ($(window).height()+top+prescrollHeight >= $(document).height())){
+      loadingData = true;
+      var params = {};
+      if(ProductSearch){
+        params.url = API_URL+'products?term='+encodeURIComponent(ProductSearch)+'&page='+(currentPage+1)+'&st='+ProductSearchType;
+      }else if(ProductCategory){
+        params.url = API_URL+'products?category='+encodeURIComponent(ProductCategory)+'&page='+(currentPage+1)+'&st='+ProductSearchType;
+      }else if(ProductList){
+        params.url = API_URL+'featured/'+encodeURIComponent(ProductList)+'?page='+(currentPage+1);
+      }
+      if(params.url){
+        $('.cube').show();
+        ajaxSturdy(params, 5000, 4, function(err, data){
+          if(!err){
+            loadingData = false;
+            currentPage++;
+            renderCardsWithData(data, true);
+          }
+        });
+      }
+    }
+  });
+
+  function sizeProductModal(){
+    //$('#productModal .modal-lg').css('height', (window.innerHeight-parseInt($('#productModal .modal-lg').css('marginTop'))*2)+'px');
+  }
+
+  $(window).load(function() {
+    sizeProductModal();
+    if(!_Products.length && ProductList){
+      // load products async
+      $('.cube').show();
+      var params = {
+        url: API_URL+'featured/'+encodeURIComponent(ProductList)
+      };
+      ajaxSturdy(params, 5000, 4, function(err, data){
+        if(!err){
+          renderCardsWithData(data);
+          $('.cube').show();
+          params.url = API_URL+'featured/'+encodeURIComponent(ProductList)+'?page=2';
+          setTimeout(function(){
+            ajaxSturdy(params, 5000, 4, function(err, data2){
+              if(!err){
+                renderCardsWithData(data2, true);
+                currentPage = 2;
+                loadingData = false;
+              }else{
+                $('.cube').hide();
+              }
+            });
+          }, 100);
+        }else{
+          $('.cube').hide();
+          if(window.location.pathname != '/')
+            window.location = '/';
+        }
+      });
+    }else if(!_Products.length && ProductCategory){
+      // load products async
+      $('.cube').show();
+      var params = {
+        url: API_URL+'products?category='+encodeURIComponent(ProductCategory)+'&st='+ProductSearchType
+      };
+      ajaxSturdy(params, 5000, 4, function(err, data){
+        if(!err){
+          renderCardsWithData(data);
+          $('.cube').show();
+          params.url = API_URL+'products?category='+encodeURIComponent(ProductCategory)+'&page=2'+'&st='+ProductSearchType;
+          setTimeout(function(){
+            ajaxSturdy(params, 5000, 4, function(err, data2){
+              if(!err){
+                renderCardsWithData(data2, true);
+                currentPage = 2;
+                loadingData = false;
+              }else{
+                $('.cube').hide();
+              }
+            });
+          }, 100);
+        }else{
+          $('.cube').hide();
+          if(window.location.pathname != '/')
+            window.location = '/';
+        }
+      });
+    }else if(!_Products.length && ProductSearch){
+      // load products async
+      $('.cube').show();
+      var params = {
+        url: API_URL+'products?term='+encodeURIComponent(ProductSearch)+'&st='+ProductSearchType
+      };
+      ajaxSturdy(params, 5000, 4, function(err, data){
+        if(!err){
+          loadingData = false;
+          renderCardsWithData(data);
+          $('.cube').show();
+          var params = {};
+          params.url = API_URL+'products?term='+encodeURIComponent(ProductSearch)+'&page=2'+'&st='+ProductSearchType;
+          setTimeout(function(){
+            ajaxSturdy(params, 5000, 4, function(err, data2){
+              if(!err){
+                renderCardsWithData(data2, true);
+                currentPage = 2;
+                loadingData = false;
+              }else{
+                $('.cube').hide();
+              }
+            });
+          }, 100);
+        }else{
+          $('.cube').hide();
+          if(window.location.pathname != '/')
+            window.location = '/';
+        }
+      });
+    }else if(_Products.length){
+      renderCardsWithData(_Products);
+      $('.cube').show();
+      var params = {};
+      if(ProductSearch){
+        params.url = API_URL+'products?term='+encodeURIComponent(ProductSearch)+'&page=2'+'&st='+ProductSearchType;
+      }else if(ProductCategory){
+        params.url = API_URL+'products?category='+encodeURIComponent(ProductCategory)+'&page=2'+'&st='+ProductSearchType;
+      }else if(ProductList){
+        params.url = API_URL+'featured/'+encodeURIComponent(ProductList)+'?page=2';
+      }
+      setTimeout(function(){
+        ajaxSturdy(params, 5000, 4, function(err, data2){
+          if(!err){
+            renderCardsWithData(data2, true);
+            currentPage = 2;
+            loadingData = false;
+          }else{
+            $('.cube').hide();
+          }
+        });
+      }, 100);
+    }
+    $('body').append('<div id="dynamic-content"></div>');
+  });
+
+  if(ProductSearch || ProductCategory){
+    $('#secondmenu-collapse').addClass('bottom-shadow-light');
+
+    var tp = 'magic';
+    if(ProductSearchType)
+      tp = ProductSearchType;
+    var index = ['magic', 'score', 'trending', 'budget'].indexOf(tp);
+    $('#secondmenu-collapse a').removeClass('active');
+    $($('#secondmenu-collapse a')[index]).addClass('active');
+
+    var h = $('div.container-fluid.browse-header').outerHeight();
+    $('nav.navbar.navbar-default').css('position', 'relative');
+    $('nav.navbar.navbar-default').css('top', h+'px');
+  }
+
+  window.onresize = function(e) {
+    //console.log('window.onresize', window.innerWidth)
+    sizeCards(window.innerWidth, window.innerHeight);
+    sizeProductModal();
+  };
+
+  $('#productModal-score').hover(function(){
+    if(scoreDetailMode == false){
+      $('#productModal .scorebanner-corner1').css('background-color', '#f7f7f7');
+      $('#productModal .scorebanner-corner2').css('background-color', '#f7f7f7');
+      $('#productModal-score').css('background-color', '#f7f7f7');
+      $('#productModal-score').css('cursor', 'pointer');
+    }
+  }, function(){
+    if(scoreDetailMode == false){
+      $('#productModal .scorebanner-corner1').css('background-color', '#fff');
+      $('#productModal .scorebanner-corner2').css('background-color', '#fff');
+      $('#productModal-score').css('background-color', '#fff');
+      $('#productModal-score').css('cursor', 'auto');
+    }
+  });
+
+  $('.arrow-left').click(function(){
+    // load the previous product
+    changeProduct(-1);
+  });
+  $('.arrow-right').click(function(){
+    // load the previous product
+    changeProduct(1);
+  });
+  function changeProduct(offset){
+    var index = 0;
+    var id = $('#productModal .id').text();
+    var obj = Object.keys(Products);
+    for(var i in obj){
+      if(Products[obj[i]].objectId == id){
+        break;
+      }
+      index++;
+    }
+    index+=offset;
+    if(index < 0)
+      index = obj.length-1;
+    if(index >= obj.length)
+      index = 0;
+
+    $('#productModal .modal-body').css('opacity', 0);
+    setTimeout(function(){
+      $('#productModal .modal-body').css('transform', 'translateY(0px)');
+      $('#productModal .imagerow').css('transform', 'translateY('+(0)+'px)');
+      $('#productModal .imagebars').css('transform', 'translateY('+(0)+'px)');
+      gy = 0;
+      setModal(obj[index]);
+      if(scoreDetailMode){
+        showScoreDetail();
+      }else if(imageDetailMode){
+        showImageDetail();
+      }else{
+        hideScoreDetail();
+        hideImageDetail();
+      }
+      $('#productModal .modal-body').css('opacity', 1);
+    }, 300);
+  }
+
+  $(document).keydown(function(e){
+    if(e.which == 37){
+      $('#productModal .arrow-left').trigger('click');
+    }else if(e.which == 39){
+      $('#productModal .arrow-right').trigger('click');
+    }
+  });
+
+});</script>
