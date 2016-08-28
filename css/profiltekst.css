@@ -72,9 +72,9 @@ ul {
 }
 #menu {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  font-size: 11px;
+  bottom: 12px;
+  left: 14px;
+  font-size: 13px;
 }
 #menu a:link,
 #menu a:visited {
