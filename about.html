@@ -474,7 +474,10 @@
             function initNano(){
                 // $(".nano").nanoScroller({ alwaysVisible: true });
                 $(".nano").each(function(){
-                    $(this).nanoScroller({ alwaysVisible: true });
+                    $(this).nanoScroller({
+                        alwaysVisible: true,
+                        iOSNativeScrolling: true
+                    });
                     var sliderheight = $(this).find(".nano-slider").height();
                     $(this).find(".nano-slider").css('height',sliderheight-32+'px');
 

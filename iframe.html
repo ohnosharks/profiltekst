@@ -74,7 +74,10 @@
 								}, 100); //wtf weird hax
 
 								setTimeout(function(){
-									$(".nano").nanoScroller({ alwaysVisible: true });
+									$(".nano").nanoScroller({
+										alwaysVisible: true,
+										iOSNativeScrolling: true
+									});
 									var sliderheight = $(".nano .nano-slider").height();
 									$(".nano .nano-slider").css('height',sliderheight-36+'px');
 								}, 100);
