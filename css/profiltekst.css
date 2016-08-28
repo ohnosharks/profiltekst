@@ -108,7 +108,9 @@ ul {
   display: flex;
   display: -webkit-flex;
   align-items: center;
+  -webkit-align-items: center;
   justify-content: center;
+  -webkit-justify-content: center;
   color: #666;
   transition: 0.3s;
   cursor: url('hand.png') 5 0, pointer;
