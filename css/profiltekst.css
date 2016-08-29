@@ -23,6 +23,7 @@ body {
   font-family: 'Roboto';
   font-size: 12px;
 }
+body.loading,
 body.loading * {
   cursor: url('busy.gif'), wait;
 }
@@ -72,18 +73,35 @@ ul {
 }
 #menu {
   position: absolute;
-  bottom: 12px;
-  left: 14px;
-  font-size: 13px;
+  bottom: 15px;
+  left: 20px;
+  font-size: 12px;
+  width: 165px;
+  transition: 0.2s;
 }
-#menu a:link,
-#menu a:visited {
-  color: #666;
-  text-decoration: none;
+#menu img {
+  width: 140px;
+  transition: 0.2s;
+}
+#menu p:not(:last-child) {
+  margin-bottom: 8px;
+  transition: 0.2s;
 }
 #menu a:hover {
-  color: #000;
   text-decoration: none;
+}
+#menu.hidden {
+  opacity: 0.4;
+}
+#fb {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0.35;
+  transition: 0.2s;
+}
+#fb:hover {
+  opacity: 1;
 }
 #loading {
   width: 50px;
@@ -146,16 +164,6 @@ ul {
 }
 .go-forward.last i:first-child {
   display: none;
-}
-#fb {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  opacity: 0.35;
-  transition: 0.2s;
-}
-#fb:hover {
-  opacity: 1;
 }
 .about-box {
   background: white;

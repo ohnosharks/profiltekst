@@ -92,6 +92,7 @@ jQuery(document).ready(function($) {
 			case 39: // Right
 				goNext();
 				$(".go-back, .go-forward").addClass('low-opacity');
+				$("#menu").addClass('hidden');
 				return false;
 			break;
 			
@@ -99,6 +100,7 @@ jQuery(document).ready(function($) {
 			case 37:
 				goPrevious();
 				$(".go-back, .go-forward").addClass('low-opacity');
+				$("#menu").addClass('hidden');
 				return false;
 			break;
 		}
@@ -108,13 +110,22 @@ jQuery(document).ready(function($) {
 			case 39:
 				goNext();
 				$(".go-back, .go-forward").addClass('low-opacity');
+				$("#menu").addClass('hidden');
 			break;
 			case 37:
 				goPrevious();
 				$(".go-back, .go-forward").addClass('low-opacity');
+				$("#menu").addClass('hidden');
 			break;
 		}
 	});
+
+
+	// Menu remove low opacity
+	$("#menu").on('mouseover', function(){
+		$(this).removeClass('hidden');
+	})
+
 
 
 	// Navigation functions
@@ -163,11 +174,13 @@ jQuery(document).ready(function($) {
 	// Arrow click
 	$(".go-forward").on('click', function(){
 		goNext();
+		$("#menu").addClass('hidden');
 	}).on('mouseover', function(){
 		$(".go-back, .go-forward").removeClass('low-opacity');
 	});
 	$(".go-back").on('click', function(){
 		goPrevious();
+		$("#menu").addClass('hidden');
 	}).on('mouseover', function(){
 		$(".go-back, .go-forward").removeClass('low-opacity');
 	});
