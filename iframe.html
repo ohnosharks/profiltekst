@@ -41,7 +41,6 @@
 
 					jQuery.getJSON('http://profiltekst.taokitamoto.dk/php/fromhash.php', {hashid: hash}, function(json, textStatus) {
 						if(json==null){
-							// $("body").append("404 nigga");
 							parent.$(parent.document).trigger("iframeEvent.notfound", true);
 						} else {
 							$("#content").append( json.body );
