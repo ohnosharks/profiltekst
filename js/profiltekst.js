@@ -32,14 +32,14 @@ jQuery(document).ready(function($) {
 	if( !window.location.hash ){
 		// no hash -> random
 		// get count first
-		$.get('http://profiltekst.taokitamoto.dk/php/count.php', function(data) {
+		$.get('https://profiltekst.taokitamoto.dk/php/count.php', function(data) {
 			count = parseInt(data);
 			getRandom();
 		});
 	} else {
 		// hash -> load specific
 		// console.log('yes hash');
-		$.get('http://profiltekst.taokitamoto.dk/php/count.php', function(data) {
+		$.get('https://profiltekst.taokitamoto.dk/php/count.php', function(data) {
 			count = parseInt(data);
 		});
 		switch( getHash() ){
@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
 				loadOtherIframe('about.html');
 			break;
 			case '':
-				window.location.href = 'http://profiltekst.dk';
+				window.location.href = 'https://profiltekst.dk';
 			break;
 			default:
 				if( JSON.parse(localStorage.getItem('seen')).indexOf( getHash() )==-1 ){
@@ -74,7 +74,7 @@ jQuery(document).ready(function($) {
 					loadOtherIframe('about.html');
 				break;
 				case '':
-					window.location.href = 'http://profiltekst.dk';
+					window.location.href = 'https://profiltekst.dk';
 				break;
 				default:
 					loadIframe( getHash() );
@@ -135,7 +135,7 @@ jQuery(document).ready(function($) {
 			if( seen.indexOf(getHash()) == seen.length-1 ){
 				// Check om der er flere tilbage eller hvad lol
 				if(count==undefined){
-					$.get('http://profiltekst.taokitamoto.dk/php/count.php', function(data) {
+					$.get('https://profiltekst.taokitamoto.dk/php/count.php', function(data) {
 						var count = parseInt(data);
 						if( seen.length < count+1 ){
 							getRandom();
@@ -190,7 +190,7 @@ jQuery(document).ready(function($) {
 		localStorage.removeItem('seen');
 		localStorage.removeItem('current');
 		localStorage.removeItem('count');
-		window.location.href='http://profiltekst.dk';
+		window.location.href='https://profiltekst.dk';
 	}
 
 
@@ -206,7 +206,7 @@ jQuery(document).ready(function($) {
 	// Besked modtaget hvis iframe returner null på json (404 not found lol)
 	$(document).on('iframeEvent.notfound', function(e, data){
 		// alert("404 returned");
-		window.location.href = 'http://profiltekst.dk';
+		window.location.href = 'https://profiltekst.dk';
 	});
 
 
@@ -214,7 +214,7 @@ jQuery(document).ready(function($) {
 	// Go back from About page
 	$("body").on('click', '.about-back', function(){
 		if( localStorage.getItem('current')==null ){
-			window.location.href = 'http://profiltekst.dk';
+			window.location.href = 'https://profiltekst.dk';
 		} else {
 			setHash(localStorage.getItem('current'));
 		}
@@ -228,7 +228,7 @@ jQuery(document).ready(function($) {
 	function getRandom(){
 		$("body").addClass('loading');
 		$.ajax({
-			url: 'http://profiltekst.taokitamoto.dk/php/random.php',
+			url: 'https://profiltekst.taokitamoto.dk/php/random.php',
 			type: 'POST',
 			dataType: 'JSON',
 			data: { seen: seen },
@@ -252,7 +252,7 @@ jQuery(document).ready(function($) {
 	function getFromHash(hash){
 		$("body").addClass('loading');
 		$.ajax({
-			url: 'http://profiltekst.taokitamoto.dk/php/fromhash.php',
+			url: 'https://profiltekst.taokitamoto.dk/php/fromhash.php',
 			type: 'GET',
 			dataType: 'JSON',
 			data: { hashid: hash },
