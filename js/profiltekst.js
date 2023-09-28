@@ -28,20 +28,20 @@ jQuery(document).ready(function($) {
 	}
 
 	// No hash
-	var count = undefined;;
+	var count = 750;
 	if( !window.location.hash ){
 		// no hash -> random
 		// get count first
-		$.get('https://profiltekst.taokitamoto.dk/php/count.php', function(data) {
+		/*$.get('https://profiltekst.taokitamoto.dk/php/count.php', function(data) {
 			count = parseInt(data);
 			getRandom();
-		});
+		});*/
 	} else {
 		// hash -> load specific
 		// console.log('yes hash');
-		$.get('https://profiltekst.taokitamoto.dk/php/count.php', function(data) {
+		/*$.get('https://profiltekst.taokitamoto.dk/php/count.php', function(data) {
 			count = parseInt(data);
-		});
+		});*/
 		switch( getHash() ){
 			case 'about':
 				loadOtherIframe('about.html');
