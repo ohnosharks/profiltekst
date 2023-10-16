@@ -36,6 +36,7 @@ jQuery(document).ready(function($) {
 			count = parseInt(data);
 			getRandom();
 		});*/
+		getRandom();
 	} else {
 		// hash -> load specific
 		// console.log('yes hash');
